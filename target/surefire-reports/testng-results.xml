@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-04T20:16:36 IST" name="Testingbaba" finished-at="2022-03-04T20:17:37 IST" duration-ms="61310">
+    <groups>
+    </groups>
+    <test started-at="2022-03-04T20:16:36 IST" name="smoke" finished-at="2022-03-04T20:16:42 IST" duration-ms="5807">
+      <class name="test.Testingbaba_launch_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_launch_test@6a28ffa4]" started-at="2022-03-04T20:16:36 IST" name="launchtestingbaba" finished-at="2022-03-04T20:16:41 IST" duration-ms="5364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="gettitle()[pri:0, instance:test.Testingbaba_launch_test@6a28ffa4]" started-at="2022-03-04T20:16:41 IST" name="gettitle" finished-at="2022-03-04T20:16:41 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettitle -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_launch_test@6a28ffa4]" started-at="2022-03-04T20:16:41 IST" name="Teardown" finished-at="2022-03-04T20:16:42 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_launch_test -->
+    </test> <!-- smoke -->
+    <test started-at="2022-03-04T20:16:42 IST" name="Textbox" finished-at="2022-03-04T20:16:49 IST" duration-ms="7675">
+      <class name="test.Testingbaba_textbox_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_textbox_test@20ce78ec]" started-at="2022-03-04T20:16:42 IST" name="launchtestingbaba" finished-at="2022-03-04T20:16:48 IST" duration-ms="6256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="gettitle()[pri:1, instance:test.Testingbaba_textbox_test@20ce78ec]" started-at="2022-03-04T20:16:48 IST" name="gettitle" finished-at="2022-03-04T20:16:48 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettitle -->
+        <test-method signature="clickonelements()[pri:2, instance:test.Testingbaba_textbox_test@20ce78ec]" started-at="2022-03-04T20:16:48 IST" name="clickonelements" finished-at="2022-03-04T20:16:48 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonelements -->
+        <test-method signature="filldetails()[pri:3, instance:test.Testingbaba_textbox_test@20ce78ec]" started-at="2022-03-04T20:16:48 IST" name="filldetails" finished-at="2022-03-04T20:16:49 IST" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filldetails -->
+        <test-method signature="getverify()[pri:4, instance:test.Testingbaba_textbox_test@20ce78ec]" started-at="2022-03-04T20:16:49 IST" name="getverify" finished-at="2022-03-04T20:16:49 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getverify -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_textbox_test@20ce78ec]" started-at="2022-03-04T20:16:49 IST" name="Teardown" finished-at="2022-03-04T20:16:49 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_textbox_test -->
+    </test> <!-- Textbox -->
+    <test started-at="2022-03-04T20:16:49 IST" name="buttons" finished-at="2022-03-04T20:16:57 IST" duration-ms="7741">
+      <class name="test.Testingbaba_buttons_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_buttons_test@6c80d78a]" started-at="2022-03-04T20:16:49 IST" name="launchtestingbaba" finished-at="2022-03-04T20:16:56 IST" duration-ms="6699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="getelement()[pri:0, instance:test.Testingbaba_buttons_test@6c80d78a]" started-at="2022-03-04T20:16:56 IST" name="getelement" finished-at="2022-03-04T20:16:56 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getelement -->
+        <test-method signature="getbuttn()[pri:1, instance:test.Testingbaba_buttons_test@6c80d78a]" started-at="2022-03-04T20:16:56 IST" name="getbuttn" finished-at="2022-03-04T20:16:57 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getbuttn -->
+        <test-method signature="doble()[pri:2, instance:test.Testingbaba_buttons_test@6c80d78a]" started-at="2022-03-04T20:16:57 IST" name="doble" finished-at="2022-03-04T20:16:57 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doble -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_buttons_test@6c80d78a]" started-at="2022-03-04T20:16:57 IST" name="Teardown" finished-at="2022-03-04T20:16:57 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_buttons_test -->
+    </test> <!-- buttons -->
+    <test started-at="2022-03-04T20:16:57 IST" name="checkbox" finished-at="2022-03-04T20:17:06 IST" duration-ms="8546">
+      <class name="test.Testingbaba_checkbox_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_checkbox_test@32eff876]" started-at="2022-03-04T20:16:57 IST" name="launchtestingbaba" finished-at="2022-03-04T20:17:04 IST" duration-ms="6475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="elements()[pri:1, instance:test.Testingbaba_checkbox_test@32eff876]" started-at="2022-03-04T20:17:04 IST" name="elements" finished-at="2022-03-04T20:17:04 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elements -->
+        <test-method signature="checkbox()[pri:2, instance:test.Testingbaba_checkbox_test@32eff876]" started-at="2022-03-04T20:17:04 IST" name="checkbox" finished-at="2022-03-04T20:17:04 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox -->
+        <test-method signature="mobilecheckbox()[pri:3, instance:test.Testingbaba_checkbox_test@32eff876]" started-at="2022-03-04T20:17:04 IST" name="mobilecheckbox" finished-at="2022-03-04T20:17:05 IST" duration-ms="1555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilecheckbox -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_checkbox_test@32eff876]" started-at="2022-03-04T20:17:05 IST" name="Teardown" finished-at="2022-03-04T20:17:06 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_checkbox_test -->
+    </test> <!-- checkbox -->
+    <test started-at="2022-03-04T20:17:06 IST" name="dropdown" finished-at="2022-03-04T20:17:12 IST" duration-ms="6327">
+      <class name="test.Testingbaba_dropdown_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_dropdown_test@158da8e]" started-at="2022-03-04T20:17:06 IST" name="launchtestingbaba" finished-at="2022-03-04T20:17:10 IST" duration-ms="3869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="getdropdown()[pri:0, instance:test.Testingbaba_dropdown_test@158da8e]" started-at="2022-03-04T20:17:10 IST" name="getdropdown" finished-at="2022-03-04T20:17:12 IST" duration-ms="2194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdropdown -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_dropdown_test@158da8e]" started-at="2022-03-04T20:17:12 IST" name="Teardown" finished-at="2022-03-04T20:17:12 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_dropdown_test -->
+    </test> <!-- dropdown -->
+    <test started-at="2022-03-04T20:17:12 IST" name="links" finished-at="2022-03-04T20:17:21 IST" duration-ms="8711">
+      <class name="test.Testingbaba_links_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_links_test@5af3afd9]" started-at="2022-03-04T20:17:12 IST" name="launchtestingbaba" finished-at="2022-03-04T20:17:18 IST" duration-ms="6041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="elements()[pri:1, instance:test.Testingbaba_links_test@5af3afd9]" started-at="2022-03-04T20:17:18 IST" name="elements" finished-at="2022-03-04T20:17:18 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elements -->
+        <test-method signature="links()[pri:2, instance:test.Testingbaba_links_test@5af3afd9]" started-at="2022-03-04T20:17:18 IST" name="links" finished-at="2022-03-04T20:17:20 IST" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- links -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_links_test@5af3afd9]" started-at="2022-03-04T20:17:20 IST" name="Teardown" finished-at="2022-03-04T20:17:21 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_links_test -->
+    </test> <!-- links -->
+    <test started-at="2022-03-04T20:17:21 IST" name="radio" finished-at="2022-03-04T20:17:27 IST" duration-ms="6498">
+      <class name="test.Testingbaba_radio_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_radio_test@5ffead27]" started-at="2022-03-04T20:17:21 IST" name="launchtestingbaba" finished-at="2022-03-04T20:17:24 IST" duration-ms="3739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="getradio()[pri:0, instance:test.Testingbaba_radio_test@5ffead27]" started-at="2022-03-04T20:17:24 IST" name="getradio" finished-at="2022-03-04T20:17:27 IST" duration-ms="2494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getradio -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_radio_test@5ffead27]" started-at="2022-03-04T20:17:27 IST" name="Teardown" finished-at="2022-03-04T20:17:27 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_radio_test -->
+    </test> <!-- radio -->
+    <test started-at="2022-03-04T20:17:27 IST" name="autocomplete" finished-at="2022-03-04T20:17:37 IST" duration-ms="9930">
+      <class name="test.Testingbaba_autocomplete_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_autocomplete_test@3e58a80e]" started-at="2022-03-04T20:17:27 IST" name="launchtestingbaba" finished-at="2022-03-04T20:17:33 IST" duration-ms="6013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="getweb()[pri:1, instance:test.Testingbaba_autocomplete_test@3e58a80e]" started-at="2022-03-04T20:17:33 IST" name="getweb" finished-at="2022-03-04T20:17:33 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getweb -->
+        <test-method signature="completeclick()[pri:2, instance:test.Testingbaba_autocomplete_test@3e58a80e]" started-at="2022-03-04T20:17:33 IST" name="completeclick" finished-at="2022-03-04T20:17:35 IST" duration-ms="1124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeclick -->
+        <test-method signature="filldetails()[pri:3, instance:test.Testingbaba_autocomplete_test@3e58a80e]" started-at="2022-03-04T20:17:35 IST" name="filldetails" finished-at="2022-03-04T20:17:37 IST" duration-ms="2297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filldetails -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_autocomplete_test@3e58a80e]" started-at="2022-03-04T20:17:37 IST" name="Teardown" finished-at="2022-03-04T20:17:37 IST" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_autocomplete_test -->
+    </test> <!-- autocomplete -->
+  </suite> <!-- Testingbaba -->
+</testng-results>

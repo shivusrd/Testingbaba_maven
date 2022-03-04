@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testingbaba]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="radio(failed)" verbose="0">
+    <classes>
+      <class name="test.Testingbaba_radio_test">
+        <methods>
+          <include name="Teardown"/>
+          <include name="getradio"/>
+          <include name="launchtestingbaba"/>
+        </methods>
+      </class> <!-- test.Testingbaba_radio_test -->
+    </classes>
+  </test> <!-- radio(failed) -->
+</suite> <!-- Failed suite [Testingbaba] -->
