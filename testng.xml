@@ -12,7 +12,7 @@
     <classes>
       <class name="test.Testingbaba_launch_test"/>
     </classes>
-  </test> 
+    </test> 
   
   <test name = "Textbox" enabled="true">
   <classes>
@@ -53,6 +53,12 @@
   <test name = "autocomplete" enabled="true" >
   <classes>
   <class name="test.Testingbaba_autocomplete_test"/>
+    </classes>
+  </test>
+  
+  <test name = "Webtable" enabled="true" >
+  <classes>
+  <class name="test.Testingbaba_webtables_test"/>
     </classes>
   </test>
 
