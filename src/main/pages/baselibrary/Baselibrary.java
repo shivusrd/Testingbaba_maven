@@ -1,10 +1,27 @@
 package baselibrary;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
 
 public class Baselibrary 
 {
@@ -53,6 +70,16 @@ public static WebDriver driver;
 //		
 //	}
 			
+	public void getScreenshot(String result) throws IOException {
+		// Web Driver take the screenshot as a file and save in virtually in src
+		// variable.
+		//File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		// copy the file from src and put in your local machine with the name of failed
+		// test class
+		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.jpeg"));
+
+	}
 	
 	
 }
