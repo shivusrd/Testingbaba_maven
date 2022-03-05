@@ -17,6 +17,8 @@ import org.testng.xml.XmlSuite;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import test.Testingbaba_launch_test;
  
 
 
@@ -29,7 +31,7 @@ public class Extent_report implements IReporter
 {
 
 	 private ExtentReports extent;
-	 
+	
 	    public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 	        extent = new ExtentReports(outputDirectory + File.separator +"ExtentReportsTestNG.html", true);
 	 
@@ -68,8 +70,12 @@ public class Extent_report implements IReporter
 	                    message = result.getThrowable().getMessage();
 	 
 	                test.log(status, message);
-	 
+	                
+
+	                
+	               
 	                extent.endTest(test);
+	                
 	            }
 	        }
 	    }

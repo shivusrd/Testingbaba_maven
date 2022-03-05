@@ -31,7 +31,7 @@ public class Excelutility_automation
 	public static void main(String[] args) {
 		String path = "C:\\Users\\dubey\\OneDrive\\Documents\\GitHub\\18october_framework\\src\\main\\pages\\excelutility\\Webtabledata.xlsx";
 
-		for (int i = 0; i <= 3; i++)
+		for (int i = 0; i <= 6; i++)
 
 		{
 			String out = Getreaddata(path, i, 0);

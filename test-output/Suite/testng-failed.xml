@@ -2,114 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="functest"/>
+        <include name="checkintest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="test.Testingbaba_menu_test">
+      <class name="test.Flipkart_buy_test">
         <methods>
-          <include name="Teardown"/>
-          <include name="gettitle"/>
-          <include name="launchtestingbaba"/>
+          <include name="flipkart"/>
+          <include name="hover"/>
         </methods>
-      </class> <!-- test.Testingbaba_menu_test -->
-      <class name="test.Testingbaba_links_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="elements"/>
-          <include name="links"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_links_test -->
-      <class name="test.Testingbaba_webtables_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="getweb"/>
-        </methods>
-      </class> <!-- test.Testingbaba_webtables_test -->
-      <class name="test.Testingbaba_upload_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="getweb"/>
-          <include name="uploadfile"/>
-        </methods>
-      </class> <!-- test.Testingbaba_upload_test -->
-      <class name="test.Testingbaba_buttons_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="getelement"/>
-          <include name="getbuttn"/>
-          <include name="doble"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_buttons_test -->
-      <class name="test.Testingbaba_radio_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="getradio"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_radio_test -->
-      <class name="test.Testingbaba_dropdown_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="getdropdown"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_dropdown_test -->
-      <class name="test.TestingbabaAlerts_Frame_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="getclick2"/>
-          <include name="getalerts"/>
-          <include name="getclick3"/>
-          <include name="getclick"/>
-          <include name="getclick4"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.TestingbabaAlerts_Frame_test -->
-      <class name="test.Testingbaba_launch_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="gettitle"/>
-        </methods>
-      </class> <!-- test.Testingbaba_launch_test -->
-      <class name="test.Testingbaba_autocomplete_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="filldetails"/>
-          <include name="launchtestingbaba"/>
-          <include name="completeclick"/>
-          <include name="getweb"/>
-        </methods>
-      </class> <!-- test.Testingbaba_autocomplete_test -->
-      <class name="test.Testingbaba_mousehover_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="click"/>
-          <include name="mouse"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_mousehover_test -->
-      <class name="test.Testingbaba_checkbox_test">
-        <methods>
-          <include name="checkbox"/>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="mobilecheckbox"/>
-          <include name="elements"/>
-        </methods>
-      </class> <!-- test.Testingbaba_checkbox_test -->
-      <class name="test.Testingbaba_textbox_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="gettitle"/>
-          <include name="clickonelements"/>
-          <include name="getverify"/>
-          <include name="launchtestingbaba"/>
-          <include name="filldetails"/>
-        </methods>
-      </class> <!-- test.Testingbaba_textbox_test -->
+      </class> <!-- test.Flipkart_buy_test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

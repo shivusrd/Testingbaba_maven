@@ -3,6 +3,8 @@ package test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.ExtentTest;
+
 import baselibrary.Baselibrary;
 
 import pages.Testingbaba_textbox_page;
@@ -10,7 +12,9 @@ import propertyutility.PropertyUtility;
 
 public class Testingbaba_textbox_test extends Baselibrary
 
-{
+{	
+	ExtentTest test;
+	
 	Testingbaba_textbox_page ob;
 
 	@BeforeTest
