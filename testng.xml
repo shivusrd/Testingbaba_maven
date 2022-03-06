@@ -62,6 +62,18 @@
     </classes>
   </test>
   
+  <test name = "Flipkart" enabled="true" >
+  <classes>
+  <class name="test.Flipkart_buy_test"/>
+    </classes>
+  </test>
+  
+  <test name = "Flipkart" enabled="true" >
+  <classes>
+  <class name="test.Flipkart_buyproduct_test"/>
+    </classes>
+  </test>
+  
  
 
 </suite> <!-- Suite -->

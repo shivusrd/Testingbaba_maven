@@ -22,7 +22,8 @@ public class Testingbaba_menu_test extends Baselibrary
 	public void launchtestingbaba() 
 	{   
 		String url = PropertyUtility.getreadproperty("url");
-	    getlaunch(url);
+	    getlaunch();
+	    driver.get(url);
 	    
 		ob = new Testingbaba_menu_page();
 		ob.closebtn();

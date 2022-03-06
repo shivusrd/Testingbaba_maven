@@ -17,7 +17,8 @@ public class Testingbaba_dropdown_test extends Baselibrary
 	@BeforeTest
 	public void launchtestingbaba() {
 		String url = PropertyUtility.getreadproperty("url");
-		getlaunch(url);
+		getlaunch();
+		driver.get(url);
 		ob = new Testingbaba_dropdown_page();
 
 	}

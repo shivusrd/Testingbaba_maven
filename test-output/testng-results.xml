@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-05T18:28:32 IST" name="Default suite" finished-at="2022-03-05T18:28:42 IST" duration-ms="10323">
+  <suite started-at="2022-03-06T18:40:41 IST" name="Default suite" finished-at="2022-03-06T18:40:52 IST" duration-ms="10389">
     <groups>
     </groups>
-    <test started-at="2022-03-05T18:28:32 IST" name="Default test" finished-at="2022-03-05T18:28:42 IST" duration-ms="10323">
-      <class name="test.Flipkart_buy_test">
-        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Flipkart_buy_test@1b7cc17c]" started-at="2022-03-05T18:28:32 IST" name="launchtestingbaba" finished-at="2022-03-05T18:28:36 IST" duration-ms="4252" status="PASS">
+    <test started-at="2022-03-06T18:40:41 IST" name="Default test" finished-at="2022-03-06T18:40:52 IST" duration-ms="10389">
+      <class name="test.Flipkart_buyproduct_test">
+        <test-method is-config="true" signature="launchFB()[pri:0, instance:test.Flipkart_buyproduct_test@4efbca5a]" started-at="2022-03-06T18:40:41 IST" name="launchFB" finished-at="2022-03-06T18:40:45 IST" duration-ms="3521" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchtestingbaba -->
-        <test-method signature="flipkart()[pri:0, instance:test.Flipkart_buy_test@1b7cc17c]" started-at="2022-03-05T18:28:36 IST" name="flipkart" finished-at="2022-03-05T18:28:41 IST" duration-ms="5485" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flipkart -->
-        <test-method signature="hover()[pri:0, instance:test.Flipkart_buy_test@1b7cc17c]" started-at="2022-03-05T18:28:41 IST" name="hover" finished-at="2022-03-05T18:28:42 IST" duration-ms="184" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- launchFB -->
+        <test-method signature="flipkart()[pri:0, instance:test.Flipkart_buyproduct_test@4efbca5a]" started-at="2022-03-06T18:40:45 IST" name="flipkart" finished-at="2022-03-06T18:40:52 IST" duration-ms="6819" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".col\-1\-12"}
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a9ed24f347438311dda5dcde75b6b3e3, findElement {using=css selector, value=.col\-1\-12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\dubey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64173/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a9ed24f347438311dda5dcde75b6b3e3]]>
+Command: [06d1bb854b5ee9464cf6818bd7844fd1, clickElement {id=a3beaea6-fecf-406e-94d2-90307d0821a1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\dubey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64911/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (06d1bb854b5ee9464cf6818bd7844fd1)] -> xpath: //button[@class='_2KpZ6l _2U9uOA _3v1-ww']]
+Session ID: 06d1bb854b5ee9464cf6818bd7844fd1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".col\-1\-12"}
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a9ed24f347438311dda5dcde75b6b3e3, findElement {using=css selector, value=.col\-1\-12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\dubey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64173/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a9ed24f347438311dda5dcde75b6b3e3
+Command: [06d1bb854b5ee9464cf6818bd7844fd1, clickElement {id=a3beaea6-fecf-406e-94d2-90307d0821a1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\dubey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64911/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (06d1bb854b5ee9464cf6818bd7844fd1)] -> xpath: //button[@class='_2KpZ6l _2U9uOA _3v1-ww']]
+Session ID: 06d1bb854b5ee9464cf6818bd7844fd1
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -50,21 +48,16 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.By$PreW3CLocator.findElement(By.java:429)
-at org.openqa.selenium.By$ByClassName.findElement(By.java:298)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:80)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at pages.Flipkart_buy_page.AddtoCart(Flipkart_buy_page.java:76)
-at test.Flipkart_buy_test.hover(Flipkart_buy_test.java:39)
+at pages.Flipkart_buyproduct_page.login(Flipkart_buyproduct_page.java:57)
+at test.Flipkart_buyproduct_test.flipkart(Flipkart_buyproduct_test.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,15 +88,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hover -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Flipkart_buy_test@1b7cc17c]" started-at="2022-03-05T18:28:42 IST" name="Teardown" finished-at="2022-03-05T18:28:42 IST" duration-ms="362" status="PASS">
+        </test-method> <!-- flipkart -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Flipkart_buyproduct_test@4efbca5a]" started-at="2022-03-06T18:40:52 IST" name="Teardown" finished-at="2022-03-06T18:40:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- test.Flipkart_buy_test -->
+      </class> <!-- test.Flipkart_buyproduct_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -18,7 +18,8 @@ public class Testingbaba_buttons_test extends Baselibrary
 	public void launchtestingbaba() 
 	{
 		String url = PropertyUtility.getreadproperty("url");
-		getlaunch(url);
+		getlaunch();
+		driver.get(url);
 		ob = new Testingbaba_buttons_page();
 		ob.closebtn();
 	}

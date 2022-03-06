@@ -17,7 +17,8 @@ public class Testingbaba_webtables_test extends Baselibrary
 	public void launchtestingbaba() 
 	{
 		String url = PropertyUtility.getreadproperty("url");
-		getlaunch(url);
+		getlaunch();
+		driver.get(url);
 		ob = new Testingbaba_webtables_page();
 		ob.closebtn();
 	}

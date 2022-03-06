@@ -16,7 +16,8 @@ public class Testingbaba_upload_test extends Baselibrary
 	@BeforeTest
 	public void launchtestingbaba() {
 		String url = PropertyUtility.getreadproperty("url");
-		getlaunch(url);
+		getlaunch();
+		driver.get(url);
 		ob = new Testingbaba_upload_page();
 		ob.closebtn();
 	}

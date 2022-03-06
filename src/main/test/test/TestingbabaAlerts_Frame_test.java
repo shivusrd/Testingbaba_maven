@@ -16,7 +16,8 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 	@BeforeTest
 	public void launchtestingbaba() {
 		String url = PropertyUtility.getreadproperty("url");
-		getlaunch(url);
+		getlaunch();
+		driver.get(url);
 		ob = new TestingbabaAlerts_Frame_page();
 		ob.closebtn();
 	}

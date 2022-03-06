@@ -26,7 +26,8 @@ public class Testingbaba_launch_test extends Baselibrary
 		
 		
 		String url = PropertyUtility.getreadproperty("url");
-		getlaunch(url);
+		getlaunch();
+		driver.get(url);
 		ob = new Testingbaba_launch_page();
 	    ob.closebtn();
 	}

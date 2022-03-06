@@ -27,11 +27,10 @@ public class Baselibrary
 {
 public static WebDriver driver;
 	
-	public void getlaunch (String url)
+	public void getlaunch ()
 	{
 		driver = new ChromeDriver();
-		driver.get(url);
-		driver.manage().window().maximize();
+	    driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 	}
@@ -40,7 +39,7 @@ public static WebDriver driver;
 	
 	public void Teardown()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 	
 	
