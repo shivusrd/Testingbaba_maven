@@ -68,7 +68,7 @@
     </classes>
   </test>
   
-  <test name = "Flipkart" enabled="true" >
+  <test name = "Flipkart_Buy_product" enabled="true" >
   <classes>
   <class name="test.Flipkart_buyproduct_test"/>
     </classes>
