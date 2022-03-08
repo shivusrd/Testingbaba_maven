@@ -74,6 +74,14 @@
     </classes>
   </test>
   
+  <test name = "Makemytrip" enabled="true" >
+  <classes>
+  <class name="test.Makemytrip_launch_test"/>
+    </classes>
+  </test>
+  
+  
+  
  
 
 </suite> <!-- Suite -->

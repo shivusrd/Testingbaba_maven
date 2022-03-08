@@ -47,7 +47,7 @@ public class Flipkart_buyproduct_page extends Baselibrary
 		password.sendKeys("Shivu@srd1");
 		login.click();
 		
-		search.sendKeys("pintola peanut", Keys.ENTER);
+		search.sendKeys("mixed seeds", Keys.ENTER);
 		Thread.sleep(2000);
 		iphone.click();
 		Thread.sleep(2000);

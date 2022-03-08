@@ -39,7 +39,7 @@ public static WebDriver driver;
 	
 	public void Teardown()
 	{
-		//driver.quit();
+		driver.quit();
 	}
 	
 	
