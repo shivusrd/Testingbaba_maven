@@ -6,8 +6,8 @@
       <class name="test.Flipkart_buyproduct_test">
         <methods>
           <include name="Teardown"/>
+          <include name="flipkart2"/>
           <include name="launchFB"/>
-          <include name="flipkart"/>
         </methods>
       </class> <!-- test.Flipkart_buyproduct_test -->
     </classes>

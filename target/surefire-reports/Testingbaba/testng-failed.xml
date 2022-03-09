@@ -5,15 +5,15 @@
     <listener class-name="test.Listners"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="Webtable1(failed)" verbose="0">
+  <test thread-count="5" name="Flipkart_Buy_product(failed)" verbose="0">
     <classes>
-      <class name="test.Testingbaba_webtables_test">
+      <class name="test.Flipkart_buyproduct_test">
         <methods>
           <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="getweb1"/>
+          <include name="flipkart2"/>
+          <include name="launchFB"/>
         </methods>
-      </class> <!-- test.Testingbaba_webtables_test -->
+      </class> <!-- test.Flipkart_buyproduct_test -->
     </classes>
-  </test> <!-- Webtable1(failed) -->
+  </test> <!-- Flipkart_Buy_product(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

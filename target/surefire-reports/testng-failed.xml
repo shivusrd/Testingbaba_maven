@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="Test(failed)" verbose="0">
+<suite name="Failed suite [Testingbaba]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="test.Listners"/>
+    <listener class-name="extentReports.Extent_report"/>
+  </listeners>
+  <test thread-count="5" name="Flipkart_Buy_product(failed)" verbose="0">
     <classes>
-      <class name="test.Flipkart_buy_test">
+      <class name="test.Flipkart_buyproduct_test">
         <methods>
-          <include name="launchtestingbaba"/>
-          <include name="hover"/>
           <include name="Teardown"/>
+          <include name="flipkart2"/>
+          <include name="launchFB"/>
         </methods>
-      </class> <!-- test.Flipkart_buy_test -->
+      </class> <!-- test.Flipkart_buyproduct_test -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Flipkart_Buy_product(failed) -->
+</suite> <!-- Failed suite [Testingbaba] -->

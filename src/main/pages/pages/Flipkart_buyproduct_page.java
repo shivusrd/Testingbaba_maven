@@ -47,14 +47,10 @@ public class Flipkart_buyproduct_page extends Baselibrary
 		password.sendKeys("Shivu@srd1");
 		login.click();
 		
-		search.sendKeys("mixed seeds", Keys.ENTER);
+		search.sendKeys("iphone", Keys.ENTER);
 		Thread.sleep(2000);
-		iphone.click();
-		Thread.sleep(2000);
-		Applicationutility.changewindow(1);
-		Thread.sleep(2000);
-		Applicationutility.clickme(addtocart);
-		addtocart.click();
+		
+		driver.navigate().back();
 
 		String title = driver.getTitle();
 		System.out.println(title);
