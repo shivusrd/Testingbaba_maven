@@ -66,8 +66,11 @@ public class Flipkart_buy_page extends Baselibrary
 		Thread.sleep(3000);
 		myprofile.click();
 		Thread.sleep(3000);
+		driver.navigate().refresh();
 		button.click();
 		Thread.sleep(3000);
+		
+		
 		lastname.clear();
 		Thread.sleep(3000);
 		save.click();
