@@ -1,124 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 47, Failures: 12, Errors: 0, Skipped: 35, Time elapsed: 35.823 s <<< FAILURE! - in TestSuite
-test.Testingbaba_launch_test.launchtestingbaba  Time elapsed: 9.802 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 124.272 s <<< FAILURE! - in TestSuite
+test.Flipkart_buy_test.profilechange  Time elapsed: 11.75 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="oKZoMV">...</span> is not clickable at point (564, 147). Other element would receive the click: <a title="..." class="_3QN6WI" href="/home-furnishing/bed-linen-blankets/bedsheets/pr?sid=jra,knw,qcw&amp;marketplace=FLIPKART&amp;otracker=nmenu_sub_Home%20%26%20Furniture_0_Bedsheets">Bedsheets</a>
+  (Session info: chrome=99.0.4844.51)
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Testingbaba_launch_test.launchtestingbaba(Testingbaba_launch_test.java:29)
-
-test.Testingbaba_textbox_test.launchtestingbaba  Time elapsed: 2.461 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Testingbaba_textbox_test.launchtestingbaba(Testingbaba_textbox_test.java:23)
-
-test.Testingbaba_buttons_test.launchtestingbaba  Time elapsed: 3.943 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:21)
-
-test.Testingbaba_checkbox_test.launchtestingbaba  Time elapsed: 2.533 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Testingbaba_checkbox_test.launchtestingbaba(Testingbaba_checkbox_test.java:20)
-
-test.Testingbaba_dropdown_test.launchtestingbaba  Time elapsed: 2.101 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Testingbaba_dropdown_test.launchtestingbaba(Testingbaba_dropdown_test.java:20)
-
-test.Testingbaba_links_test.launchtestingbaba  Time elapsed: 2.065 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Testingbaba_links_test.launchtestingbaba(Testingbaba_links_test.java:20)
-
-test.Testingbaba_radio_test.launchtestingbaba  Time elapsed: 1.894 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Testingbaba_radio_test.launchtestingbaba(Testingbaba_radio_test.java:20)
-
-test.Testingbaba_autocomplete_test.launchtestingbaba  Time elapsed: 2.327 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Testingbaba_autocomplete_test.launchtestingbaba(Testingbaba_autocomplete_test.java:19)
-
-test.Testingbaba_webtables_test.launchtestingbaba  Time elapsed: 1.976 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Testingbaba_webtables_test.launchtestingbaba(Testingbaba_webtables_test.java:20)
-
-test.Flipkart_buy_test.launchFB  Time elapsed: 1.927 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Flipkart_buy_test.launchFB(Flipkart_buy_test.java:24)
-
-test.Flipkart_buyproduct_test.launchFB  Time elapsed: 1.932 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Flipkart_buyproduct_test.launchFB(Flipkart_buyproduct_test.java:21)
-
-test.Makemytrip_launch_test.launchFB  Time elapsed: 1.972 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at test.Makemytrip_launch_test.launchFB(Makemytrip_launch_test.java:21)
+Command: [539d3aba4baa7dc1ad268defa85ba429, clickElement {id=49568b20-3fc6-4db4-aebe-37ee020617a3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:58863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58863/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (539d3aba4baa7dc1ad268defa85ba429)] -> xpath: //span[@class='oKZoMV']]
+Session ID: 539d3aba4baa7dc1ad268defa85ba429
+	at test.Flipkart_buy_test.profilechange(Flipkart_buy_test.java:43)
 

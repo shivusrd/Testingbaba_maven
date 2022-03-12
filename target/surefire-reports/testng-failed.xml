@@ -5,147 +5,15 @@
     <listener class-name="test.Listners"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="smoke(failed)" verbose="0">
-    <classes>
-      <class name="test.Testingbaba_launch_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="gettitle"/>
-        </methods>
-      </class> <!-- test.Testingbaba_launch_test -->
-    </classes>
-  </test> <!-- smoke(failed) -->
-  <test thread-count="5" name="Textbox(failed)" verbose="0">
-    <classes>
-      <class name="test.Testingbaba_textbox_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="gettitle"/>
-          <include name="clickonelements"/>
-          <include name="getverify"/>
-          <include name="launchtestingbaba"/>
-          <include name="filldetails"/>
-        </methods>
-      </class> <!-- test.Testingbaba_textbox_test -->
-    </classes>
-  </test> <!-- Textbox(failed) -->
-  <test thread-count="5" name="buttons(failed)" verbose="0">
-    <classes>
-      <class name="test.Testingbaba_buttons_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="getelement"/>
-          <include name="getbuttn"/>
-          <include name="doble"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_buttons_test -->
-    </classes>
-  </test> <!-- buttons(failed) -->
-  <test thread-count="5" name="checkbox(failed)" verbose="0">
-    <classes>
-      <class name="test.Testingbaba_checkbox_test">
-        <methods>
-          <include name="checkbox"/>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="mobilecheckbox"/>
-          <include name="elements"/>
-        </methods>
-      </class> <!-- test.Testingbaba_checkbox_test -->
-    </classes>
-  </test> <!-- checkbox(failed) -->
-  <test thread-count="5" name="dropdown(failed)" verbose="0">
-    <classes>
-      <class name="test.Testingbaba_dropdown_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="getdropdown"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_dropdown_test -->
-    </classes>
-  </test> <!-- dropdown(failed) -->
-  <test thread-count="5" name="links(failed)" verbose="0">
-    <classes>
-      <class name="test.Testingbaba_links_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="elements"/>
-          <include name="links"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_links_test -->
-    </classes>
-  </test> <!-- links(failed) -->
-  <test thread-count="5" name="radio(failed)" verbose="0">
-    <classes>
-      <class name="test.Testingbaba_radio_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="getradio"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_radio_test -->
-    </classes>
-  </test> <!-- radio(failed) -->
-  <test thread-count="5" name="autocomplete(failed)" verbose="0">
-    <classes>
-      <class name="test.Testingbaba_autocomplete_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="filldetails"/>
-          <include name="launchtestingbaba"/>
-          <include name="completeclick"/>
-          <include name="getweb"/>
-        </methods>
-      </class> <!-- test.Testingbaba_autocomplete_test -->
-    </classes>
-  </test> <!-- autocomplete(failed) -->
-  <test thread-count="5" name="Webtable(failed)" verbose="0">
-    <classes>
-      <class name="test.Testingbaba_webtables_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="getweb1"/>
-        </methods>
-      </class> <!-- test.Testingbaba_webtables_test -->
-    </classes>
-  </test> <!-- Webtable(failed) -->
   <test thread-count="5" name="Flipkart(failed)" verbose="0">
     <classes>
       <class name="test.Flipkart_buy_test">
         <methods>
           <include name="Teardown"/>
-          <include name="flipkart"/>
           <include name="profilechange"/>
           <include name="launchFB"/>
         </methods>
       </class> <!-- test.Flipkart_buy_test -->
     </classes>
   </test> <!-- Flipkart(failed) -->
-  <test thread-count="5" name="Flipkart_Buy_product(failed)" verbose="0">
-    <classes>
-      <class name="test.Flipkart_buyproduct_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="flipkart2"/>
-          <include name="launchFB"/>
-        </methods>
-      </class> <!-- test.Flipkart_buyproduct_test -->
-    </classes>
-  </test> <!-- Flipkart_Buy_product(failed) -->
-  <test thread-count="5" name="Makemytrip(failed)" verbose="0">
-    <classes>
-      <class name="test.Makemytrip_launch_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchFB"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- test.Makemytrip_launch_test -->
-    </classes>
-  </test> <!-- Makemytrip(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

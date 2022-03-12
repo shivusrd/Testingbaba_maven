@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Flipkart_buyproduct_test">
+      <class name="test.Flipkart_buy_test">
         <methods>
           <include name="Teardown"/>
-          <include name="flipkart2"/>
+          <include name="profilechange"/>
           <include name="launchFB"/>
         </methods>
-      </class> <!-- test.Flipkart_buyproduct_test -->
+      </class> <!-- test.Flipkart_buy_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
