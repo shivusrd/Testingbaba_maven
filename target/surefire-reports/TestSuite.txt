@@ -1,17 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 124.272 s <<< FAILURE! - in TestSuite
-test.Flipkart_buy_test.profilechange  Time elapsed: 11.75 s  <<< FAILURE!
+Tests run: 25, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 109.32 s <<< FAILURE! - in TestSuite
+test.Testingbaba_links_test.launchtestingbaba  Time elapsed: 8.044 s  <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="oKZoMV">...</span> is not clickable at point (564, 147). Other element would receive the click: <a title="..." class="_3QN6WI" href="/home-furnishing/bed-linen-blankets/bedsheets/pr?sid=jra,knw,qcw&amp;marketplace=FLIPKART&amp;otracker=nmenu_sub_Home%20%26%20Furniture_0_Bedsheets">Bedsheets</a>
+element click intercepted: Element <a class="nav-link" href="newdemo.html">...</a> is not clickable at point (566, 35). Other element would receive the click: <div class="modal-header">...</div>
   (Session info: chrome=99.0.4844.51)
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [539d3aba4baa7dc1ad268defa85ba429, clickElement {id=49568b20-3fc6-4db4-aebe-37ee020617a3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:58863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58863/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (539d3aba4baa7dc1ad268defa85ba429)] -> xpath: //span[@class='oKZoMV']]
-Session ID: 539d3aba4baa7dc1ad268defa85ba429
-	at test.Flipkart_buy_test.profilechange(Flipkart_buy_test.java:43)
+Command: [b12590aeb6591ad10c3cacc751de2d20, clickElement {id=0c5e286e-ec28-4fe5-a93d-b1859f2b31c3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:55562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55562/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b12590aeb6591ad10c3cacc751de2d20)] -> xpath: //*[@id="navbarSupportedContent"]/ul/li[5]/a]
+Session ID: b12590aeb6591ad10c3cacc751de2d20
+	at test.Testingbaba_links_test.launchtestingbaba(Testingbaba_links_test.java:23)
 

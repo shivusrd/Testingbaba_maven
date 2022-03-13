@@ -28,13 +28,13 @@ public class Testingbaba_textbox_test extends Baselibrary
 
 	@Test(priority = 1)
 
-	public void gettitle() throws Exception {
+	public void TextboxTestingBaba_test01() throws Exception {
 		ob.gettitle();
 
 	}
 
 	@Test(priority = 2)
-	public void clickonelements()
+	public void TextboxTestingBaba_test02()
 
 	{
 
@@ -43,7 +43,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 
 	@Test (priority = 3)
 
-	public void filldetails() 
+	public void TextboxTestingBaba_test03() 
 	
 	{
 		ob.filldetails();
@@ -51,7 +51,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 	}
 
 	@Test(priority = 4)
-	public void getverify() 
+	public void TextboxTestingBaba_test04() 
 	{
 
 		ob.getverify_textboxdata();

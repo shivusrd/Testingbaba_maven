@@ -25,7 +25,7 @@ public class Testingbaba_webtables_test extends Baselibrary
 
 	@Test 
 
-	public void getweb1() throws Exception
+	public void WebTablesTestingBaba_test01() throws Exception
 	{
 		
         ob.clickonelements();

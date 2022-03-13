@@ -25,7 +25,7 @@ public class Testingbaba_dropdown_test extends Baselibrary
 
 	@Test()
 
-	public void getdropdown() throws Exception
+	public void DropdownTestingBaba_test01() throws Exception
 
 	{
 		ob.getdropdown();

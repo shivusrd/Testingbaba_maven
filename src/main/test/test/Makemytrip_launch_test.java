@@ -25,7 +25,7 @@ public class Makemytrip_launch_test extends Baselibrary
 	}
 
 	@Test
-	public void login() throws InterruptedException
+	public void MakemyTripLogin_Test01() throws InterruptedException
 
 	{
 	   ob.makemytrip_login();

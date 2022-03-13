@@ -28,7 +28,7 @@ public class Flipkart_buy_test extends Baselibrary {
 	}
 
 	@Test
-	public void flipkart() throws InterruptedException
+	public void FlipkartLogin_Test01() throws InterruptedException
 
 	{
 
@@ -37,7 +37,7 @@ public class Flipkart_buy_test extends Baselibrary {
 	}
 
 	@Test
-	public void profilechange() throws InterruptedException
+	public void FlipkartProfileChange_Test02() throws InterruptedException
 
 	{
 		ob.Namechange();

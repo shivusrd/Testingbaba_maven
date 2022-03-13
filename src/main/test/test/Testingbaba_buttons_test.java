@@ -26,7 +26,7 @@ public class Testingbaba_buttons_test extends Baselibrary
 	
 	@Test(priority = 0)
 
-	public void getelement() throws Exception
+	public void ButtonsTestingBaba_test01() throws Exception
 	{
 		ob.clickonelements();
        
@@ -34,7 +34,7 @@ public class Testingbaba_buttons_test extends Baselibrary
 	
 	@Test(priority = 1)
 
-	public void getbuttn() throws Exception
+	public void ButtonsTestingBaba_test02() throws Exception
 	{
 		ob.clickbuttn();
        
@@ -42,7 +42,7 @@ public class Testingbaba_buttons_test extends Baselibrary
 	
 	@Test(priority=2)
 	
-	public void doble() 
+	public void ButtonsTestingBaba_test03() 
 	{
 		ob.doubleclick();
 		

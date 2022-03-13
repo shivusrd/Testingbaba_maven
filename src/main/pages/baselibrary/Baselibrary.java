@@ -1,6 +1,7 @@
 package baselibrary;
 
 import java.io.File;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.TakesScreenshot;
@@ -17,6 +18,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+
 import screenshotutility.ScreenshotUtility;
 
 import java.io.File;
@@ -26,6 +28,8 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;

@@ -24,7 +24,7 @@ public class Testingbaba_upload_test extends Baselibrary
 
 	@Test
 
-	public void getweb() throws Exception {
+	public void UploadFileTestingBaba_test01() throws Exception {
 
 		ob.clickonelements();
 
@@ -32,7 +32,7 @@ public class Testingbaba_upload_test extends Baselibrary
 	
 	@Test
 	
-	public void uploadfile() throws InterruptedException
+	public void UploadFileTestingBaba_test02() throws InterruptedException
 	{
 		
 		

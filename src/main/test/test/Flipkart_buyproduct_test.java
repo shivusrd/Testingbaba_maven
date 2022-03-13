@@ -25,7 +25,7 @@ public class Flipkart_buyproduct_test extends Baselibrary
 	}
 
 	@Test
-	public void flipkart2() throws InterruptedException
+	public void FlipkartLoginInvalidCred_Test01() throws InterruptedException
 
 	{
 

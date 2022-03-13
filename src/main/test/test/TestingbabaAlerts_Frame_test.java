@@ -26,7 +26,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	@Test (priority = 1)
 
-	public void getalerts()
+	public void AlertsTestingBaba_test01()
 
 	{
 		ob.alerts();
@@ -34,7 +34,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	@Test(priority = 2)
 
-	public void getclick()
+	public void AlertsTestingBaba_test02()
 
 	{
 		ob.clickme1();
@@ -42,7 +42,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 	}
 
 	@Test(priority = 3)
-	public void getclick2()
+	public void AlertsTestingBaba_test03()
 
 	{
 
@@ -51,7 +51,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 	}
 
 	@Test(priority = 4)
-	public void getclick3()
+	public void AlertsTestingBaba_test04()
 
 	{
 
@@ -60,7 +60,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 	}
 
 	@Test(priority = 5)
-	public void getclick4()
+	public void AlertsTestingBaba_test05()
 
 	{
 

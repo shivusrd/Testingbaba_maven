@@ -27,7 +27,7 @@ public class Testingbaba_links_test extends Baselibrary
 	
 	@Test(priority =1)
 
-	public void elements() throws Exception
+	public void LinksTestingBaba_test01() throws Exception
 
 	{
 		ob.clickonelements();
@@ -36,7 +36,7 @@ public class Testingbaba_links_test extends Baselibrary
 	
 	@Test(priority =2)
 
-	public void links() throws Exception
+	public void LinksTestingBaba_test02() throws Exception
 
 	{
 		ob.clickonlinks();

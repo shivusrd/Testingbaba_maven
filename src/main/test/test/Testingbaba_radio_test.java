@@ -25,7 +25,7 @@ public class Testingbaba_radio_test extends Baselibrary
 
 	@Test()
 
-	public void getradio() throws Exception
+	public void RadioButtonTestingBaba_test01() throws Exception
 
 	{
 		ob.getradio();

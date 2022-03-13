@@ -25,7 +25,7 @@ public class Testingbaba_checkbox_test extends Baselibrary
 
 	@Test(priority = 1)
 
-	public void elements() throws Exception
+	public void CheckboxTestingBaba_test01() throws Exception
 
 	{
 		ob.clickonelements();
@@ -34,14 +34,14 @@ public class Testingbaba_checkbox_test extends Baselibrary
 
 	@Test(priority = 2)
 
-	public void checkbox() {
+	public void CheckboxTestingBaba_test02() {
 		ob.checkbox();
 
 	}
 
 	@Test(priority = 3)
 
-	public void mobilecheckbox() throws InterruptedException 
+	public void CheckboxTestingBaba_test03() throws InterruptedException 
 	{
     ob.mobilecheckbox();
 

@@ -24,7 +24,7 @@ public class Testingbaba_autocomplete_test extends Baselibrary
 
 	@Test(priority=1)
 
-	public void getweb() throws InterruptedException 
+	public void AutocompleteTestingBaba_test01() throws InterruptedException 
 	{
 		
 		ob.clicauto();
@@ -33,14 +33,14 @@ public class Testingbaba_autocomplete_test extends Baselibrary
 	
 	@Test (priority=2)
 
-	public void completeclick() throws InterruptedException 
+	public void AutocompleteTestingBaba_test02() throws InterruptedException 
 	{
 		
 		ob.autocomplete();
 	}
 	
 	@Test(priority=3)
-	public void filldetails() throws InterruptedException
+	public void AutocompleteTestingBaba_test03() throws InterruptedException
 	
 	{
 		ob.select();

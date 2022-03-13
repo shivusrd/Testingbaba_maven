@@ -33,7 +33,7 @@ public class Testingbaba_launch_test extends Baselibrary
 	}
 	
 	@Test
-   public void gettitle() throws Exception
+   public void LaunchTestingBaba_test01() throws Exception
    {
 		
 		ob.gettitle();

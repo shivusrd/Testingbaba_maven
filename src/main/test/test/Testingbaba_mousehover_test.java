@@ -28,7 +28,7 @@ public class Testingbaba_mousehover_test extends Baselibrary
 
 	@Test(priority = 1)
 
-	public void click() throws InterruptedException {
+	public void MousehoverTestingBaba_test01() throws InterruptedException {
 
 		ob.clicauto();
 
@@ -36,7 +36,7 @@ public class Testingbaba_mousehover_test extends Baselibrary
 
 	@Test(priority = 2)
 
-	public void mouse() throws InterruptedException {
+	public void MousehoverTestingBaba_test02() throws InterruptedException {
 
 		ob.hoverfunction();
 	}

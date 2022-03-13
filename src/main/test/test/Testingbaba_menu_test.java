@@ -31,7 +31,7 @@ public class Testingbaba_menu_test extends Baselibrary
 	
 	@Test (priority = 0)
 
-	public void gettitle() throws Exception 
+	public void MenuTestingBaba_test01() throws Exception 
 	{
 		ob.gettitle();
 	}
