@@ -24,8 +24,8 @@ public class Makemytrip_launch_test extends Baselibrary
 		ob = new Makemytrip_launch_page();
 	}
 
-	@Test
-	public void MakemyTripLogin_Test01() throws InterruptedException
+	@Test(priority = 0)
+	public void MakemyTripSendValidNumber_Test01() throws InterruptedException
 
 	{
 	   ob.makemytrip_login();
@@ -33,6 +33,16 @@ public class Makemytrip_launch_test extends Baselibrary
 
 	}
 
+	
+	@Test(priority = 1)
+	public void MakemyTripSendINValidNumber_Test02() throws InterruptedException
+
+	{
+		
+		ob.makemytrip_booking();
+		
+
+	}
 
 
 

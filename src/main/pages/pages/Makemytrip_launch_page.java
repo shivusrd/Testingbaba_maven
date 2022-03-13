@@ -20,52 +20,81 @@ public class Makemytrip_launch_page extends Baselibrary
 		PageFactory.initElements(driver, this);
 
 	}
+
+	@FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]/a[1]")
+	private WebElement homepage;
+
 	@FindBy(xpath = "//span[@class='langCardClose']")
 	private WebElement closebtn;
-	
+
 	@FindBy(xpath = "//li[@class='makeFlex hrtlCenter font10 makeRelative lhUser userLoggedOut']")
 	private WebElement popup;
 	@FindBy(xpath = "//span[contains(text(),'Login with Google')]")
 	private WebElement google;
-	
+
 	@FindBy(xpath = "//span[@class='chNavIcon appendBottom2 chSprite chBuses active']")
 	private WebElement bus;
-	
+
 	@FindBy(xpath = "//p[normalize-space()='Login or Create Account']")
 	private WebElement acount;
-	
+
 	@FindBy(xpath = "//input[contains(@placeholder,'Enter Mobile number')]")
 	private WebElement applink;
-	
-	@FindBy(xpath = "//button[contains(text(),'GET APP LINK')]")
-	private WebElement submit;
-	
-	
-	
-	
-	
-	
-	
 
-	public void makemytrip_login() throws InterruptedException 
-	
-	
-	{	Reporter rep = new Reporter();
-		
-		
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/main/div[5]/div/div[1]/div/div/button")
+	private WebElement submit;
+
+	@FindBy(xpath = "//h3[@class='appDnldCnt__heading']")
+	private WebElement scroll;
+
+	@FindBy(xpath = "//span[normalize-space()='Invalid Number']")
+	private WebElement invalid;
+
+	public void makemytrip_login() throws InterruptedException
+
+	{
+
 		closebtn.click();
 		Thread.sleep(2000);
-		driver.navigate().refresh();
+		Applicationutility.getscroll(scroll);
+		
 		Thread.sleep(2000);
-		Applicationutility.getscroll(applink);
 		applink.sendKeys("8630597482");
+
+		Applicationutility.clickme(submit);
+		Thread.sleep(5000);
+
 		String compare = driver.getTitle();
 		rep.log("adding these steps");
 		rep.getClass();
+
+		System.out.println(compare);
+		assertEquals(compare, "MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday");
+
+	}
+
+	public void makemytrip_booking() throws InterruptedException {
+		homepage();
+		Applicationutility.getscroll(scroll);
 		
-	    System.out.println(compare);
-		assertEquals(compare,"MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday");
-	
+		Thread.sleep(2000);
+
+		applink.sendKeys("");
+
+		Applicationutility.clickme(submit);
+		String text = invalid.getText();
+		assertEquals(text, "invalid Number");
+		System.out.println(text);
+
+		Thread.sleep(5000);
+
+		String compare = driver.getTitle();
+		rep.log("adding these steps");
+		rep.getClass();
+
+		System.out.println(compare);
+		assertEquals(compare, "MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday");
+
 	}
 
 }

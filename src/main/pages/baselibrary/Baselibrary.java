@@ -19,7 +19,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-
+import propertyutility.PropertyUtility;
 import screenshotutility.ScreenshotUtility;
 
 import java.io.File;
@@ -43,9 +43,9 @@ public class Baselibrary
 {
 public static WebDriver driver;
 public static Reporter reporter;
+public Reporter rep = new Reporter();
 
 
-	
 	
 
 
@@ -56,6 +56,12 @@ public static Reporter reporter;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		reporter.log("launching browser");
 	}
+    
+    public void homepage()
+    {
+    	
+    	driver.navigate().to(PropertyUtility.getreadproperty("makemytrip"));
+    }
 	
 	@AfterTest
 	
