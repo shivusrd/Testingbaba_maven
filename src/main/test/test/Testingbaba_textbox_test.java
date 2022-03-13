@@ -1,6 +1,8 @@
 package test;
 
+import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -10,12 +12,14 @@ import baselibrary.Baselibrary;
 import pages.Testingbaba_textbox_page;
 import propertyutility.PropertyUtility;
 
+@Listeners(listeners.Report_log.class)
 public class Testingbaba_textbox_test extends Baselibrary
 
 {	
-	ExtentTest test;
+
 	
 	Testingbaba_textbox_page ob;
+	
 
 	@BeforeTest
 	public void launchtestingbaba() {
@@ -26,34 +30,36 @@ public class Testingbaba_textbox_test extends Baselibrary
 		ob.closebtn();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 0)
 
 	public void TextboxTestingBaba_test01() throws Exception {
+		reporter.log("inside test01");
 		ob.gettitle();
+		
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void TextboxTestingBaba_test02()
 
 	{
-
+		reporter.log("inside test01");
 		ob.clickonelements();
 	}
 
-	@Test (priority = 3)
+	@Test (priority = 2)
 
 	public void TextboxTestingBaba_test03() 
 	
-	{
+	{reporter.log("inside test01");
 		ob.filldetails();
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void TextboxTestingBaba_test04() 
 	{
-
+		reporter.log("inside test01");
 		ob.getverify_textboxdata();
 	}
 

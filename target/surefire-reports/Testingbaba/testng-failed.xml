@@ -5,16 +5,15 @@
     <listener class-name="test.Listners"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="links(failed)" verbose="0">
+  <test thread-count="5" name="radio(failed)" verbose="0">
     <classes>
-      <class name="test.Testingbaba_links_test">
+      <class name="test.Testingbaba_radio_test">
         <methods>
           <include name="Teardown"/>
-          <include name="elements"/>
-          <include name="links"/>
+          <include name="RadioButtonTestingBaba_test01"/>
           <include name="launchtestingbaba"/>
         </methods>
-      </class> <!-- test.Testingbaba_links_test -->
+      </class> <!-- test.Testingbaba_radio_test -->
     </classes>
-  </test> <!-- links(failed) -->
+  </test> <!-- radio(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

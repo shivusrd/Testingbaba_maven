@@ -1,5 +1,7 @@
 package test;
 
+import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.logging.LogEntries;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -29,7 +31,7 @@ public class Testingbaba_checkbox_test extends Baselibrary
 
 	{
 		ob.clickonelements();
-
+		
 	}
 
 	@Test(priority = 2)

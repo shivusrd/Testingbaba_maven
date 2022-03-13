@@ -1,25 +1,838 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="23" passed="22" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[About to begin executing Class smoke]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase LaunchTestingBaba_test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase LaunchTestingBaba_test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class smoke]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class Textbox]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase TextboxTestingBaba_test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[inside test01]]>
+    </line>
+    <line>
+      <![CDATA[Testcase TextboxTestingBaba_test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase TextboxTestingBaba_test02 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[inside test01]]>
+    </line>
+    <line>
+      <![CDATA[Testcase TextboxTestingBaba_test02 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase TextboxTestingBaba_test03 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[inside test01]]>
+    </line>
+    <line>
+      <![CDATA[Testcase TextboxTestingBaba_test03 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase TextboxTestingBaba_test04 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[inside test01]]>
+    </line>
+    <line>
+      <![CDATA[Testcase TextboxTestingBaba_test04 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class Textbox]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class buttons]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase ButtonsTestingBaba_test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase ButtonsTestingBaba_test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase ButtonsTestingBaba_test02 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase ButtonsTestingBaba_test02 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase ButtonsTestingBaba_test03 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase ButtonsTestingBaba_test03 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class buttons]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class checkbox]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase CheckboxTestingBaba_test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase CheckboxTestingBaba_test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase CheckboxTestingBaba_test02 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase CheckboxTestingBaba_test02 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase CheckboxTestingBaba_test03 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase CheckboxTestingBaba_test03 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class checkbox]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class dropdown]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase DropdownTestingBaba_test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase DropdownTestingBaba_test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class dropdown]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class links]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase LinksTestingBaba_test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase LinksTestingBaba_test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase LinksTestingBaba_test02 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase LinksTestingBaba_test02 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class links]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class radio]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase RadioButtonTestingBaba_test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase RadioButtonTestingBaba_test01 failed]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class radio]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class autocomplete]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase AutocompleteTestingBaba_test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase AutocompleteTestingBaba_test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase AutocompleteTestingBaba_test02 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase AutocompleteTestingBaba_test02 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase AutocompleteTestingBaba_test03 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase AutocompleteTestingBaba_test03 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class autocomplete]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class Webtable]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase WebTablesTestingBaba_test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase WebTablesTestingBaba_test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class Webtable]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class Flipkart]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartLogin_Test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartLogin_Test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartProfileChange_Test02 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartProfileChange_Test02 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class Flipkart]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class Flipkart_Buy_product]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class Flipkart_Buy_product]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class Makemytrip]]>
+    </line>
+    <line>
+      <![CDATA[launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Testcase MakemyTripLogin_Test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[adding these steps]]>
+    </line>
+    <line>
+      <![CDATA[Testcase MakemyTripLogin_Test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-03-12T17:31:09 IST" name="Testingbaba" finished-at="2022-03-12T17:31:15 IST" duration-ms="5912">
+  <suite started-at="2022-03-13T11:39:19 IST" name="Testingbaba" finished-at="2022-03-13T11:41:03 IST" duration-ms="104184">
     <groups>
     </groups>
-    <test started-at="2022-03-12T17:31:09 IST" name="smoke" finished-at="2022-03-12T17:31:15 IST" duration-ms="5912">
+    <test started-at="2022-03-13T11:39:19 IST" name="smoke" finished-at="2022-03-13T11:39:24 IST" duration-ms="5169">
       <class name="test.Testingbaba_launch_test">
-        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_launch_test@3e6104fc]" started-at="2022-03-12T17:31:09 IST" name="launchtestingbaba" finished-at="2022-03-12T17:31:15 IST" duration-ms="5463" status="PASS">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_launch_test@5b8dfcc1]" started-at="2022-03-13T11:39:19 IST" name="launchtestingbaba" finished-at="2022-03-13T11:39:23 IST" duration-ms="4833" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
           </reporter-output>
         </test-method> <!-- launchtestingbaba -->
-        <test-method signature="gettitle()[pri:0, instance:test.Testingbaba_launch_test@3e6104fc]" started-at="2022-03-12T17:31:15 IST" name="gettitle" finished-at="2022-03-12T17:31:15 IST" duration-ms="34" status="PASS">
+        <test-method signature="LaunchTestingBaba_test01()[pri:0, instance:test.Testingbaba_launch_test@5b8dfcc1]" started-at="2022-03-13T11:39:23 IST" name="LaunchTestingBaba_test01" finished-at="2022-03-13T11:39:23 IST" duration-ms="13" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Testcase LaunchTestingBaba_test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase LaunchTestingBaba_test01 passed successfully]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- gettitle -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_launch_test@3e6104fc]" started-at="2022-03-12T17:31:15 IST" name="Teardown" finished-at="2022-03-12T17:31:15 IST" duration-ms="334" status="PASS">
+        </test-method> <!-- LaunchTestingBaba_test01 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_launch_test@5b8dfcc1]" started-at="2022-03-13T11:39:23 IST" name="Teardown" finished-at="2022-03-13T11:39:24 IST" duration-ms="283" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- test.Testingbaba_launch_test -->
     </test> <!-- smoke -->
+    <test started-at="2022-03-13T11:39:24 IST" name="Textbox" finished-at="2022-03-13T11:39:30 IST" duration-ms="6455">
+      <class name="test.Testingbaba_textbox_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_textbox_test@51399530]" started-at="2022-03-13T11:39:24 IST" name="launchtestingbaba" finished-at="2022-03-13T11:39:29 IST" duration-ms="5597" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="TextboxTestingBaba_test01()[pri:0, instance:test.Testingbaba_textbox_test@51399530]" started-at="2022-03-13T11:39:29 IST" name="TextboxTestingBaba_test01" finished-at="2022-03-13T11:39:29 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase TextboxTestingBaba_test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[inside test01]]>
+            </line>
+            <line>
+              <![CDATA[Testcase TextboxTestingBaba_test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TextboxTestingBaba_test01 -->
+        <test-method signature="TextboxTestingBaba_test02()[pri:1, instance:test.Testingbaba_textbox_test@51399530]" started-at="2022-03-13T11:39:29 IST" name="TextboxTestingBaba_test02" finished-at="2022-03-13T11:39:29 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase TextboxTestingBaba_test02 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[inside test01]]>
+            </line>
+            <line>
+              <![CDATA[Testcase TextboxTestingBaba_test02 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TextboxTestingBaba_test02 -->
+        <test-method signature="TextboxTestingBaba_test03()[pri:2, instance:test.Testingbaba_textbox_test@51399530]" started-at="2022-03-13T11:39:29 IST" name="TextboxTestingBaba_test03" finished-at="2022-03-13T11:39:30 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase TextboxTestingBaba_test03 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[inside test01]]>
+            </line>
+            <line>
+              <![CDATA[Testcase TextboxTestingBaba_test03 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TextboxTestingBaba_test03 -->
+        <test-method signature="TextboxTestingBaba_test04()[pri:3, instance:test.Testingbaba_textbox_test@51399530]" started-at="2022-03-13T11:39:30 IST" name="TextboxTestingBaba_test04" finished-at="2022-03-13T11:39:30 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase TextboxTestingBaba_test04 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[inside test01]]>
+            </line>
+            <line>
+              <![CDATA[Testcase TextboxTestingBaba_test04 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TextboxTestingBaba_test04 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_textbox_test@51399530]" started-at="2022-03-13T11:39:30 IST" name="Teardown" finished-at="2022-03-13T11:39:30 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_textbox_test -->
+    </test> <!-- Textbox -->
+    <test started-at="2022-03-13T11:39:30 IST" name="buttons" finished-at="2022-03-13T11:39:36 IST" duration-ms="6239">
+      <class name="test.Testingbaba_buttons_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_buttons_test@45752059]" started-at="2022-03-13T11:39:30 IST" name="launchtestingbaba" finished-at="2022-03-13T11:39:35 IST" duration-ms="5063" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="ButtonsTestingBaba_test01()[pri:0, instance:test.Testingbaba_buttons_test@45752059]" started-at="2022-03-13T11:39:35 IST" name="ButtonsTestingBaba_test01" finished-at="2022-03-13T11:39:35 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase ButtonsTestingBaba_test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase ButtonsTestingBaba_test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ButtonsTestingBaba_test01 -->
+        <test-method signature="ButtonsTestingBaba_test02()[pri:1, instance:test.Testingbaba_buttons_test@45752059]" started-at="2022-03-13T11:39:35 IST" name="ButtonsTestingBaba_test02" finished-at="2022-03-13T11:39:36 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase ButtonsTestingBaba_test02 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase ButtonsTestingBaba_test02 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ButtonsTestingBaba_test02 -->
+        <test-method signature="ButtonsTestingBaba_test03()[pri:2, instance:test.Testingbaba_buttons_test@45752059]" started-at="2022-03-13T11:39:36 IST" name="ButtonsTestingBaba_test03" finished-at="2022-03-13T11:39:36 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase ButtonsTestingBaba_test03 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase ButtonsTestingBaba_test03 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ButtonsTestingBaba_test03 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_buttons_test@45752059]" started-at="2022-03-13T11:39:36 IST" name="Teardown" finished-at="2022-03-13T11:39:36 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_buttons_test -->
+    </test> <!-- buttons -->
+    <test started-at="2022-03-13T11:39:36 IST" name="checkbox" finished-at="2022-03-13T11:39:43 IST" duration-ms="6902">
+      <class name="test.Testingbaba_checkbox_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_checkbox_test@6025e1b6]" started-at="2022-03-13T11:39:36 IST" name="launchtestingbaba" finished-at="2022-03-13T11:39:42 IST" duration-ms="5233" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="CheckboxTestingBaba_test01()[pri:1, instance:test.Testingbaba_checkbox_test@6025e1b6]" started-at="2022-03-13T11:39:42 IST" name="CheckboxTestingBaba_test01" finished-at="2022-03-13T11:39:42 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase CheckboxTestingBaba_test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase CheckboxTestingBaba_test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CheckboxTestingBaba_test01 -->
+        <test-method signature="CheckboxTestingBaba_test02()[pri:2, instance:test.Testingbaba_checkbox_test@6025e1b6]" started-at="2022-03-13T11:39:42 IST" name="CheckboxTestingBaba_test02" finished-at="2022-03-13T11:39:42 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase CheckboxTestingBaba_test02 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase CheckboxTestingBaba_test02 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CheckboxTestingBaba_test02 -->
+        <test-method signature="CheckboxTestingBaba_test03()[pri:3, instance:test.Testingbaba_checkbox_test@6025e1b6]" started-at="2022-03-13T11:39:42 IST" name="CheckboxTestingBaba_test03" finished-at="2022-03-13T11:39:43 IST" duration-ms="1291" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase CheckboxTestingBaba_test03 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase CheckboxTestingBaba_test03 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CheckboxTestingBaba_test03 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_checkbox_test@6025e1b6]" started-at="2022-03-13T11:39:43 IST" name="Teardown" finished-at="2022-03-13T11:39:43 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_checkbox_test -->
+    </test> <!-- checkbox -->
+    <test started-at="2022-03-13T11:39:43 IST" name="dropdown" finished-at="2022-03-13T11:39:49 IST" duration-ms="5664">
+      <class name="test.Testingbaba_dropdown_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_dropdown_test@4c12331b]" started-at="2022-03-13T11:39:43 IST" name="launchtestingbaba" finished-at="2022-03-13T11:39:47 IST" duration-ms="3426" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="DropdownTestingBaba_test01()[pri:0, instance:test.Testingbaba_dropdown_test@4c12331b]" started-at="2022-03-13T11:39:47 IST" name="DropdownTestingBaba_test01" finished-at="2022-03-13T11:39:49 IST" duration-ms="1993" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase DropdownTestingBaba_test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase DropdownTestingBaba_test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DropdownTestingBaba_test01 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_dropdown_test@4c12331b]" started-at="2022-03-13T11:39:49 IST" name="Teardown" finished-at="2022-03-13T11:39:49 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_dropdown_test -->
+    </test> <!-- dropdown -->
+    <test started-at="2022-03-13T11:39:49 IST" name="links" finished-at="2022-03-13T11:39:57 IST" duration-ms="8304">
+      <class name="test.Testingbaba_links_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_links_test@7e6f74c]" started-at="2022-03-13T11:39:49 IST" name="launchtestingbaba" finished-at="2022-03-13T11:39:54 IST" duration-ms="5309" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="LinksTestingBaba_test01()[pri:1, instance:test.Testingbaba_links_test@7e6f74c]" started-at="2022-03-13T11:39:54 IST" name="LinksTestingBaba_test01" finished-at="2022-03-13T11:39:54 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase LinksTestingBaba_test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase LinksTestingBaba_test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LinksTestingBaba_test01 -->
+        <test-method signature="LinksTestingBaba_test02()[pri:2, instance:test.Testingbaba_links_test@7e6f74c]" started-at="2022-03-13T11:39:54 IST" name="LinksTestingBaba_test02" finished-at="2022-03-13T11:39:57 IST" duration-ms="2152" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase LinksTestingBaba_test02 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase LinksTestingBaba_test02 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LinksTestingBaba_test02 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_links_test@7e6f74c]" started-at="2022-03-13T11:39:57 IST" name="Teardown" finished-at="2022-03-13T11:39:57 IST" duration-ms="790" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_links_test -->
+    </test> <!-- links -->
+    <test started-at="2022-03-13T11:39:57 IST" name="radio" finished-at="2022-03-13T11:40:03 IST" duration-ms="5455">
+      <class name="test.Testingbaba_radio_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_radio_test@5aa9e4eb]" started-at="2022-03-13T11:39:57 IST" name="launchtestingbaba" finished-at="2022-03-13T11:40:01 IST" duration-ms="3621" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="RadioButtonTestingBaba_test01()[pri:0, instance:test.Testingbaba_radio_test@5aa9e4eb]" started-at="2022-03-13T11:40:01 IST" name="RadioButtonTestingBaba_test01" finished-at="2022-03-13T11:40:02 IST" duration-ms="1319" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="nav-link" href="newdemo.html">...</a> is not clickable at point (601, 40). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05a4cb8052465a3c0b3b8c9d15804c3d, clickElement {id=c421a2e4-26e1-46cf-a03a-caa62136afc9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\dubey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60158/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (05a4cb8052465a3c0b3b8c9d15804c3d)] -> xpath: //*[@id="navbarSupportedContent"]/ul/li[5]/a]
+Session ID: 05a4cb8052465a3c0b3b8c9d15804c3d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="newdemo.html">...</a> is not clickable at point (601, 40). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05a4cb8052465a3c0b3b8c9d15804c3d, clickElement {id=c421a2e4-26e1-46cf-a03a-caa62136afc9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\dubey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60158/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (05a4cb8052465a3c0b3b8c9d15804c3d)] -> xpath: //*[@id="navbarSupportedContent"]/ul/li[5]/a]
+Session ID: 05a4cb8052465a3c0b3b8c9d15804c3d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at pages.Testingbaba_radio_page.getradio(Testingbaba_radio_page.java:42)
+at test.Testingbaba_radio_test.RadioButtonTestingBaba_test01(Testingbaba_radio_test.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase RadioButtonTestingBaba_test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase RadioButtonTestingBaba_test01 failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RadioButtonTestingBaba_test01 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_radio_test@5aa9e4eb]" started-at="2022-03-13T11:40:03 IST" name="Teardown" finished-at="2022-03-13T11:40:03 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_radio_test -->
+    </test> <!-- radio -->
+    <test started-at="2022-03-13T11:40:03 IST" name="autocomplete" finished-at="2022-03-13T11:40:12 IST" duration-ms="9129">
+      <class name="test.Testingbaba_autocomplete_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_autocomplete_test@3eb25e1a]" started-at="2022-03-13T11:40:03 IST" name="launchtestingbaba" finished-at="2022-03-13T11:40:08 IST" duration-ms="5386" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="AutocompleteTestingBaba_test01()[pri:1, instance:test.Testingbaba_autocomplete_test@3eb25e1a]" started-at="2022-03-13T11:40:08 IST" name="AutocompleteTestingBaba_test01" finished-at="2022-03-13T11:40:08 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase AutocompleteTestingBaba_test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase AutocompleteTestingBaba_test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AutocompleteTestingBaba_test01 -->
+        <test-method signature="AutocompleteTestingBaba_test02()[pri:2, instance:test.Testingbaba_autocomplete_test@3eb25e1a]" started-at="2022-03-13T11:40:08 IST" name="AutocompleteTestingBaba_test02" finished-at="2022-03-13T11:40:09 IST" duration-ms="1056" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase AutocompleteTestingBaba_test02 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase AutocompleteTestingBaba_test02 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AutocompleteTestingBaba_test02 -->
+        <test-method signature="AutocompleteTestingBaba_test03()[pri:3, instance:test.Testingbaba_autocomplete_test@3eb25e1a]" started-at="2022-03-13T11:40:09 IST" name="AutocompleteTestingBaba_test03" finished-at="2022-03-13T11:40:12 IST" duration-ms="2268" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase AutocompleteTestingBaba_test03 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase AutocompleteTestingBaba_test03 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AutocompleteTestingBaba_test03 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_autocomplete_test@3eb25e1a]" started-at="2022-03-13T11:40:12 IST" name="Teardown" finished-at="2022-03-13T11:40:12 IST" duration-ms="360" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_autocomplete_test -->
+    </test> <!-- autocomplete -->
+    <test started-at="2022-03-13T11:40:12 IST" name="Webtable" finished-at="2022-03-13T11:40:21 IST" duration-ms="8682">
+      <class name="test.Testingbaba_webtables_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:test.Testingbaba_webtables_test@1e800aaa]" started-at="2022-03-13T11:40:12 IST" name="launchtestingbaba" finished-at="2022-03-13T11:40:17 IST" duration-ms="4995" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="WebTablesTestingBaba_test01()[pri:0, instance:test.Testingbaba_webtables_test@1e800aaa]" started-at="2022-03-13T11:40:17 IST" name="WebTablesTestingBaba_test01" finished-at="2022-03-13T11:40:21 IST" duration-ms="3683" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase WebTablesTestingBaba_test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase WebTablesTestingBaba_test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- WebTablesTestingBaba_test01 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Testingbaba_webtables_test@1e800aaa]" started-at="2022-03-13T11:40:21 IST" name="Teardown" finished-at="2022-03-13T11:40:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Testingbaba_webtables_test -->
+    </test> <!-- Webtable -->
+    <test started-at="2022-03-13T11:40:21 IST" name="Flipkart" finished-at="2022-03-13T11:40:46 IST" duration-ms="25115">
+      <class name="test.Flipkart_buy_test">
+        <test-method is-config="true" signature="launchFB()[pri:0, instance:test.Flipkart_buy_test@4116aac9]" started-at="2022-03-13T11:40:21 IST" name="launchFB" finished-at="2022-03-13T11:40:24 IST" duration-ms="3291" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchFB -->
+        <test-method signature="FlipkartLogin_Test01()[pri:0, instance:test.Flipkart_buy_test@4116aac9]" started-at="2022-03-13T11:40:24 IST" name="FlipkartLogin_Test01" finished-at="2022-03-13T11:40:26 IST" duration-ms="2275" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase FlipkartLogin_Test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase FlipkartLogin_Test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FlipkartLogin_Test01 -->
+        <test-method signature="FlipkartProfileChange_Test02()[pri:0, instance:test.Flipkart_buy_test@4116aac9]" started-at="2022-03-13T11:40:26 IST" name="FlipkartProfileChange_Test02" finished-at="2022-03-13T11:40:45 IST" duration-ms="19239" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase FlipkartProfileChange_Test02 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase FlipkartProfileChange_Test02 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FlipkartProfileChange_Test02 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Flipkart_buy_test@4116aac9]" started-at="2022-03-13T11:40:45 IST" name="Teardown" finished-at="2022-03-13T11:40:46 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Flipkart_buy_test -->
+    </test> <!-- Flipkart -->
+    <test started-at="2022-03-13T11:40:46 IST" name="Flipkart_Buy_product" finished-at="2022-03-13T11:40:52 IST" duration-ms="6060">
+      <class name="test.Flipkart_buyproduct_test">
+        <test-method is-config="true" signature="launchFB()[pri:0, instance:test.Flipkart_buyproduct_test@3857f613]" started-at="2022-03-13T11:40:46 IST" name="launchFB" finished-at="2022-03-13T11:40:49 IST" duration-ms="2870" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchFB -->
+        <test-method signature="FlipkartLoginInvalidCred_Test01()[pri:0, instance:test.Flipkart_buyproduct_test@3857f613]" started-at="2022-03-13T11:40:49 IST" name="FlipkartLoginInvalidCred_Test01" finished-at="2022-03-13T11:40:51 IST" duration-ms="2804" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FlipkartLoginInvalidCred_Test01 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Flipkart_buyproduct_test@3857f613]" started-at="2022-03-13T11:40:51 IST" name="Teardown" finished-at="2022-03-13T11:40:52 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Flipkart_buyproduct_test -->
+    </test> <!-- Flipkart_Buy_product -->
+    <test started-at="2022-03-13T11:40:52 IST" name="Makemytrip" finished-at="2022-03-13T11:41:03 IST" duration-ms="10930">
+      <class name="test.Makemytrip_launch_test">
+        <test-method is-config="true" signature="launchFB()[pri:0, instance:test.Makemytrip_launch_test@4b2bac3f]" started-at="2022-03-13T11:40:52 IST" name="launchFB" finished-at="2022-03-13T11:40:57 IST" duration-ms="5321" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchFB -->
+        <test-method signature="MakemyTripLogin_Test01()[pri:0, instance:test.Makemytrip_launch_test@4b2bac3f]" started-at="2022-03-13T11:40:57 IST" name="MakemyTripLogin_Test01" finished-at="2022-03-13T11:41:02 IST" duration-ms="5286" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase MakemyTripLogin_Test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[adding these steps]]>
+            </line>
+            <line>
+              <![CDATA[Testcase MakemyTripLogin_Test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MakemyTripLogin_Test01 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Makemytrip_launch_test@4b2bac3f]" started-at="2022-03-13T11:41:02 IST" name="Teardown" finished-at="2022-03-13T11:41:03 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- test.Makemytrip_launch_test -->
+    </test> <!-- Makemytrip -->
   </suite> <!-- Testingbaba -->
 </testng-results>
