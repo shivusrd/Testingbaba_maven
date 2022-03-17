@@ -44,7 +44,7 @@ public class Flipkart_buyproduct_page extends Baselibrary
 
 	{
 		email.sendKeys("8171765673");
-		password.sendKeys("Shivu@srd1");
+		password.sendKeys("Shivu@s");
 		login.click();
 		
 		search.sendKeys("iphone", Keys.ENTER);
