@@ -70,7 +70,6 @@ public class Testingbaba_checkbox_page extends Baselibrary
 
 		Applicationutility.clickme(mobile);
 		Applicationutility.clickme(laptop);
-		
 		String actual1 = checkboxtext.get(0).getText();
 		String actual2 = checkboxtext.get(1).getText();
 		String excpected1 = PropertyUtility.getreadproperty("mobile");

@@ -39,7 +39,6 @@ public class Testingbaba_dropdown_page extends Baselibrary
 		Select sel = new Select(ele1);
 		sel.selectByVisibleText("Manual Testing");	
 		Regestir.click();
-		
 	}
 	
 	

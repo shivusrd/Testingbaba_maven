@@ -52,7 +52,6 @@ public class Testingbaba_mousehover_page extends Baselibrary
 
 	{
 		widgets.click();
-
 	}
 	
 	public  void hoverfunction() throws InterruptedException

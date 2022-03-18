@@ -38,7 +38,6 @@ public class Testingbaba_menu_page extends Baselibrary
 	
 	public void menuclick()
 	{
-		
 		menu.click();
 		
 	}

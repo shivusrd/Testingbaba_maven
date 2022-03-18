@@ -91,7 +91,6 @@ public class Makemytrip_launch_page extends Baselibrary
 		assertEquals(text2, "Link sent successfully to 8532015889, please check your SMS");
 		System.out.println(text2);
 
-		
 
 		String compare = driver.getTitle();
 		

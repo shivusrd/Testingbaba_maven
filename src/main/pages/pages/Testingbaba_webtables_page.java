@@ -72,7 +72,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 	public void getweb() throws InterruptedException
 
-	{
+	{	
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
 		

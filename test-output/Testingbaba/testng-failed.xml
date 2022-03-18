@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" name="excel(failed)">
     <classes>
-      <class name="test.Testingbaba_webtables_test">
+      <class name="test.Testingbaba_launch_test">
         <methods>
           <include name="Teardown"/>
-          <include name="WebTablesTestingBaba_test01"/>
           <include name="launchtestingbaba"/>
+          <include name="LaunchTestingBaba_test01"/>
         </methods>
-      </class> <!-- test.Testingbaba_webtables_test -->
+      </class> <!-- test.Testingbaba_launch_test -->
     </classes>
   </test> <!-- excel(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

@@ -59,13 +59,11 @@ public class Testingbaba_buttons_page extends Baselibrary
 	{   
 		Applicationutility.clickme(buttons);
 	    
-		
 	}	
 	
 	public void doubleclick()
 	{
 		Applicationutility.doubleclick(doubleclick);
-		
 		Applicationutility.rightclick(rightclick);
 		
 	}
