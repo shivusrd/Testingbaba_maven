@@ -6,27 +6,15 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="links(failed)" verbose="0">
+  <test thread-count="5" name="Makemytrip(failed)" verbose="0">
     <classes>
-      <class name="test.Testingbaba_links_test">
+      <class name="test.Makemytrip_launch_test">
         <methods>
           <include name="Teardown"/>
-          <include name="LinksTestingBaba_test01"/>
-          <include name="LinksTestingBaba_test02"/>
-          <include name="launchtestingbaba"/>
-        </methods>
-      </class> <!-- test.Testingbaba_links_test -->
-    </classes>
-  </test> <!-- links(failed) -->
-  <test thread-count="5" name="Flipkart(failed)" verbose="0">
-    <classes>
-      <class name="test.Flipkart_buy_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="FlipkartProfileChange_Test02"/>
           <include name="launchFB"/>
+          <include name="MakemyTripSendValidNumber_Test01"/>
         </methods>
-      </class> <!-- test.Flipkart_buy_test -->
+      </class> <!-- test.Makemytrip_launch_test -->
     </classes>
-  </test> <!-- Flipkart(failed) -->
+  </test> <!-- Makemytrip(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->
