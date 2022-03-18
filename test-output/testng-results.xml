@@ -1,53 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[launching browser]]>
-    </line>
-    <line>
-      <![CDATA[adding these steps]]>
-    </line>
-    <line>
-      <![CDATA[adding these steps]]>
-    </line>
-    <line>
-      <![CDATA[closing browser]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-03-13T18:09:23 IST" name="Default suite" finished-at="2022-03-13T18:09:53 IST" duration-ms="30484">
+  <suite started-at="2022-03-18T13:10:36 IST" name="Default suite" finished-at="2022-03-18T13:11:04 IST" duration-ms="28334">
     <groups>
     </groups>
-    <test started-at="2022-03-13T18:09:23 IST" name="Default test" finished-at="2022-03-13T18:09:53 IST" duration-ms="30484">
-      <class name="test.Makemytrip_launch_test">
-        <test-method is-config="true" signature="launchFB()[pri:0, instance:test.Makemytrip_launch_test@35e2d654]" started-at="2022-03-13T18:09:23 IST" name="launchFB" finished-at="2022-03-13T18:09:33 IST" duration-ms="10783" status="PASS">
+    <test started-at="2022-03-18T13:10:36 IST" name="Default test" finished-at="2022-03-18T13:11:04 IST" duration-ms="28334">
+      <class name="test.Flipkart_buy_test">
+        <test-method is-config="true" signature="launchFB()[pri:0, instance:test.Flipkart_buy_test@6cf0e0ba]" started-at="2022-03-18T13:10:36 IST" name="launchFB" finished-at="2022-03-18T13:10:40 IST" duration-ms="4372" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[launching browser]]>
-            </line>
           </reporter-output>
         </test-method> <!-- launchFB -->
-        <test-method signature="MakemyTripSendValidNumber_Test01()[pri:0, instance:test.Makemytrip_launch_test@35e2d654]" started-at="2022-03-13T18:09:33 IST" name="MakemyTripSendValidNumber_Test01" finished-at="2022-03-13T18:09:43 IST" duration-ms="9481" status="PASS">
+        <test-method signature="FlipkartLogin_Test01()[pri:0, instance:test.Flipkart_buy_test@6cf0e0ba]" started-at="2022-03-18T13:10:40 IST" name="FlipkartLogin_Test01" finished-at="2022-03-18T13:10:43 IST" duration-ms="2460" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[adding these steps]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- MakemyTripSendValidNumber_Test01 -->
-        <test-method signature="MakemyTripSendINValidNumber_Test02()[pri:1, instance:test.Makemytrip_launch_test@35e2d654]" started-at="2022-03-13T18:09:43 IST" name="MakemyTripSendINValidNumber_Test02" finished-at="2022-03-13T18:09:53 IST" duration-ms="9790" status="PASS">
+        </test-method> <!-- FlipkartLogin_Test01 -->
+        <test-method signature="FlipkartProfileChange_Test02()[pri:0, instance:test.Flipkart_buy_test@6cf0e0ba]" started-at="2022-03-18T13:10:43 IST" name="FlipkartProfileChange_Test02" finished-at="2022-03-18T13:11:04 IST" duration-ms="21241" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[adding these steps]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- MakemyTripSendINValidNumber_Test02 -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Makemytrip_launch_test@35e2d654]" started-at="2022-03-13T18:09:53 IST" name="Teardown" finished-at="2022-03-13T18:09:53 IST" duration-ms="393" status="PASS">
+        </test-method> <!-- FlipkartProfileChange_Test02 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:test.Flipkart_buy_test@6cf0e0ba]" started-at="2022-03-18T13:11:04 IST" name="Teardown" finished-at="2022-03-18T13:11:04 IST" duration-ms="206" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[closing browser]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- test.Makemytrip_launch_test -->
+      </class> <!-- test.Flipkart_buy_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

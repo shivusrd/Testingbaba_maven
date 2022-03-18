@@ -2,18 +2,31 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Testingbaba]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
-    <listener class-name="test.Listners"/>
+    <listener class-name="listeners.Listners"/>
+    <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="radio(failed)" verbose="0">
+  <test thread-count="5" name="links(failed)" verbose="0">
     <classes>
-      <class name="test.Testingbaba_radio_test">
+      <class name="test.Testingbaba_links_test">
         <methods>
           <include name="Teardown"/>
-          <include name="RadioButtonTestingBaba_test01"/>
+          <include name="LinksTestingBaba_test01"/>
+          <include name="LinksTestingBaba_test02"/>
           <include name="launchtestingbaba"/>
         </methods>
-      </class> <!-- test.Testingbaba_radio_test -->
+      </class> <!-- test.Testingbaba_links_test -->
     </classes>
-  </test> <!-- radio(failed) -->
+  </test> <!-- links(failed) -->
+  <test thread-count="5" name="Flipkart(failed)" verbose="0">
+    <classes>
+      <class name="test.Flipkart_buy_test">
+        <methods>
+          <include name="Teardown"/>
+          <include name="FlipkartProfileChange_Test02"/>
+          <include name="launchFB"/>
+        </methods>
+      </class> <!-- test.Flipkart_buy_test -->
+    </classes>
+  </test> <!-- Flipkart(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

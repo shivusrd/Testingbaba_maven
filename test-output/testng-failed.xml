@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Makemytrip_launch_test">
+      <class name="test.Flipkart_buy_test">
         <methods>
           <include name="Teardown"/>
+          <include name="FlipkartProfileChange_Test02"/>
           <include name="launchFB"/>
-          <include name="MakemyTripSendINValidNumber_Test02"/>
         </methods>
-      </class> <!-- test.Makemytrip_launch_test -->
+      </class> <!-- test.Flipkart_buy_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,6 +6,9 @@ import org.testng.TestListenerAdapter;
 public class CustomListener extends TestListenerAdapter{
    private int m_count = 0;
 
+   
+   
+   
    @Override
    public void onTestFailure(ITestResult tr) {
       log(tr.getName()+ "--Test method failed\n");

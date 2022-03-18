@@ -11,6 +11,7 @@ import org.testng.Assert;
 
 import applicationutility.Applicationutility;
 import baselibrary.Baselibrary;
+import propertyutility.PropertyUtility;
 
 public class Flipkart_buyproduct_page extends Baselibrary
 
@@ -43,8 +44,8 @@ public class Flipkart_buyproduct_page extends Baselibrary
 	public void login() throws InterruptedException
 
 	{
-		email.sendKeys("8171765673");
-		password.sendKeys("Shivu@srd1");
+		email.sendKeys(PropertyUtility.getreadproperty("user"));
+		password.sendKeys(PropertyUtility.getreadproperty("password"));
 		login.click();
 		
 		search.sendKeys("iphone", Keys.ENTER);
