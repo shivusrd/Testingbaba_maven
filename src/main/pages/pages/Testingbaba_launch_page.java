@@ -37,7 +37,7 @@ public class Testingbaba_launch_page extends Baselibrary
 	
 	public void closebtn()
 	{
-		
+		logger.info("Opening Testingbaba Website");
 		closebtn.click();
 		practiceform.click();
 		Applicationutility.getscroll(scroll);

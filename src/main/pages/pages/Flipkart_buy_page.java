@@ -1,10 +1,13 @@
 package pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.model.Log;
 
 import applicationutility.Applicationutility;
 import baselibrary.Baselibrary;
@@ -72,15 +75,22 @@ public class Flipkart_buy_page extends Baselibrary
 
 	public void login() throws InterruptedException
 
-	{
+	{	logger.info("Entering Username");
 		email.sendKeys(PropertyUtility.getreadproperty("user"));
+		
+		logger.info("Entering Password");
 		password.sendKeys(PropertyUtility.getreadproperty("password"));
+		
+		logger.info("Clicks on login button");
 		login.click();
 		Thread.sleep(2000);
+		
 		
 	}
 
 	public void Namechange() throws InterruptedException {
+		
+		logger.info("Navigating to Flipkart Profile");
 		Thread.sleep(3000);
 		Applicationutility.mousehover(hover);
 		Thread.sleep(3000);
@@ -91,10 +101,13 @@ public class Flipkart_buy_page extends Baselibrary
 		Thread.sleep(3000);
 		
 		firstname.clear();
+		logger.info("Entering First Name");
 		firstname.sendKeys("shivam");
 		Thread.sleep(3000);
+		logger.info("Clicks on Save Button");
 		save.click();
 		Thread.sleep(3000);
+		
 
 	}
 	

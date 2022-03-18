@@ -20,8 +20,10 @@ import org.w3c.dom.html.HTMLUListElement;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.relevantcodes.extentreports.model.Log;
 
 import pages.Makemytrip_launch_page;
 import propertyutility.PropertyUtility;
@@ -52,7 +54,7 @@ public class Baselibrary
 public static WebDriver driver;
 public static Reporter reporter;
 public Reporter rep = new Reporter();
-
+public static  Logger logger = LogManager.getLogger(Log.class.getName());
 
 	
 
@@ -65,6 +67,7 @@ public Reporter rep = new Reporter();
 //    	DesiredCapabilities cap = new DesiredCapabilities();
 //    	cap.setCapability(ChromeOptions.CAPABILITY,options);
 //    	options.merge(cap);
+    	logger.info("Starting Chrome Browser");
     	driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -81,10 +84,8 @@ public Reporter rep = new Reporter();
 	
 	public void Teardown()
 	{   
-		
+		logger.info("Closing Chrome Browser");
 		driver.quit();
-		System.out.println("$--------------------------------------------------$");
-		
 	}
 	
 	
