@@ -135,7 +135,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
-						 <useSystemClassLoader>true</useSystemClassLoader>
+						
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
