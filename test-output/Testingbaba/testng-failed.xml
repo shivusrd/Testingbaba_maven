@@ -6,15 +6,15 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="Makemytrip(failed)">
+  <test thread-count="5" name="excel(failed)">
     <classes>
-      <class name="test.Flipkart_buy_test">
+      <class name="test.Testingbaba_webtables_test">
         <methods>
           <include name="Teardown"/>
-          <include name="FlipkartProfileChange_Test02"/>
-          <include name="launchFB"/>
+          <include name="WebTablesTestingBaba_test01"/>
+          <include name="launchtestingbaba"/>
         </methods>
-      </class> <!-- test.Flipkart_buy_test -->
+      </class> <!-- test.Testingbaba_webtables_test -->
     </classes>
-  </test> <!-- Makemytrip(failed) -->
+  </test> <!-- excel(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

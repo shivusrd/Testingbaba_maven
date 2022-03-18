@@ -22,7 +22,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 	}
 
-	static String path = "C:\\Users\\dubey\\OneDrive\\Documents\\GitHub\\18october_framework\\src\\main\\pages\\excelutility\\Webtabledata.xlsx";
+	static String path = "C:\\Users\\dubey\\OneDrive\\Documents\\Customer_dump.xlsx";
 
 	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
 	private WebElement closebtn;
@@ -80,7 +80,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 		driver.switchTo().frame(web_frame);
 
-		for (int i = 0; i <= 6; i++)
+		for (int i = 0; i <= 78; i++)
 
 		{
 
@@ -89,16 +89,16 @@ public class Testingbaba_webtables_page extends Baselibrary
 			webname.sendKeys(name);
 			webemail.sendKeys(email);
 			save.click();
-			
+			Thread.sleep(1000);			
 
 		}
 		
-		for(int k = 0; k <= 6; k++)
+		for(int k = 0; k <= 78; k++)
 		{
 			String datafill = namedata.get(k).getText();
 			String datafill2 = emaildata.get(k).getText();
 			System.out.println(datafill + " "+ datafill2);
-			continue;
+			
 		}
 		
 
