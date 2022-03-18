@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 131.803 s <<< FAILURE! - in TestSuite
-test.Makemytrip_launch_test.MakemyTripSendValidNumber_Test01  Time elapsed: 10.207 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='langCardClose']"}
-  (Session info: chrome=99.0.4844.74)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc780b681966d72af3b6faf4276d86dd, findElement {using=xpath, value=//span[@class='langCardClose']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\dubey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53985}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53985/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fc780b681966d72af3b6faf4276d86dd
-	at test.Makemytrip_launch_test.MakemyTripSendValidNumber_Test01(Makemytrip_launch_test.java:31)
-
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 129.057 s - in TestSuite
