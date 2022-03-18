@@ -1,0 +1,5 @@
+[TRACE] 2022-03-18 20:36:24.015 [main] Log4jDemo - This is trace messages
+[INFO ] 2022-03-18 20:36:24.018 [main] Log4jDemo - This is information message
+[ERROR] 2022-03-18 20:36:24.018 [main] Log4jDemo - This is an error message
+[WARN ] 2022-03-18 20:36:24.018 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-03-18 20:36:24.018 [main] Log4jDemo - This is a fatal message

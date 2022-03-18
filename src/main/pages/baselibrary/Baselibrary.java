@@ -32,6 +32,8 @@ import screenshotutility.ScreenshotUtility;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -54,20 +56,15 @@ public class Baselibrary
 public static WebDriver driver;
 public static Reporter reporter;
 public Reporter rep = new Reporter();
-public static  Logger logger = LogManager.getLogger(Log.class.getName());
+public static  Logger logger = LogManager.getLogger(Baselibrary.class);
 
 	
 
 
     public void getlaunch ()
 	{
-    	
-//    	ChromeOptions options = new ChromeOptions();
-//    	options.addArguments("-- headless");
-//    	DesiredCapabilities cap = new DesiredCapabilities();
-//    	cap.setCapability(ChromeOptions.CAPABILITY,options);
-//    	options.merge(cap);
     	logger.info("Starting Chrome Browser");
+       
     	driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -93,41 +90,43 @@ public static  Logger logger = LogManager.getLogger(Log.class.getName());
 	
 	
 	
-//	@AfterMethod
-//	public void analysis(ITestResult result)
-//	
-//	{
-//		String methodname = result.getMethod().getMethodName();
+	@AfterMethod
+	public void analysis(ITestResult result)
+	
+	{
+		String methodname = result.getMethod().getMethodName();
 //		if(result.isSuccess())
 //		{
 //			
 //			ScreenshotUtility.getscreenshot("PASSED", methodname);
 //		}
-//		
-//		else if (result.getStatus()==ITestResult.FAILURE)
-//		
-//		{
-//			ScreenshotUtility.getscreenshot("FAILED", methodname);
-//		}
-//		
-//		else if (result.getStatus()==ITestResult.SKIP)
-//			
-//		{
-//			ScreenshotUtility.getscreenshot("SKIP", methodname);
-//		}
-//		
-//	}
+		
+		if (result.getStatus()==ITestResult.FAILURE)
+		
+		{
+			ScreenshotUtility.getscreenshot("FAILED", methodname);
+		}
+		
+		else if (result.getStatus()==ITestResult.SKIP)
 			
-	public void getScreenshot(String result) throws IOException {
-		// Web Driver take the screenshot as a file and save in virtually in src
-		// variable.
-		//File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		{
+			ScreenshotUtility.getscreenshot("SKIP", methodname);
+		}
+		
+	}
+			
+	public void getScreenshot(String result) throws IOException 
+	{
+		
+		
 		File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// copy the file from src and put in your local machine with the name of failed
-		// test class
+	
 		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.jpeg"));
 
 	}
+	
+	
+	
 	
 	
 }
