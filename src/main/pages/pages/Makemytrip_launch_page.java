@@ -105,7 +105,7 @@ public class Makemytrip_launch_page extends Baselibrary
 		Applicationutility.getscroll(scroll);
 		
 		Thread.sleep(2000);
-
+		assertEquals(applink.isDisplayed(),true);
 		applink.sendKeys("");
 
 		Applicationutility.clickme(submit);
