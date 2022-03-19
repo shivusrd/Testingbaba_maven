@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Testingbaba">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Testingbaba" title="testingbaba.Testingbaba_webtables_test" class="method navigator-link" hash-for-method="WebTablesTestingBaba_test01">WebTablesTestingBaba_test01</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Testingbaba" title="flipkart.Flipkart_buy_test" class="method navigator-link" hash-for-method="FlipkartLogin_Test01">FlipkartLogin_Test01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testingbaba" title="flipkart.Flipkart_buy_test" class="method navigator-link" hash-for-method="FlipkartProfileChange_Test02">FlipkartProfileChange_Test02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Testingbaba -->
@@ -122,14 +127,21 @@
           <div class="suite-Testingbaba-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testingbaba.Testingbaba_webtables_test</span>
+              <span class="class-name">flipkart.Flipkart_buy_test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="WebTablesTestingBaba_test01">
-                  </a> <!-- WebTablesTestingBaba_test01 -->
-                  <span class="method-name">WebTablesTestingBaba_test01</span>
+                  <a name="FlipkartLogin_Test01">
+                  </a> <!-- FlipkartLogin_Test01 -->
+                  <span class="method-name">FlipkartLogin_Test01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlipkartProfileChange_Test02">
+                  </a> <!-- FlipkartProfileChange_Test02 -->
+                  <span class="method-name">FlipkartProfileChange_Test02</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,11 +161,11 @@
     &lt;listener class-name=&quot;listeners.Report_log&quot;/&gt;
     &lt;listener class-name=&quot;extentReports.Extent_report&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Launch&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Single_Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testingbaba.Testingbaba_webtables_test&quot;/&gt;
+      &lt;class name=&quot;flipkart.Flipkart_buy_test&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Launch --&gt;
+  &lt;/test&gt; &lt;!-- Single_Test --&gt;
 &lt;/suite&gt; &lt;!-- Testingbaba --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,7 +177,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Launch (1 class)</span>
+                <span class="test-name">Single_Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,16 +203,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'WebTablesTestingBaba_test01')
-data.setCell(0, 2, 'testingbaba.Testingbaba_webtables_test')
-data.setCell(0, 3, 15958);
+data.setCell(0, 1, 'FlipkartProfileChange_Test02')
+data.setCell(0, 2, 'flipkart.Flipkart_buy_test')
+data.setCell(0, 3, 19207);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'FlipkartLogin_Test01')
+data.setCell(1, 2, 'flipkart.Flipkart_buy_test')
+data.setCell(1, 3, 2340);
 window.suiteTableData['Testingbaba']= { tableData: data, tableDiv: 'times-div-Testingbaba'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Testingbaba">
               </div> <!-- times-div-Testingbaba -->
             </div> <!-- times-div -->
@@ -212,10 +228,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">WebTablesTestingBaba_test01</span>
+              <span class="reporter-method-name">FlipkartProfileChange_Test02</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testcase WebTablesTestingBaba_test01 started successfully</span>
-                <span class="reporter-method-output">Testcase WebTablesTestingBaba_test01 passed successfully</span>
+                <span class="reporter-method-output">Testcase FlipkartProfileChange_Test02 started successfully</span>
+                <span class="reporter-method-output">Testcase FlipkartProfileChange_Test02 passed successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">FlipkartLogin_Test01</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase FlipkartLogin_Test01 started successfully</span>
+                <span class="reporter-method-output">Testcase FlipkartLogin_Test01 passed successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,23 +256,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testingbaba.Testingbaba_webtables_test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">flipkart.Flipkart_buy_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchtestingbaba</span>
+                <span class="method-name">launchFB</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">WebTablesTestingBaba_test01</span>
-                <span class="method-start">6664 ms</span>
+                <span class="method-name">FlipkartLogin_Test01</span>
+                <span class="method-start">3820 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">analysis([TestResult name=WebTablesTestingBaba_test01 status=SUCCESS method=Testingbaba_webtables_test.WebTab...)</span>
-                <span class="method-start">22624 ms</span>
+                <span class="method-name">analysis([TestResult name=FlipkartLogin_Test01 status=SUCCESS method=Flipkart_buy_test.FlipkartLogin_Test01()...)</span>
+                <span class="method-start">6160 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">FlipkartProfileChange_Test02</span>
+                <span class="method-start">6173 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">22634 ms</span>
+                <span class="method-start">25380 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">analysis([TestResult name=FlipkartProfileChange_Test02 status=SUCCESS method=Flipkart_buy_test.FlipkartProfil...)</span>
+                <span class="method-start">25380 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

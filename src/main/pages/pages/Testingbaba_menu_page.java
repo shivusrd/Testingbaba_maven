@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -38,6 +40,7 @@ public class Testingbaba_menu_page extends Baselibrary
 	
 	public void menuclick()
 	{
+		assertEquals(menu.isDisplayed(),true);
 		menu.click();
 		
 	}

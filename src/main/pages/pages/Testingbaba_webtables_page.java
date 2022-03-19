@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -75,7 +77,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 	{	
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
-		
+		assertEquals(webtables.isDisplayed(),true);
 		webtables.click();
 
 		driver.switchTo().frame(web_frame);

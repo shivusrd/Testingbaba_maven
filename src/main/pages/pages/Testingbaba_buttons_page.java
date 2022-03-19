@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
@@ -51,6 +53,7 @@ public class Testingbaba_buttons_page extends Baselibrary
 	public void clickonelements()
 
 	{
+		assertEquals(elements.isDisplayed(),true);
 		Applicationutility.clickme(elements);
 
 	}

@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -38,6 +40,7 @@ public class Testingbaba_launch_page extends Baselibrary
 	public void closebtn()
 	{
 		closebtn.click();
+		assertEquals(practiceform.isDisplayed(),true);
 		practiceform.click();
 		Applicationutility.getscroll(scroll);
 	}

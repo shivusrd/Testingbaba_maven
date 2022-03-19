@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
@@ -40,6 +42,7 @@ public class Testingbaba_radio_page extends Baselibrary
 		closebtn.click();
 		practiceform.click();
 		elements.click();
+		assertEquals(radio.isDisplayed(),true);
 		radio.click();
 		impressive.click();
 

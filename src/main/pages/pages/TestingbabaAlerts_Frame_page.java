@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -59,6 +61,7 @@ public class TestingbabaAlerts_Frame_page extends Baselibrary
 	
 	{
 		alertsframe.click();
+		assertEquals(alerts.isDisplayed(),true);
 		alerts.click();
 	}
 	

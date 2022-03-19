@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 
 import org.apache.poi.sl.usermodel.ObjectMetaData.Application;
@@ -47,7 +49,7 @@ public class Flipkart_buyproduct_page extends Baselibrary
 		email.sendKeys(PropertyUtility.getreadproperty("user"));
 		password.sendKeys(PropertyUtility.getreadproperty("password"));
 		login.click();
-		
+		assertEquals(search.isSelected(),true);
 		search.sendKeys("iphone", Keys.ENTER);
 		Thread.sleep(2000);
 		

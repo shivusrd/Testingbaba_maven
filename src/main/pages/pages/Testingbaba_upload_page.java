@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -55,7 +57,7 @@ public class Testingbaba_upload_page extends Baselibrary
 	public void uploadfile() throws InterruptedException
 	
 	{
-		
+		assertEquals(upload.isDisplayed(),true);
 		upload.click();
 		
 		Thread.sleep(2000);

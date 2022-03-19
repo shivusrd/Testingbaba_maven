@@ -99,6 +99,7 @@ public class Flipkart_buy_page extends Baselibrary
 		myprofile.click();
 		Thread.sleep(3000);
 		driver.navigate().refresh();
+		assertEquals(button2.isDisplayed(),true);
 		button.click();
 		Thread.sleep(3000);
 		
@@ -109,7 +110,7 @@ public class Flipkart_buy_page extends Baselibrary
 		logger.info("Clicks on Save Button");
 		save.click();
 		Thread.sleep(3000);
-		assertEquals(button2.isDisplayed(),true);;
+		
 
 	}
 	
