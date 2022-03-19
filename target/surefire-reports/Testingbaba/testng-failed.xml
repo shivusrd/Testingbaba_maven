@@ -6,19 +6,18 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="checkbox(failed)" verbose="0">
+  <test thread-count="5" name="radio(failed)" verbose="0">
     <classes>
-      <class name="testingbaba.Testingbaba_checkbox_test">
+      <class name="testingbaba.Testingbaba_radio_test">
         <methods>
           <include name="Teardown"/>
           <include name="launchtestingbaba"/>
-          <include name="CheckboxTestingBaba_test03"/>
-          <include name="CheckboxTestingBaba_test02"/>
+          <include name="RadioButtonTestingBaba_test01"/>
           <include name="analysis"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_checkbox_test -->
+      </class> <!-- testingbaba.Testingbaba_radio_test -->
     </classes>
-  </test> <!-- checkbox(failed) -->
+  </test> <!-- radio(failed) -->
   <test thread-count="5" name="Webtable(failed)" verbose="0">
     <classes>
       <class name="testingbaba.Testingbaba_webtables_test">
@@ -31,28 +30,4 @@
       </class> <!-- testingbaba.Testingbaba_webtables_test -->
     </classes>
   </test> <!-- Webtable(failed) -->
-  <test thread-count="5" name="Flipkart_Buy_product(failed)" verbose="0">
-    <classes>
-      <class name="flipkart.Flipkart_buyproduct_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="analysis"/>
-          <include name="FlipkartLoginInvalidCred_Test01"/>
-          <include name="launchFB"/>
-        </methods>
-      </class> <!-- flipkart.Flipkart_buyproduct_test -->
-    </classes>
-  </test> <!-- Flipkart_Buy_product(failed) -->
-  <test thread-count="5" name="Makemytrip(failed)" verbose="0">
-    <classes>
-      <class name="makemytrip.Makemytrip_launch_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchFB"/>
-          <include name="MakemyTripSendINValidNumber_Test02"/>
-          <include name="analysis"/>
-        </methods>
-      </class> <!-- makemytrip.Makemytrip_launch_test -->
-    </classes>
-  </test> <!-- Makemytrip(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

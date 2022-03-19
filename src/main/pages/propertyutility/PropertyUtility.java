@@ -6,7 +6,7 @@ import java.util.Properties;
 public class PropertyUtility 
 {
 	
-static String path ="C:\\Users\\dubey\\eclipse-workspace\\Testingbaba_maven\\src\\main\\resources\\Testdata.properties";
+static String path ="C:\\Users\\POOJA SINGH\\Documents\\GitHub\\Testingbaba_maven\\src\\main\\resources\\Testdata.properties";
 	
 	
 	public static String getreadproperty(String key)
