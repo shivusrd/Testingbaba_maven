@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -35,6 +37,7 @@ public class Testingbaba_dropdown_page extends Baselibrary
 	public void getdropdown()
 	{
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		assertEquals(closebtn.isDisplayed(),true);
 		closebtn.click();
 		Select sel = new Select(ele1);
 		sel.selectByVisibleText("Manual Testing");	

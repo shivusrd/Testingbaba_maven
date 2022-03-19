@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
@@ -56,6 +58,7 @@ public class Testingbaba_mousehover_page extends Baselibrary
 	
 	public  void hoverfunction() throws InterruptedException
 	{
+		assertEquals(tooltip.isDisplayed(),true);
 		tooltip.click();
 		Applicationutility.mousehover(hoverme);
 		Thread.sleep(4000);

@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.sl.usermodel.ObjectMetaData.Application;
@@ -51,6 +53,7 @@ public class Testingbaba_autocomplete_page extends Baselibrary
 	public void clicauto() throws InterruptedException
 
 	{   
+		assertEquals(widgets.isDisplayed(),true);
 		widgets.click();
       
 		

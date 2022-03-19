@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -65,7 +67,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 	public void clickonelements()
 
 	{
-
+		assertEquals(elements.isDisplayed(),true);
 		elements.click();
 
 	}

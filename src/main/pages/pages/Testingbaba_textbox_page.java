@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -99,7 +101,7 @@ public class Testingbaba_textbox_page extends Baselibrary
 		
 		fulladress.sendKeys(cadress);
 		permanentadress.sendKeys(padress);
-
+		assertEquals(submit.isDisplayed(),true);
 		submit.click();
 
 	}

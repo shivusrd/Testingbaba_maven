@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
@@ -52,6 +54,7 @@ public class Testingbaba_links_page extends Baselibrary
 	public void clickonlinks() throws InterruptedException
 	{
 		Thread.sleep(1000);
+		assertEquals(links.isDisplayed(),true);
 		links.click();
 		Thread.sleep(1000);
 		demopage.click();

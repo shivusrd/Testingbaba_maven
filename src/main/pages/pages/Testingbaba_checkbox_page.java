@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -57,8 +59,9 @@ public class Testingbaba_checkbox_page extends Baselibrary
 
 	}
 
-	public void checkbox() {
-
+	public void checkbox()
+	{
+		assertEquals(checkbox.isDisplayed(),true);
 		checkbox.click();
 
 	}

@@ -121,7 +121,7 @@ public static  Logger logger = LogManager.getLogger(Baselibrary.class);
 		
 		File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	
-		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.jpeg"));
+		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.png"));
 
 	}
 	
