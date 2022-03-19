@@ -1,4 +1,4 @@
-package test;
+package testingbaba;
 
 import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;

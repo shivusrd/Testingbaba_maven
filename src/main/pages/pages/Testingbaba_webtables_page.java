@@ -89,7 +89,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 			webname.sendKeys(name);
 			webemail.sendKeys(email);
 			save.click();
-			Thread.sleep(1000);			
+					
 
 		}
 		

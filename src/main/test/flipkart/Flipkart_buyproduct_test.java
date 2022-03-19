@@ -1,4 +1,4 @@
-package test;
+package flipkart;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;

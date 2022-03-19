@@ -11,73 +11,73 @@
  
   <test name="smoke" enabled="true">
     <classes>
-      <class name="test.Testingbaba_launch_test"/>
+      <class name="testingbaba.Testingbaba_launch_test"/>
     </classes>
     </test> 
   
   <test name = "Textbox" enabled="true">
   <classes>
-  <class name="test.Testingbaba_textbox_test"/>
+  <class name="testingbaba.Testingbaba_textbox_test"/>
     </classes>
    </test>
   
   <test name = "buttons" enabled="true">
   <classes>
-  <class name="test.Testingbaba_buttons_test"/>
+  <class name="testingbaba.Testingbaba_buttons_test"/>
     </classes>
   </test>
   
   <test name = "checkbox" enabled="true">
   <classes>
-  <class name="test.Testingbaba_checkbox_test"/>
+  <class name="testingbaba.Testingbaba_checkbox_test"/>
     </classes>
   </test>
   
   <test name = "dropdown" enabled="true">
   <classes>
-  <class name="test.Testingbaba_dropdown_test"/>
+  <class name="testingbaba.Testingbaba_dropdown_test"/>
     </classes>
   </test>
   
   <test name = "links" enabled="true">
   <classes>
-  <class name="test.Testingbaba_links_test"/>
+  <class name="testingbaba.Testingbaba_links_test"/>
     </classes>
   </test>
   
   <test name = "radio" enabled="true">
   <classes>
-  <class name="test.Testingbaba_radio_test"/>
+  <class name="testingbaba.Testingbaba_radio_test"/>
     </classes>
   </test>
   
   <test name = "autocomplete" enabled="true" >
   <classes>
-  <class name="test.Testingbaba_autocomplete_test"/>
+  <class name="testingbaba.Testingbaba_autocomplete_test"/>
     </classes>
   </test>
   
   <test name = "Webtable" enabled="true" >
   <classes>
-  <class name="test.Testingbaba_webtables_test"/>
+  <class name="testingbaba.Testingbaba_webtables_test"/>
     </classes>
   </test>
   
   <test name = "Flipkart" enabled="true" >
   <classes>
-  <class name="test.Flipkart_buy_test"/>
+  <class name="flipkart.Flipkart_buy_test"/>
     </classes>
   </test>
   
   <test name = "Flipkart_Buy_product" enabled="true" >
   <classes>
-  <class name="test.Flipkart_buyproduct_test"/>
+  <class name="flipkart.Flipkart_buyproduct_test"/>
     </classes>
   </test>
   
   <test name = "Makemytrip" enabled="true" >
   <classes>
-  <class name="test.Makemytrip_launch_test"/>
+  <class name="makemytrip.Makemytrip_launch_test"/>
     </classes>
   </test>
   

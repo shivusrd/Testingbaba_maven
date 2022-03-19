@@ -1,4 +1,4 @@
-package test;
+package testingbaba;
 
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.logging.LogEntries;
