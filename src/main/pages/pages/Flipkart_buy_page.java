@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -107,7 +109,7 @@ public class Flipkart_buy_page extends Baselibrary
 		logger.info("Clicks on Save Button");
 		save.click();
 		Thread.sleep(3000);
-		
+		assertEquals(button2.isDisplayed(),true);;
 
 	}
 	
