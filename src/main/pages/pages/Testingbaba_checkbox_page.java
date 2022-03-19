@@ -61,7 +61,7 @@ public class Testingbaba_checkbox_page extends Baselibrary
 
 	public void checkbox()
 	{
-		assertEquals(checkbox.isSelected(),true);
+		assertEquals(checkbox.isDisplayed(),true);
 		checkbox.click();
 
 	}

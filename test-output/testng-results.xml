@@ -1,78 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[About to begin executing Class Single_Test]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartLogin_Test01 started successfully]]>
+      <![CDATA[Testcase CheckboxTestingBaba_test01 started successfully]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartLogin_Test01 passed successfully]]>
+      <![CDATA[Testcase CheckboxTestingBaba_test01 passed successfully]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartProfileChange_Test02 started successfully]]>
+      <![CDATA[Testcase CheckboxTestingBaba_test02 started successfully]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartProfileChange_Test02 passed successfully]]>
+      <![CDATA[Testcase CheckboxTestingBaba_test02 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase CheckboxTestingBaba_test03 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase CheckboxTestingBaba_test03 passed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-03-19T12:34:26 IST" name="Testingbaba" finished-at="2022-03-19T12:34:51 IST" duration-ms="25761">
+  <suite started-at="2022-03-19T12:54:49 IST" name="Testingbaba" finished-at="2022-03-19T12:54:57 IST" duration-ms="8182">
     <groups>
     </groups>
-    <test started-at="2022-03-19T12:34:26 IST" name="Single_Test" finished-at="2022-03-19T12:34:51 IST" duration-ms="25761">
-      <class name="flipkart.Flipkart_buy_test">
-        <test-method is-config="true" signature="launchFB()[pri:0, instance:flipkart.Flipkart_buy_test@1477089c]" started-at="2022-03-19T12:34:26 IST" name="launchFB" finished-at="2022-03-19T12:34:29 IST" duration-ms="3787" status="PASS">
+    <test started-at="2022-03-19T12:54:49 IST" name="Single_Test" finished-at="2022-03-19T12:54:57 IST" duration-ms="8182">
+      <class name="testingbaba.Testingbaba_checkbox_test">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:testingbaba.Testingbaba_checkbox_test@663411de]" started-at="2022-03-19T12:54:49 IST" name="launchtestingbaba" finished-at="2022-03-19T12:54:56 IST" duration-ms="6278" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchFB -->
-        <test-method signature="FlipkartLogin_Test01()[pri:0, instance:flipkart.Flipkart_buy_test@1477089c]" started-at="2022-03-19T12:34:29 IST" name="FlipkartLogin_Test01" finished-at="2022-03-19T12:34:32 IST" duration-ms="2340" status="PASS">
+        </test-method> <!-- launchtestingbaba -->
+        <test-method signature="CheckboxTestingBaba_test01()[pri:1, instance:testingbaba.Testingbaba_checkbox_test@663411de]" started-at="2022-03-19T12:54:56 IST" name="CheckboxTestingBaba_test01" finished-at="2022-03-19T12:54:56 IST" duration-ms="47" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Testcase FlipkartLogin_Test01 started successfully]]>
+              <![CDATA[Testcase CheckboxTestingBaba_test01 started successfully]]>
             </line>
             <line>
-              <![CDATA[Testcase FlipkartLogin_Test01 passed successfully]]>
+              <![CDATA[Testcase CheckboxTestingBaba_test01 passed successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- FlipkartLogin_Test01 -->
-        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:flipkart.Flipkart_buy_test@1477089c]" started-at="2022-03-19T12:34:32 IST" name="analysis" finished-at="2022-03-19T12:34:32 IST" duration-ms="12" status="PASS">
+        </test-method> <!-- CheckboxTestingBaba_test01 -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:testingbaba.Testingbaba_checkbox_test@663411de]" started-at="2022-03-19T12:54:56 IST" name="analysis" finished-at="2022-03-19T12:54:56 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FlipkartLogin_Test01 status=SUCCESS method=Flipkart_buy_test.FlipkartLogin_Test01()[pri:0, instance:flipkart.Flipkart_buy_test@1477089c] output=Testcase FlipkartLogin_Test01 started successfully]]]>
+                <![CDATA[[TestResult name=CheckboxTestingBaba_test01 status=SUCCESS method=Testingbaba_checkbox_test.CheckboxTestingBaba_test01()[pri:1, instance:testingbaba.Testingbaba_checkbox_test@663411de] output=Testcase CheckboxTestingBaba_test01 started successfully]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- analysis -->
-        <test-method signature="FlipkartProfileChange_Test02()[pri:0, instance:flipkart.Flipkart_buy_test@1477089c]" started-at="2022-03-19T12:34:32 IST" name="FlipkartProfileChange_Test02" finished-at="2022-03-19T12:34:51 IST" duration-ms="19207" status="PASS">
+        <test-method signature="CheckboxTestingBaba_test02()[pri:2, instance:testingbaba.Testingbaba_checkbox_test@663411de]" started-at="2022-03-19T12:54:56 IST" name="CheckboxTestingBaba_test02" finished-at="2022-03-19T12:54:56 IST" duration-ms="202" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Testcase FlipkartProfileChange_Test02 started successfully]]>
+              <![CDATA[Testcase CheckboxTestingBaba_test02 started successfully]]>
             </line>
             <line>
-              <![CDATA[Testcase FlipkartProfileChange_Test02 passed successfully]]>
+              <![CDATA[Testcase CheckboxTestingBaba_test02 passed successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- FlipkartProfileChange_Test02 -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:flipkart.Flipkart_buy_test@1477089c]" started-at="2022-03-19T12:34:51 IST" name="Teardown" finished-at="2022-03-19T12:34:51 IST" duration-ms="378" status="PASS">
+        </test-method> <!-- CheckboxTestingBaba_test02 -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:testingbaba.Testingbaba_checkbox_test@663411de]" started-at="2022-03-19T12:54:56 IST" name="analysis" finished-at="2022-03-19T12:54:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxTestingBaba_test02 status=SUCCESS method=Testingbaba_checkbox_test.CheckboxTestingBaba_test02()[pri:2, instance:testingbaba.Testingbaba_checkbox_test@663411de] output=Testcase CheckboxTestingBaba_test02 started successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analysis -->
+        <test-method signature="CheckboxTestingBaba_test03()[pri:3, instance:testingbaba.Testingbaba_checkbox_test@663411de]" started-at="2022-03-19T12:54:56 IST" name="CheckboxTestingBaba_test03" finished-at="2022-03-19T12:54:57 IST" duration-ms="1303" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase CheckboxTestingBaba_test03 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase CheckboxTestingBaba_test03 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CheckboxTestingBaba_test03 -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:testingbaba.Testingbaba_checkbox_test@663411de]" started-at="2022-03-19T12:54:57 IST" name="analysis" finished-at="2022-03-19T12:54:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxTestingBaba_test03 status=SUCCESS method=Testingbaba_checkbox_test.CheckboxTestingBaba_test03()[pri:3, instance:testingbaba.Testingbaba_checkbox_test@663411de] output=Testcase CheckboxTestingBaba_test03 started successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analysis -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testingbaba.Testingbaba_checkbox_test@663411de]" started-at="2022-03-19T12:54:57 IST" name="Teardown" finished-at="2022-03-19T12:54:57 IST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:flipkart.Flipkart_buy_test@1477089c]" started-at="2022-03-19T12:34:51 IST" name="analysis" finished-at="2022-03-19T12:34:51 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=FlipkartProfileChange_Test02 status=SUCCESS method=Flipkart_buy_test.FlipkartProfileChange_Test02()[pri:0, instance:flipkart.Flipkart_buy_test@1477089c] output=Testcase FlipkartProfileChange_Test02 started successfully]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- analysis -->
-      </class> <!-- flipkart.Flipkart_buy_test -->
+      </class> <!-- testingbaba.Testingbaba_checkbox_test -->
     </test> <!-- Single_Test -->
   </suite> <!-- Testingbaba -->
 </testng-results>

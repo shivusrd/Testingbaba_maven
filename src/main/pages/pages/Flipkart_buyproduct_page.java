@@ -49,7 +49,7 @@ public class Flipkart_buyproduct_page extends Baselibrary
 		email.sendKeys(PropertyUtility.getreadproperty("user"));
 		password.sendKeys(PropertyUtility.getreadproperty("password"));
 		login.click();
-		assertEquals(search.isSelected(),true);
+		assertEquals(search.isDisplayed(),true);
 		search.sendKeys("iphone", Keys.ENTER);
 		Thread.sleep(2000);
 		

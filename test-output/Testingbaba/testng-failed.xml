@@ -8,14 +8,15 @@
   </listeners>
   <test thread-count="5" name="Single_Test(failed)">
     <classes>
-      <class name="flipkart.Flipkart_buy_test">
+      <class name="testingbaba.Testingbaba_checkbox_test">
         <methods>
           <include name="Teardown"/>
-          <include name="FlipkartProfileChange_Test02"/>
-          <include name="launchFB"/>
+          <include name="CheckboxTestingBaba_test03"/>
+          <include name="launchtestingbaba"/>
+          <include name="CheckboxTestingBaba_test02"/>
           <include name="analysis"/>
         </methods>
-      </class> <!-- flipkart.Flipkart_buy_test -->
+      </class> <!-- testingbaba.Testingbaba_checkbox_test -->
     </classes>
   </test> <!-- Single_Test(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

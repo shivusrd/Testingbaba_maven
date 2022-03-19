@@ -67,7 +67,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 	public void clickonelements()
 
 	{
-
+		assertEquals(elements.isDisplayed(),true);
 		elements.click();
 
 	}
@@ -77,7 +77,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 	{	
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
-		assertEquals(webtables.isDisplayed(),true);
+		
 		webtables.click();
 
 		driver.switchTo().frame(web_frame);
