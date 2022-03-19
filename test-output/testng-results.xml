@@ -11,16 +11,16 @@
       <![CDATA[Testcase WebTablesTestingBaba_test01 passed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-03-19T08:23:26 IST" name="Testingbaba" finished-at="2022-03-19T08:23:48 IST" duration-ms="22276">
+  <suite started-at="2022-03-19T08:42:25 IST" name="Testingbaba" finished-at="2022-03-19T08:42:48 IST" duration-ms="22644">
     <groups>
     </groups>
-    <test started-at="2022-03-19T08:23:26 IST" name="Launch" finished-at="2022-03-19T08:23:48 IST" duration-ms="22276">
+    <test started-at="2022-03-19T08:42:25 IST" name="Launch" finished-at="2022-03-19T08:42:48 IST" duration-ms="22644">
       <class name="testingbaba.Testingbaba_webtables_test">
-        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:testingbaba.Testingbaba_webtables_test@44b3606b]" started-at="2022-03-19T08:23:26 IST" name="launchtestingbaba" finished-at="2022-03-19T08:23:31 IST" duration-ms="5369" status="PASS">
+        <test-method is-config="true" signature="launchtestingbaba()[pri:0, instance:testingbaba.Testingbaba_webtables_test@44b3606b]" started-at="2022-03-19T08:42:25 IST" name="launchtestingbaba" finished-at="2022-03-19T08:42:32 IST" duration-ms="6643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchtestingbaba -->
-        <test-method signature="WebTablesTestingBaba_test01()[pri:0, instance:testingbaba.Testingbaba_webtables_test@44b3606b]" started-at="2022-03-19T08:23:31 IST" name="WebTablesTestingBaba_test01" finished-at="2022-03-19T08:23:48 IST" duration-ms="16874" status="PASS">
+        <test-method signature="WebTablesTestingBaba_test01()[pri:0, instance:testingbaba.Testingbaba_webtables_test@44b3606b]" started-at="2022-03-19T08:42:32 IST" name="WebTablesTestingBaba_test01" finished-at="2022-03-19T08:42:48 IST" duration-ms="15958" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Testcase WebTablesTestingBaba_test01 started successfully]]>
@@ -30,7 +30,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- WebTablesTestingBaba_test01 -->
-        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:testingbaba.Testingbaba_webtables_test@44b3606b]" started-at="2022-03-19T08:23:48 IST" name="analysis" finished-at="2022-03-19T08:23:48 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:testingbaba.Testingbaba_webtables_test@44b3606b]" started-at="2022-03-19T08:42:48 IST" name="analysis" finished-at="2022-03-19T08:42:48 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- analysis -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testingbaba.Testingbaba_webtables_test@44b3606b]" started-at="2022-03-19T08:23:48 IST" name="Teardown" finished-at="2022-03-19T08:23:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testingbaba.Testingbaba_webtables_test@44b3606b]" started-at="2022-03-19T08:42:48 IST" name="Teardown" finished-at="2022-03-19T08:42:48 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
