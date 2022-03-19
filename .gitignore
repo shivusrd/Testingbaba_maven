@@ -5,7 +5,7 @@
 test-output/Testingbaba/Webtable.html
 test-output/Testingbaba/Textbox.xml
 test-output/Testingbaba/Textbox.xml
-*.properties
+
 target/surefire-reports/Testingbaba/dropdown.xml
 test-output/testng-results.xml
 test-output/testng-failed.xml
