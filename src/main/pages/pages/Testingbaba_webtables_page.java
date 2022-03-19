@@ -82,7 +82,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 		driver.switchTo().frame(web_frame);
 
-		for (int i = 0; i <= 78; i++)
+		for (int i = 0; i <= 6; i++)
 
 		{
 
@@ -95,7 +95,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 		}
 		
-		for(int k = 0; k <= 78; k++)
+		for(int k = 0; k <= 6; k++)
 		{
 			String datafill = namedata.get(k).getText();
 			String datafill2 = emaildata.get(k).getText();

@@ -29,9 +29,9 @@ public class Excelutility_automation
 	}
 
 	public static void main(String[] args) {
-		String path = "C:\\Users\\dubey\\OneDrive\\Documents\\Customer_dump.xlsx";
+		String path = "C:\\Users\\POOJA SINGH\\Documents\\GitHub\\Testingbaba_maven\\src\\main\\resources\\Webtabledata.xlsx";
 
-		for (int i = 0; i <= 78; i++)
+		for (int i = 0; i <= 6; i++)
 
 		{
 			String out = Getreaddata(path, i, 0);
