@@ -86,8 +86,8 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 		{
 
-			String name = Excelutility_automation.Getreaddata(path, i, 0);
-			String email = Excelutility_automation.Getreaddata(path, i, 1);
+			String name = Excelutility_automation.Getreaddata(i, 0);
+			String email = Excelutility_automation.Getreaddata(i, 1);
 			webname.sendKeys(name);
 			webemail.sendKeys(email);
 			save.click();

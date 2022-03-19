@@ -13,7 +13,7 @@
 
 	 <test name = "Single_Test" enabled="true" >
   <classes>
-  <class name="testingbaba.Testingbaba_checkbox_test"/>
+  <class name="testingbaba.Testingbaba_webtables_test"/>
     </classes>
   </test>
   

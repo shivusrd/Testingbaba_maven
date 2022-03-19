@@ -8,15 +8,14 @@
   </listeners>
   <test thread-count="5" name="Single_Test(failed)">
     <classes>
-      <class name="testingbaba.Testingbaba_checkbox_test">
+      <class name="testingbaba.Testingbaba_webtables_test">
         <methods>
           <include name="Teardown"/>
-          <include name="CheckboxTestingBaba_test03"/>
           <include name="launchtestingbaba"/>
-          <include name="CheckboxTestingBaba_test02"/>
+          <include name="WebTablesTestingBaba_test01"/>
           <include name="analysis"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_checkbox_test -->
+      </class> <!-- testingbaba.Testingbaba_webtables_test -->
     </classes>
   </test> <!-- Single_Test(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->
