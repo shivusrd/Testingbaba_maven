@@ -24,7 +24,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 	}
 
-	static String path = "C:\\Users\\dubey\\OneDrive\\Documents\\Customer_dump.xlsx";
+	static String path = "C:\\Users\\POOJA SINGH\\Documents\\GitHub\\Testingbaba_maven\\src\\main\\resources\\Webtabledata.xlsx";
 
 	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
 	private WebElement closebtn;
