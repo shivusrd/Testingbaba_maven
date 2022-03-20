@@ -70,6 +70,7 @@ public class Testingbaba_checkbox_page extends Baselibrary
 		SoftAssert softassert = new SoftAssert();
 		Thread.sleep(1000);
 		driver.switchTo().frame(checkbox_frame);
+		Thread.sleep(2000);
 
 		Applicationutility.clickme(mobile);
 		Applicationutility.clickme(laptop);

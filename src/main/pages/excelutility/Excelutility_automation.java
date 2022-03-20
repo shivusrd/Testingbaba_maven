@@ -35,12 +35,12 @@ public class Excelutility_automation
 		
 		path = path+"\\src\\main\\resources\\Webtabledata.xlsx";
 
-		for (int i = 0; i <= 6; i++)
+		for (int i = 0; i <= 29; i++)
 
 		{
 			String out = Getreaddata(i, 0);
 			String out1 = Getreaddata(i, 1);
-			System.out.println(out + out1);
+			System.out.println(out +     "      "    + out1);
 
 		}
 
