@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extentReports.ExtentReportsClass">
+      <class name="testingbaba.Testingbaba_launch_test">
         <methods>
-          <include name="skipTest"/>
-          <include name="getResult"/>
-          <include name="passTest"/>
-          <include name="failTest"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
+          <include name="Teardown"/>
+          <include name="launchtestingbaba"/>
+          <include name="checkResult"/>
+          <include name="LaunchTestingBaba_test01"/>
         </methods>
-      </class> <!-- extentReports.ExtentReportsClass -->
+      </class> <!-- testingbaba.Testingbaba_launch_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

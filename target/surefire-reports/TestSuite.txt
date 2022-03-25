@@ -1,4 +1,56 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 143.099 sec - in TestSuite
+Tests run: 30, Failures: 4, Errors: 0, Skipped: 11, Time elapsed: 144.469 sec <<< FAILURE! - in TestSuite
+launchtestingbaba(testingbaba.Testingbaba_textbox_test)  Time elapsed: 7.546 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="nav-link" href="newdemo.html">...</a> is not clickable at point (566, 34). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cae2bf796b4fc398bdda567d99539ac, clickElement {id=b12c99be-331a-4e8c-93f0-3b1e7169ad51}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:54214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54214/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6cae2bf796b4fc398bdda567d99539ac)] -> xpath: //*[@id="navbarSupportedContent"]/ul/li[5]/a]
+Session ID: 6cae2bf796b4fc398bdda567d99539ac
+	at testingbaba.Testingbaba_textbox_test.launchtestingbaba(Testingbaba_textbox_test.java:30)
+
+launchtestingbaba(testingbaba.Testingbaba_checkbox_test)  Time elapsed: 7.664 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="nav-link" href="newdemo.html">...</a> is not clickable at point (566, 34). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [055b45b487ebf9bc3ab184350526f341, clickElement {id=903e35b7-528a-40d6-a275-5c0e98e93e77}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54267/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (055b45b487ebf9bc3ab184350526f341)] -> xpath: //*[@id="navbarSupportedContent"]/ul/li[5]/a]
+Session ID: 055b45b487ebf9bc3ab184350526f341
+	at testingbaba.Testingbaba_checkbox_test.launchtestingbaba(Testingbaba_checkbox_test.java:25)
+
+RadioButtonTestingBaba_test01(testingbaba.Testingbaba_radio_test)  Time elapsed: 1.446 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="nav-link" href="newdemo.html">...</a> is not clickable at point (566, 34). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [11915e490606b6ffd6ee49250fdf6a87, clickElement {id=5fced28a-b0e6-4159-81f4-9dcd7a51a84b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54363/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (11915e490606b6ffd6ee49250fdf6a87)] -> xpath: //*[@id="navbarSupportedContent"]/ul/li[5]/a]
+Session ID: 11915e490606b6ffd6ee49250fdf6a87
+	at testingbaba.Testingbaba_radio_test.RadioButtonTestingBaba_test01(Testingbaba_radio_test.java:31)
+
+launchtestingbaba(testingbaba.Testingbaba_webtables_test)  Time elapsed: 10.525 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="nav-link" href="newdemo.html">...</a> is not clickable at point (566, 34). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [42398c49978ece8ae2c481c24fe81fed, clickElement {id=875e4431-79b5-4082-9989-aa2788b7326d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54429}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54429/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (42398c49978ece8ae2c481c24fe81fed)] -> xpath: //*[@id="navbarSupportedContent"]/ul/li[5]/a]
+Session ID: 42398c49978ece8ae2c481c24fe81fed
+	at testingbaba.Testingbaba_webtables_test.launchtestingbaba(Testingbaba_webtables_test.java:23)
+

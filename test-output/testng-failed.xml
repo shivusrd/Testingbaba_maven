@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Testingbaba]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="listeners.Listners"/>
-    <listener class-name="listeners.Report_log"/>
-    <listener class-name="extentReports.Extent_report"/>
-  </listeners>
-  <test thread-count="5" name="links(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testingbaba.Testingbaba_links_test">
+      <class name="testingbaba.Testingbaba_launch_test">
         <methods>
           <include name="Teardown"/>
           <include name="launchtestingbaba"/>
-          <include name="LinksTestingBaba_test01"/>
-          <include name="LinksTestingBaba_test02"/>
-          <include name="analysis"/>
+          <include name="checkResult"/>
+          <include name="LaunchTestingBaba_test01"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_links_test -->
+      </class> <!-- testingbaba.Testingbaba_launch_test -->
     </classes>
-  </test> <!-- links(failed) -->
-</suite> <!-- Failed suite [Testingbaba] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
