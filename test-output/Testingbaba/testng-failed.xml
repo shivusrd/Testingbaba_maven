@@ -6,16 +6,17 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="Single_Test(failed)">
+  <test thread-count="5" name="links(failed)">
     <classes>
-      <class name="testingbaba.Testingbaba_webtables_test">
+      <class name="testingbaba.Testingbaba_links_test">
         <methods>
           <include name="Teardown"/>
           <include name="launchtestingbaba"/>
-          <include name="WebTablesTestingBaba_test01"/>
+          <include name="LinksTestingBaba_test01"/>
+          <include name="LinksTestingBaba_test02"/>
           <include name="analysis"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_webtables_test -->
+      </class> <!-- testingbaba.Testingbaba_links_test -->
     </classes>
-  </test> <!-- Single_Test(failed) -->
+  </test> <!-- links(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

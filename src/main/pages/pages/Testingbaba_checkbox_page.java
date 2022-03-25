@@ -59,9 +59,11 @@ public class Testingbaba_checkbox_page extends Baselibrary
 
 	}
 
-	public void checkbox()
+	public void checkbox() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		assertEquals(checkbox.isDisplayed(),true);
+		Thread.sleep(2000);
 		checkbox.click();
 
 	}
@@ -73,6 +75,7 @@ public class Testingbaba_checkbox_page extends Baselibrary
 		Thread.sleep(2000);
 
 		Applicationutility.clickme(mobile);
+		Thread.sleep(2000);
 		Applicationutility.clickme(laptop);
 		String actual1 = checkboxtext.get(0).getText();
 		String actual2 = checkboxtext.get(1).getText();

@@ -6,7 +6,9 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Excelutility 
-{
+{	
+	
+	static String path = System.getProperty("user.dir");
 	public static String Getreaddata(String path, int rowno, int column) {
 		String data = "";
 		try {

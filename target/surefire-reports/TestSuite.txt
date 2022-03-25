@@ -1,21 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 199.725 sec <<< FAILURE! - in TestSuite
-RadioButtonTestingBaba_test01(testingbaba.Testingbaba_radio_test)  Time elapsed: 1.699 sec  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a class="nav-link" href="newdemo.html">...</a> is not clickable at point (601, 40). Other element would receive the click: <div class="modal-header">...</div>
-  (Session info: chrome=99.0.4844.74)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-GN8H4QN', ip: '192.168.1.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7cf1237f6d9ce22d2e02fbe1bf8c7515, clickElement {id=7d47907c-8393-4081-8354-b829c0dcdfb0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\POOJA SINGH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62672}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62672/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7cf1237f6d9ce22d2e02fbe1bf8c7515)] -> xpath: //*[@id="navbarSupportedContent"]/ul/li[5]/a]
-Session ID: 7cf1237f6d9ce22d2e02fbe1bf8c7515
-	at testingbaba.Testingbaba_radio_test.RadioButtonTestingBaba_test01(Testingbaba_radio_test.java:31)
-
-WebTablesTestingBaba_test01(testingbaba.Testingbaba_webtables_test)  Time elapsed: 67.568 sec  <<< FAILURE!
-java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at testingbaba.Testingbaba_webtables_test.WebTablesTestingBaba_test01(Testingbaba_webtables_test.java:33)
-
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 143.099 sec - in TestSuite

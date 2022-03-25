@@ -36,7 +36,7 @@ public class Testingbaba_checkbox_test extends Baselibrary
 
 	@Test(priority = 2)
 
-	public void CheckboxTestingBaba_test02() {
+	public void CheckboxTestingBaba_test02() throws InterruptedException {
 		ob.checkbox();
 
 	}

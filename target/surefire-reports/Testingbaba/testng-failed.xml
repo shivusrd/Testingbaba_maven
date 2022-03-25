@@ -6,6 +6,32 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
+  <test thread-count="5" name="checkbox(failed)" verbose="0">
+    <classes>
+      <class name="testingbaba.Testingbaba_checkbox_test">
+        <methods>
+          <include name="Teardown"/>
+          <include name="CheckboxTestingBaba_test03"/>
+          <include name="launchtestingbaba"/>
+          <include name="CheckboxTestingBaba_test02"/>
+          <include name="analysis"/>
+        </methods>
+      </class> <!-- testingbaba.Testingbaba_checkbox_test -->
+    </classes>
+  </test> <!-- checkbox(failed) -->
+  <test thread-count="5" name="links(failed)" verbose="0">
+    <classes>
+      <class name="testingbaba.Testingbaba_links_test">
+        <methods>
+          <include name="Teardown"/>
+          <include name="launchtestingbaba"/>
+          <include name="LinksTestingBaba_test01"/>
+          <include name="LinksTestingBaba_test02"/>
+          <include name="analysis"/>
+        </methods>
+      </class> <!-- testingbaba.Testingbaba_links_test -->
+    </classes>
+  </test> <!-- links(failed) -->
   <test thread-count="5" name="radio(failed)" verbose="0">
     <classes>
       <class name="testingbaba.Testingbaba_radio_test">
@@ -24,8 +50,8 @@
         <methods>
           <include name="Teardown"/>
           <include name="launchtestingbaba"/>
-          <include name="analysis"/>
           <include name="WebTablesTestingBaba_test01"/>
+          <include name="analysis"/>
         </methods>
       </class> <!-- testingbaba.Testingbaba_webtables_test -->
     </classes>
