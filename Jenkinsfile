@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Build and git clone') {
+        stage("git") {
             steps {
-                echo 'Building..'
-                git clone https://github.com/shivusrd/Testingbaba_maven
+                
+                git credentialsId:'git_credentials', url: 'https://github.com/shivusrd/Testingbaba_maven'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+               bat mvn clean install
             }
         }
         stage('Deploy') {
