@@ -16,7 +16,7 @@ pipeline
             {
                 git 'https://github.com/shivusrd/Testingbaba_maven.git'
                 
-                bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                bat "mvn test"
             }
             
             post
