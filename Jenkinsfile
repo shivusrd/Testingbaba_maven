@@ -1,6 +1,12 @@
 pipeline 
 {
     agent any
+    
+    tools
+    {
+    
+    maven "MAVEN_HOME   "
+    }
 
     stages 
     {
@@ -8,25 +14,22 @@ pipeline
         {
             steps 
             {
-                echo 'Build App'
+                git 'https://github.com/shivusrd/Testingbaba_maven.git'
+                
+                bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+            
+            post
+            {
+                success
+                {
+                archiveArtifacts 'target/*.jar'
+                }
+            
             }
         }
 
-        stage('Test') 
-        {
-            steps 
-            {
-                echo 'Test App'
-            }
-        }
-
-        stage('Deploy') 
-        {
-            steps 
-            {
-                echo 'Deploy App'
-            }
-        }
+        
     }
 
     
