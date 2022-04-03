@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Build and git clone') {
             steps {
                 echo 'Building..'
+                git clone https://github.com/shivusrd/Testingbaba_maven
             }
         }
         stage('Test') {
