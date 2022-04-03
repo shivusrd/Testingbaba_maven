@@ -1,23 +1,20 @@
 pipeline {
-    agent any
-
-    stages {
-        stage('Maven clean') {
-            steps {
-                echo 'Building..'
-                bat "mvn clean -f Testingbaba_maven"
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-                 bat "mvn test -f Testingbaba_maven"
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+  agent any
+  tools {
+    maven 'maven-3.6.3' 
+  }
+  stages {
+    stage ('Build') {
+      steps {
+        sh 'mvn clean package'
+      }
     }
+    stage ('Deploy') {
+      steps {
+        script {
+          deploy adapters: [tomcat9(credentialsId: 'tomcat_credential', path: '', url: 'http://dayal-test.letspractice.tk:8081')], contextPath: '/pipeline', onFailure: false, war: 'webapp/target/*.war' 
+        }
+      }
+    }
+  }
 }
