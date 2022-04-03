@@ -10,12 +10,7 @@ pipeline {
             }
         }
         
-         stage("build maven") {
-            steps {
-                
-                @bat "clean install"
-            }
-        }
+         
        
     }
 }
