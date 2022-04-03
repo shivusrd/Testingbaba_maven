@@ -1,16 +1,33 @@
-pipeline {
+pipeline 
+{
     agent any
-   
 
-    stages {
-        stage("git") {
-            steps {
-                
-                git credentialsId:'git_credentials', url: 'https://github.com/shivusrd/Testingbaba_maven'
+    stages 
+    {
+        stage('Build') 
+        {
+            steps 
+            {
+                echo 'Build App'
             }
         }
-        
-         
-       
+
+        stage('Test') 
+        {
+            steps 
+            {
+                echo 'Test App'
+            }
+        }
+
+        stage('Deploy') 
+        {
+            steps 
+            {
+                echo 'Deploy App'
+            }
+        }
     }
+
+    
 }
