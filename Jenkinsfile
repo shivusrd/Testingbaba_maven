@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    environment{
-        PATH = "C:\Users\dubey\Downloads\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin"
-    }
+   
 
     stages {
         stage("git") {
