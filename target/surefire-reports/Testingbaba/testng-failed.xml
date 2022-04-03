@@ -6,53 +6,15 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="Textbox(failed)" verbose="0">
+  <test thread-count="5" name="Flipkart(failed)" verbose="0">
     <classes>
-      <class name="testingbaba.Testingbaba_textbox_test">
-        <methods>
-          <include name="launchtestingbaba"/>
-          <include name="Teardown"/>
-          <include name="TextboxTestingBaba_test03"/>
-          <include name="TextboxTestingBaba_test04"/>
-          <include name="TextboxTestingBaba_test01"/>
-          <include name="TextboxTestingBaba_test02"/>
-        </methods>
-      </class> <!-- testingbaba.Testingbaba_textbox_test -->
-    </classes>
-  </test> <!-- Textbox(failed) -->
-  <test thread-count="5" name="checkbox(failed)" verbose="0">
-    <classes>
-      <class name="testingbaba.Testingbaba_checkbox_test">
+      <class name="flipkart.Flipkart_buy_test">
         <methods>
           <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="CheckboxTestingBaba_test03"/>
-          <include name="CheckboxTestingBaba_test02"/>
-          <include name="CheckboxTestingBaba_test01"/>
+          <include name="FlipkartProfileChange_Test02"/>
+          <include name="launchFB"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_checkbox_test -->
+      </class> <!-- flipkart.Flipkart_buy_test -->
     </classes>
-  </test> <!-- checkbox(failed) -->
-  <test thread-count="5" name="radio(failed)" verbose="0">
-    <classes>
-      <class name="testingbaba.Testingbaba_radio_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="RadioButtonTestingBaba_test01"/>
-        </methods>
-      </class> <!-- testingbaba.Testingbaba_radio_test -->
-    </classes>
-  </test> <!-- radio(failed) -->
-  <test thread-count="5" name="Webtable(failed)" verbose="0">
-    <classes>
-      <class name="testingbaba.Testingbaba_webtables_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="WebTablesTestingBaba_test01"/>
-        </methods>
-      </class> <!-- testingbaba.Testingbaba_webtables_test -->
-    </classes>
-  </test> <!-- Webtable(failed) -->
+  </test> <!-- Flipkart(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->
