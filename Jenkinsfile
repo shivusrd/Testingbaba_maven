@@ -5,7 +5,7 @@ pipeline
     tools
     {
     
-    maven "MAVEN_HOME"
+    maven "MAVEN"
     }
 
     stages 
