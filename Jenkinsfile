@@ -2,11 +2,11 @@ pipeline
 {
     agent any
     
-    tools
+    /*tools
     {
     
     maven "MAVEN"
-    }
+    }*/
 
     stages 
     {
