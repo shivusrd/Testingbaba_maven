@@ -10,7 +10,10 @@ pipeline
 
     stages 
     {
-        stage('Build') 
+        
+        
+        
+        stage('Git') 
         {
             steps 
             {
@@ -19,11 +22,20 @@ pipeline
                 bat "mvn test"
             }
             
+           
+            
+             stage('Build') 
+        {
+            steps 
+            {
+                bat "mvn test"
+            }
+            
             post
             {
                 success
                 {
-                archiveArtifacts 'target/*.jar'
+                     archiveArtifacts 'target/*.jar'
                 }
             
             }
