@@ -1,4 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 209.575 sec - in TestSuite
+Tests run: 26, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 175.066 sec <<< FAILURE! - in TestSuite
+launchtestingbaba(testingbaba.Testingbaba_webtables_test)  Time elapsed: 10.673 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="nav-link" href="newdemo.html">...</a> is not clickable at point (566, 34). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [95855561424a6654feeae6d0c8e6b117, clickElement {id=b6e34e1f-5c64-4aa9-ab2b-ae7671026583}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:58405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58405/devtoo..., se:cdpVersion: 100.0.4896.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (95855561424a6654feeae6d0c8e6b117)] -> xpath: //*[@id="navbarSupportedContent"]/ul/li[5]/a]
+Session ID: 95855561424a6654feeae6d0c8e6b117
+	at testingbaba.Testingbaba_webtables_test.launchtestingbaba(Testingbaba_webtables_test.java:23)
+
+FlipkartLoginInvalidCred_Test01(flipkart.Flipkart_buyproduct_test)  Time elapsed: 3.543 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=100.0.4896.60)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-493EAAE', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ad4d3d90b5df6731ae0acdf2b2bcebc, sendKeysToElement {id=9733fdf6-6775-4ba0-bb2f-d2c470899285, value=[Ljava.lang.CharSequence;@64bba0eb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52777/devtoo..., se:cdpVersion: 100.0.4896.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4ad4d3d90b5df6731ae0acdf2b2bcebc)] -> xpath: //input[@placeholder='Search for products, brands and more']]
+Session ID: 4ad4d3d90b5df6731ae0acdf2b2bcebc
+	at flipkart.Flipkart_buyproduct_test.FlipkartLoginInvalidCred_Test01(Flipkart_buyproduct_test.java:32)
+

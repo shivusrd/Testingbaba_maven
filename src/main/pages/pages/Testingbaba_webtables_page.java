@@ -56,6 +56,21 @@ public class Testingbaba_webtables_page extends Baselibrary
 	
 	@FindBy(xpath = "//*[@class=\"table table-bordered data-table\"]/tbody/tr/td[2]")
 	private List<WebElement> emaildata;
+	
+	@FindBy(xpath = "//*[@class=\"btn btn-info btn-xs btn-edit\"][1]")
+	private List<WebElement> edit;
+	
+	@FindBy(xpath = "//*[@class=\"table table-bordered data-table\"]/tbody/tr/td/input[@name='edit_name']")
+	private List<WebElement> name;
+	
+	@FindBy(xpath = "//*[@class=\"table table-bordered data-table\"]/tbody/tr/td/input[@name='edit_email']")
+	private List<WebElement> email;
+	
+	@FindBy(xpath = "//button[@class='btn btn-info btn-xs btn-update']")
+	private List<WebElement> update;
+	
+	
+	
 
 	public void closebtn() 
 	{
