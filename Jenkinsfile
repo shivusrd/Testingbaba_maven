@@ -11,17 +11,19 @@ pipeline {
             steps {
                 bat "mvn test"
             }
-	post
+	
+        stage('Deploy') {
+            steps {
+                 bat "mvn clean"
+            }
+		
+		post
             {
                 success
                 {
                 archiveArtifacts 'target/*.jar'
                 }
         }
-        stage('Deploy') {
-            steps {
-                 bat "mvn clean"
-            }
 			
 	
             
