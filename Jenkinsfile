@@ -7,14 +7,14 @@ pipeline {
                git 'https://github.com/shivusrd/Testingbaba_maven.git'
             }
         }
-        stage('Test') {
+        stage('deploy') {
             steps {
-                bat "mvn test"
+                bat "mvn clean"
             }
         }
-        stage('Deploy') {
+        stage('test') {
             steps {
-                 bat "mvn clean"
+                 bat "mvn test"
             }
 			
 			post
