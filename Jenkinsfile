@@ -1,28 +1,23 @@
-pipeline 
-{
+pipeline {
     agent any
-    
-    /*tools
-    {
-    
-    maven "MAVEN"
-    }*/
 
-    stages 
-    {
-        
-        
-        
-        stage('Git') 
-        {
-            steps 
-            {
-                git 'https://github.com/shivusrd/Testingbaba_maven.git'
-                
-                bat "mvn test"
+    stages {
+        stage('Build') {
+            steps {
+               git 'https://github.com/shivusrd/Testingbaba_maven.git'
             }
-            
-            post
+        }
+        stage('Test') {
+            steps {
+                bat "mvn clean"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                 bat "mvn test"
+            }
+			
+			post
             {
                 success
                 {
@@ -30,12 +25,6 @@ pipeline
                 }
             
             }
-            
-            
         }
-
-        
     }
-
-    
 }
