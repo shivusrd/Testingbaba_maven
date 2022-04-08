@@ -11,6 +11,14 @@ pipeline {
         stage('test') {
             steps {
                  bat "mvn test"
+	    publishHTML target: [
+            allowMissing: false,
+            alwaysLinkToLastBuild: false,
+            keepAll: true,
+            reportDir: 'coverage',
+            reportFiles: 'index.html',
+            reportName: 'RCov Report'
+          ]
             }
 			
 			post
