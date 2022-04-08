@@ -15,7 +15,7 @@ pipeline {
             allowMissing: true,
             alwaysLinkToLastBuild: true,
             keepAll: true,
-            reportDir: 'coverage',
+            reportDir: 'test-output',
             reportFiles: 'index.html',
             reportName: 'RCov Report'
           ]
