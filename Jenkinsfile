@@ -12,8 +12,8 @@ pipeline {
             steps {
                  bat "mvn test"
 	    publishHTML target: [
-            allowMissing: false,
-            alwaysLinkToLastBuild: false,
+            allowMissing: true,
+            alwaysLinkToLastBuild: true,
             keepAll: true,
             reportDir: 'coverage',
             reportFiles: 'index.html',
