@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                bat "mvn test"
+                bat "mvn build"
                 publishHTML target: [
             allowMissing: true,
             alwaysLinkToLastBuild: true,
