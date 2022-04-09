@@ -9,6 +9,22 @@ pipeline {
         stage('Test') { 
             steps {
                 bat "mvn test"
+                publishHTML target: [
+            allowMissing: true,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'test-output',
+            reportFiles: 'index.html',
+            reportName: 'RCov Report'
+          ]
+            }
+            post
+            {
+                success
+                {
+                archiveArtifacts 'target/*.jar'
+                }
+            
             }
         }
         stage('Deploy') { 
