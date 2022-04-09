@@ -11,12 +11,20 @@ pipeline {
             }
         }
        
+	   stage('Build') 
+	    {
+            steps 
+            {
+               mvn clean
+	   
+            }
+        }
         stage('test') 
 	    {
             steps 
 		{
                  
-	    bat "mvn clean"
+	    bat "mvn test"
 		
 	    publishHTML target: [
             allowMissing: true,
