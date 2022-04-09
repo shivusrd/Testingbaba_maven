@@ -16,7 +16,7 @@ pipeline {
             steps 
 		{
                  
-	    bat "mvn test"
+	    bat "mvn clean"
 		
 	    publishHTML target: [
             allowMissing: true,
