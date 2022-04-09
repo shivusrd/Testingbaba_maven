@@ -35,14 +35,7 @@ pipeline {
                 }
             
             }
-		   stage('release') 
-	    {
-            steps 
-            {
-               mvn clean
-	   
-            }
-        }	    
+	
         }
     }
 }
