@@ -10,16 +10,7 @@ pipeline {
 	   
             }
         }
-       
-	   stage('Test') 
-	    {
-            steps 
-            {
-               mvn clean
-	   
-            }
-        }
-        stage('Deploy') 
+       stage('Deploy') 
 	    {
             steps 
 		{
@@ -44,6 +35,14 @@ pipeline {
                 }
             
             }
+		   stage('Test') 
+	    {
+            steps 
+            {
+               mvn clean
+	   
+            }
+        }	    
         }
     }
 }
