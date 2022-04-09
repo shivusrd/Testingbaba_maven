@@ -1,41 +1,20 @@
 pipeline {
-    agent any
-
+    agent any 
     stages {
-        stage('Build') 
-	    {
-            steps 
-            {
-               git 'https://github.com/shivusrd/Testingbaba_maven.git'
-	   
+        stage('Build') { 
+            steps {
+                git 'https://github.com/shivusrd/Testingbaba_maven.git'
             }
         }
-       stage('Deploy') 
-	    {
-            steps 
-		{
-                 
-	    bat "mvn test"
-		
-	    publishHTML target: [
-            allowMissing: true,
-            alwaysLinkToLastBuild: true,
-            keepAll: true,
-            reportDir: 'test-output',
-            reportFiles: 'index.html',
-            reportName: 'RCov Report'
-          ]
+        stage('Test') { 
+            steps {
+                bat "mvn test"
             }
-			
-		post
-            {
-                success
-                {
-                archiveArtifacts 'target/*.jar'
-                }
-            
+        }
+        stage('Deploy') { 
+            steps {
+                 bat "mvn clean "
             }
-	
         }
     }
 }
