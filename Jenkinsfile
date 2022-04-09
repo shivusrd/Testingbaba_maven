@@ -11,7 +11,7 @@ pipeline {
             }
         }
        
-	   stage('Clean') 
+	   stage('Test') 
 	    {
             steps 
             {
@@ -19,7 +19,7 @@ pipeline {
 	   
             }
         }
-        stage('test') 
+        stage('Deploy') 
 	    {
             steps 
 		{
