@@ -11,7 +11,7 @@ pipeline {
             }
         }
        
-	   stage('Build') 
+	   stage('Clean') 
 	    {
             steps 
             {
