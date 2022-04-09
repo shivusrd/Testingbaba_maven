@@ -35,7 +35,7 @@ pipeline {
                 }
             
             }
-		   stage('Test') 
+		   stage('release') 
 	    {
             steps 
             {
