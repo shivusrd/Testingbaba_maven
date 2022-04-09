@@ -27,10 +27,6 @@ pipeline {
             
             }
         }
-        stage('Deploy') { 
-            steps {
-                 bat "mvn clean "
-            }
-        }
+        
     }
 }
