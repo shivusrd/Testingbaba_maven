@@ -8,12 +8,12 @@ pipeline {
         }
          stage('Deploy') { 
             steps {
-                 bat "mvn clean "
+                 bat "mvn generate-sources"
             }
         }
         stage('Test') { 
             steps {
-                bat "mvn clean test"
+                bat "mvn test"
                 publishHTML target: [
             allowMissing: true,
             alwaysLinkToLastBuild: true,
