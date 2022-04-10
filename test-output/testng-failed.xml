@@ -6,6 +6,18 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
+  <test thread-count="5" name="links(failed)">
+    <classes>
+      <class name="testingbaba.Testingbaba_links_test">
+        <methods>
+          <include name="Teardown"/>
+          <include name="launchtestingbaba"/>
+          <include name="LinksTestingBaba_test01"/>
+          <include name="LinksTestingBaba_test02"/>
+        </methods>
+      </class> <!-- testingbaba.Testingbaba_links_test -->
+    </classes>
+  </test> <!-- links(failed) -->
   <test thread-count="5" name="Makemytrip(failed)">
     <classes>
       <class name="makemytrip.Makemytrip_launch_test">

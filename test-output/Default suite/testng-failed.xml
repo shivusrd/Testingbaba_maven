@@ -7,7 +7,6 @@
         <methods>
           <include name="Teardown"/>
           <include name="launchtestingbaba"/>
-          <include name="checkResult"/>
           <include name="LaunchTestingBaba_test01"/>
         </methods>
       </class> <!-- testingbaba.Testingbaba_launch_test -->

@@ -16,7 +16,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.w3c.dom.html.HTMLUListElement;
 
 
 import com.aventstack.extentreports.ExtentReports;
@@ -57,6 +56,7 @@ public class Baselibrary
 {
 
 public static WebDriver driver;
+//public static ChromeOptions option;
 public static Reporter reporter;
 public Reporter rep = new Reporter();
 public static  Logger logger = LogManager.getLogger(Baselibrary.class);
@@ -64,17 +64,30 @@ public static ExtentHtmlReporter htmlReporter;
 public static ExtentReports extent;
 public static ExtentTest test;
 public static ExtentTest childTest;
+static String path = System.getProperty("user.dir");
 
 	
 
 
     public void getlaunch ()
 	{
+        
+    	// Initializing the Headless chromebrowser
+    
     	logger.info("Starting Chrome Browser");
-       
+//    	option=new ChromeOptions();
+//    	option.addArguments("headless");
+//    	option.setHeadless(true);
+//    	driver=new HtmlUnitDriver(BrowserVersion.CHROME);
+//    	driver=new HtmlUnitDriver(true);
+    	
+    	
+    	// Without Headless
+    	System.setProperty("webdriver.chrome.driver", path+"\\drivers\\chromedriver.exe");
     	driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		
 	}
     
@@ -162,7 +175,7 @@ public static ExtentTest childTest;
 //		
 //	}
 			
-	public void getScreenshot(String result) throws IOException 
+	public static void getScreenshot(String result) throws IOException 
 	{
 		
 		

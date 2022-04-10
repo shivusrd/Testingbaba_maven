@@ -1,5 +1,6 @@
 package testingbaba;
 
+
 import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -28,7 +29,7 @@ public class Testingbaba_launch_test extends Baselibrary
 		String url = PropertyUtility.getreadproperty("url");
 		getlaunch();
 		driver.get(url);
-		ob = new Testingbaba_launch_page();
+	    ob = new Testingbaba_launch_page();
 	    ob.closebtn();
 	}
 	
