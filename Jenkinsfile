@@ -6,12 +6,10 @@ pipeline {
                 git 'https://github.com/shivusrd/Testingbaba_maven.git'
             }
         }
-        
-        }
         stage('Test') { 
             steps {
                 bat "mvn test"
-                publishHTML target: [
+                 publishHTML target: [
             allowMissing: true,
             alwaysLinkToLastBuild: true,
             keepAll: true,
@@ -29,10 +27,10 @@ pipeline {
             
             }
         }
-     stage('Deploy') { 
+        stage('Deploy') { 
             steps {
-                 bat "mvn clean"
+                 bat "mvn clean "
             }
-        
+        }
     }
 }
