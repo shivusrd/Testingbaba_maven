@@ -32,7 +32,7 @@ pipeline {
             {
                 success
                 {
-                archiveArtifacts 'target/*.jar'
+                archiveArtifacts '**/target/*.jar'
                 }
             
             }
