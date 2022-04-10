@@ -35,13 +35,14 @@ public class Testingbaba_radio_page extends Baselibrary
 	@FindBy(xpath = "//input[@id='impressive']")
 	private WebElement impressive;
 
-	public void getradio()
+	public void getradio() throws InterruptedException
 
 	{
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		closebtn.click();
 		practiceform.click();
 		elements.click();
+		Thread.sleep(2000);
 		assertEquals(radio.isDisplayed(),true);
 		radio.click();
 		impressive.click();

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testingbaba">
+
+	<listeners>
+     <listener class-name="listeners.Listners"/>
+       <listener class-name="listeners.Report_log"/>
+       <listener class-name="extentReports.Extent_report"/> 
+        
+ </listeners>
+ 
+
+
+	 <test name = "Single_Test" enabled="true" >
+  <classes>
+  <class name="testingbaba.Testingbaba_webtables_test"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->
+

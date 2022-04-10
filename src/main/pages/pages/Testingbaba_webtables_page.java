@@ -24,7 +24,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 	}
 
-	static String path = "C:\\Users\\dubey\\OneDrive\\Documents\\Customer_dump.xlsx";
+	static String path = "C:\\Users\\POOJA SINGH\\Documents\\GitHub\\Testingbaba_maven\\src\\main\\resources\\Webtabledata.xlsx";
 
 	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
 	private WebElement closebtn;
@@ -56,6 +56,21 @@ public class Testingbaba_webtables_page extends Baselibrary
 	
 	@FindBy(xpath = "//*[@class=\"table table-bordered data-table\"]/tbody/tr/td[2]")
 	private List<WebElement> emaildata;
+	
+	@FindBy(xpath = "//*[@class=\"btn btn-info btn-xs btn-edit\"][1]")
+	private List<WebElement> edit;
+	
+	@FindBy(xpath = "//*[@class=\"table table-bordered data-table\"]/tbody/tr/td/input[@name='edit_name']")
+	private List<WebElement> name;
+	
+	@FindBy(xpath = "//*[@class=\"table table-bordered data-table\"]/tbody/tr/td/input[@name='edit_email']")
+	private List<WebElement> email;
+	
+	@FindBy(xpath = "//button[@class='btn btn-info btn-xs btn-update']")
+	private List<WebElement> update;
+	
+	
+	
 
 	public void closebtn() 
 	{
@@ -82,12 +97,12 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 		driver.switchTo().frame(web_frame);
 
-		for (int i = 0; i <= 78; i++)
+		for (int i = 0; i <=29 ; i++)
 
 		{
 
-			String name = Excelutility_automation.Getreaddata(path, i, 0);
-			String email = Excelutility_automation.Getreaddata(path, i, 1);
+			String name = Excelutility_automation.Getreaddata(i, 0);
+			String email = Excelutility_automation.Getreaddata(i, 1);
 			webname.sendKeys(name);
 			webemail.sendKeys(email);
 			save.click();
@@ -95,7 +110,7 @@ public class Testingbaba_webtables_page extends Baselibrary
 
 		}
 		
-		for(int k = 0; k <= 78; k++)
+		for(int k = 0; k <= 29; k++)
 		{
 			String datafill = namedata.get(k).getText();
 			String datafill2 = emaildata.get(k).getText();

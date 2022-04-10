@@ -6,17 +6,15 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="Single_Test(failed)">
+  <test thread-count="5" name="Makemytrip(failed)">
     <classes>
-      <class name="testingbaba.Testingbaba_checkbox_test">
+      <class name="makemytrip.Makemytrip_launch_test">
         <methods>
           <include name="Teardown"/>
-          <include name="CheckboxTestingBaba_test03"/>
-          <include name="launchtestingbaba"/>
-          <include name="CheckboxTestingBaba_test02"/>
-          <include name="analysis"/>
+          <include name="launchFB"/>
+          <include name="MakemyTripSendINValidNumber_Test02"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_checkbox_test -->
+      </class> <!-- makemytrip.Makemytrip_launch_test -->
     </classes>
-  </test> <!-- Single_Test(failed) -->
+  </test> <!-- Makemytrip(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

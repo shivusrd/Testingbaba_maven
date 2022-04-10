@@ -8,11 +8,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class Excelutility_automation
 
 {
-	public static String Getreaddata(String path, int rowno, int column) {
+	static String path = System.getProperty("user.dir");
+	public static String Getreaddata(int rowno, int column) {
 		String data = "";
 		try {
 
-			FileInputStream fis = new FileInputStream(path);
+			FileInputStream fis = new FileInputStream(path+"\\src\\main\\resources\\Webtabledata.xlsx");
 			@SuppressWarnings("resource")
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
 			XSSFSheet sheet = wb.getSheetAt(0);
@@ -29,14 +30,17 @@ public class Excelutility_automation
 	}
 
 	public static void main(String[] args) {
-		String path = "C:\\Users\\dubey\\OneDrive\\Documents\\Customer_dump.xlsx";
+		
+		String path = System.getProperty("user.dir");
+		
+		path = path+"\\src\\main\\resources\\Webtabledata.xlsx";
 
-		for (int i = 0; i <= 78; i++)
+		for (int i = 0; i <= 29; i++)
 
 		{
-			String out = Getreaddata(path, i, 0);
-			String out1 = Getreaddata(path, i, 1);
-			System.out.println(out + out1);
+			String out = Getreaddata(i, 0);
+			String out1 = Getreaddata(i, 1);
+			System.out.println(out +     "      "    + out1);
 
 		}
 

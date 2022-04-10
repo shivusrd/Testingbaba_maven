@@ -6,7 +6,8 @@ import java.util.Properties;
 public class PropertyUtility 
 {
 	
-static String path ="C:\\Users\\dubey\\eclipse-workspace\\Testingbaba_maven\\src\\main\\resources\\Testdata.properties";
+	
+ static String path = System.getProperty("user.dir");
 	
 	
 	public static String getreadproperty(String key)
@@ -15,7 +16,7 @@ static String path ="C:\\Users\\dubey\\eclipse-workspace\\Testingbaba_maven\\src
 	
 	try 
 	{
-		FileInputStream fis = new FileInputStream(path);
+		FileInputStream fis = new FileInputStream(path+"\\src\\main\\resources\\Testdata.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
 		value= prop.getProperty(key);
