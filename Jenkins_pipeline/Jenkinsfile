@@ -2,18 +2,33 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
+        stage('Git Clone') 
+	    {
+            steps 
+            {
                git 'https://github.com/shivusrd/Testingbaba_maven.git'
+	   
             }
         }
        
-        stage('Deploy') {
-            steps {
-                 bat "mvn test"
+        stage('Build') 
+	    {
+            steps 
+		{
+                 
+	    bat "mvn test"
+		
+	    publishHTML target: [
+            allowMissing: true,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'test-output',
+            reportFiles: 'index.html',
+            reportName: 'RCov Report'
+          ]
             }
 			
-			post
+		post
             {
                 success
                 {
@@ -22,5 +37,11 @@ pipeline {
             
             }
         }
+         stage('Clean') { 
+            steps {
+                 bat "mvn clean"
+            }
+        }
     }
 }
+
