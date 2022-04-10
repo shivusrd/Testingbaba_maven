@@ -9,7 +9,7 @@ pipeline {
                git 'https://github.com/shivusrd/Testingbaba_maven.git'
 	   
             }
-        }`
+        }
        
         stage('Build') 
 	    {
@@ -39,7 +39,7 @@ pipeline {
         }
          stage('Clean') { 
             steps {
-                 bat "mvn clean "
+                 bat "mvn clean"
             }
         }
     }
