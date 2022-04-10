@@ -9,7 +9,7 @@ pipeline {
         stage('Test') { 
             steps {
                 bat "mvn test"
-                publishHTML target: [
+                 publishHTML target: [
             allowMissing: true,
             alwaysLinkToLastBuild: true,
             keepAll: true,
@@ -27,6 +27,10 @@ pipeline {
             
             }
         }
-        
+        stage('Deploy') { 
+            steps {
+                 bat "mvn clean "
+            }
+        }
     }
 }
