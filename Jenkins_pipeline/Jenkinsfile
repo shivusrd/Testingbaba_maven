@@ -23,6 +23,15 @@ pipeline {
 		{
                  
 	    bat "mvn install"
+	    
+	    publishHTML target: [
+            allowMissing: true,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'test-output',
+            reportFiles: 'ExtentReportsTestNG.html',
+            reportName: 'Extent Report'
+          ]
 		
 	    
             }
