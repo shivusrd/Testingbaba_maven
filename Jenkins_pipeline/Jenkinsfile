@@ -11,7 +11,7 @@ pipeline {
             }
         }
 	    
-	    stage('Clean') { 
+	    stage('Generate-source') { 
             steps {
                  bat "mvn generate-sources"
             }
