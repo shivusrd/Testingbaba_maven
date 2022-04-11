@@ -16,16 +16,24 @@ pipeline {
             steps 
 		{
                  
-	    bat "mvn test"
+	    bat "mvn clean install"
 		
 	    
+            }
+		       post
+            {
+                success
+                {
+                archiveArtifacts 'target/*.jar'
+                }
+            
             }
 			
 		
         }
          stage('Clean') { 
             steps {
-                 bat "mvn clean"
+                 bat "mvn generate-sources"
             }
         }
     }
