@@ -2,7 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Git Clone') 
+	    
+	    stage('Version check') { 
+            steps {
+                 bat "mvn -version"
+            }
+        }
+        
+	    stage('Git Clone') 
 	    {
             steps 
             {
