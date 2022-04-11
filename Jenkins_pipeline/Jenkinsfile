@@ -10,13 +10,19 @@ pipeline {
 	   
             }
         }
+	    
+	    stage('Clean') { 
+            steps {
+                 bat "mvn generate-sources"
+            }
+        }
        
-        stage('Build') 
+        stage('install') 
 	    {
             steps 
 		{
                  
-	    bat "mvn clean install"
+	    bat "mvn install"
 		
 	    
             }
@@ -33,7 +39,7 @@ pipeline {
         }
          stage('Clean') { 
             steps {
-                 bat "mvn generate-sources"
+                 bat "mvn clean"
             }
         }
     }
