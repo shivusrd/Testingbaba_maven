@@ -21,14 +21,7 @@ pipeline {
 	    
             }
 			
-		post
-            {
-                success
-                {
-                archiveArtifacts 'target/*.jar'
-                }
-            
-            }
+		
         }
          stage('Clean') { 
             steps {
