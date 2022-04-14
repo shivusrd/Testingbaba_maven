@@ -90,6 +90,7 @@ public class Makemytrip_launch_page extends Baselibrary
 		String text2 = invalid.getText();
 		assertEquals(text2, "Link sent successfully to 8630597590, please check your SMS");
 		System.out.println(text2);
+		System.out.println(text2);
 
 
 		String compare = driver.getTitle();
