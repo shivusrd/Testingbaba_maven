@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testingbaba.Testingbaba_autocomplete_test">
+      <class name="testingbaba.Testingbaba_upload_test">
         <methods>
-          <include name="Teardown"/>
           <include name="launchtestingbaba"/>
-          <include name="AutocompleteTestingBaba_test03"/>
-          <include name="AutocompleteTestingBaba_test02"/>
+          <include name="Teardown"/>
+          <include name="UploadFileTestingBaba_test02"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_autocomplete_test -->
+      </class> <!-- testingbaba.Testingbaba_upload_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

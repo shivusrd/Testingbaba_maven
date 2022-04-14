@@ -58,8 +58,9 @@ public class Testingbaba_links_page extends Baselibrary
 		links.click();
 		Thread.sleep(1000);
 		demopage.click();
+		Thread.sleep(1000);
 		Applicationutility.changewindow(0);
-		
+		Thread.sleep(1000);
 	}
 
 

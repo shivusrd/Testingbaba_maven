@@ -75,6 +75,7 @@ public class Testingbaba_autocomplete_page extends Baselibrary
 		filldata.click();
 		filldata.sendKeys("ind");
 		filldata.sendKeys(Keys.ARROW_DOWN);
+		filldata.sendKeys(Keys.ARROW_DOWN);
 		filldata.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 		driver.switchTo().defaultContent();

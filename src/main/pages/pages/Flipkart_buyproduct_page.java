@@ -14,6 +14,7 @@ import org.testng.Assert;
 import applicationutility.Applicationutility;
 import baselibrary.Baselibrary;
 import propertyutility.PropertyUtility;
+import waitutility.Waitutility;
 
 public class Flipkart_buyproduct_page extends Baselibrary
 
@@ -52,7 +53,7 @@ public class Flipkart_buyproduct_page extends Baselibrary
 		assertEquals(search.isDisplayed(),true);
 		search.sendKeys("iphone", Keys.ENTER);
 		Thread.sleep(2000);
-		
+
 		driver.navigate().back();
 
 		String title = driver.getTitle();
