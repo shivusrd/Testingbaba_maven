@@ -24,7 +24,6 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.relevantcodes.extentreports.model.Log;
@@ -60,7 +59,7 @@ public static WebDriver driver;
 public static Reporter reporter;
 public Reporter rep = new Reporter();
 public static  Logger logger = LogManager.getLogger(Baselibrary.class);
-public static ExtentHtmlReporter htmlReporter;
+
 public static ExtentReports extent;
 public static ExtentTest test;
 public static ExtentTest childTest;
@@ -181,7 +180,7 @@ static String path = System.getProperty("user.dir");
 		
 		File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	
-		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.png"));
+		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.jpeg"));
 
 	}
 	

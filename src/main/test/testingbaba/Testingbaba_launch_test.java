@@ -33,7 +33,7 @@ public class Testingbaba_launch_test extends Baselibrary
 	    ob.closebtn();
 	}
 	
-	@Test
+	@Test()
    public void LaunchTestingBaba_test01() throws Exception
    {
 		
