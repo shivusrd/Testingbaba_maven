@@ -16,7 +16,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.w3c.dom.html.HTMLUListElement;
 
 
 import com.aventstack.extentreports.ExtentReports;
@@ -25,7 +24,6 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.relevantcodes.extentreports.model.Log;
@@ -57,24 +55,38 @@ public class Baselibrary
 {
 
 public static WebDriver driver;
+//public static ChromeOptions option;
 public static Reporter reporter;
 public Reporter rep = new Reporter();
 public static  Logger logger = LogManager.getLogger(Baselibrary.class);
-public static ExtentHtmlReporter htmlReporter;
+
 public static ExtentReports extent;
 public static ExtentTest test;
 public static ExtentTest childTest;
+static String path = System.getProperty("user.dir");
 
 	
 
 
     public void getlaunch ()
 	{
+        
+    	// Initializing the Headless chromebrowser
+    
     	logger.info("Starting Chrome Browser");
-       
+//    	option=new ChromeOptions();
+//    	option.addArguments("headless");
+//    	option.setHeadless(true);
+//    	driver=new HtmlUnitDriver(BrowserVersion.CHROME);
+//    	driver=new HtmlUnitDriver(true);
+    	
+    	
+    	// Without Headless
+    	System.setProperty("webdriver.chrome.driver", path+"\\drivers\\chromedriver.exe");
     	driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		
 	}
     
@@ -162,13 +174,13 @@ public static ExtentTest childTest;
 //		
 //	}
 			
-	public void getScreenshot(String result) throws IOException 
+	public static void getScreenshot(String result) throws IOException 
 	{
 		
 		
 		File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	
-		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.png"));
+		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.jpeg"));
 
 	}
 	

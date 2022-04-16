@@ -17,7 +17,7 @@ public class Testingbaba_buttons_test extends Baselibrary
 	@BeforeTest
 	public void launchtestingbaba() 
 	{
-		String url = PropertyUtility.getreadproperty("url");
+		String url = PropertyUtility.getreadproperty("Testingbabaurl");
 		getlaunch();
 		driver.get(url);
 		ob = new Testingbaba_buttons_page();

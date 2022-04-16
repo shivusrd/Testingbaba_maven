@@ -17,7 +17,7 @@ public class Testingbaba_mousehover_test extends Baselibrary
 	@BeforeTest
 	public void launchtestingbaba() 
 	{
-		String url = PropertyUtility.getreadproperty("url");
+		String url = PropertyUtility.getreadproperty("Testingbabaurl");
 		getlaunch();
 		driver.get(url);
 		ob = new Testingbaba_mousehover_page();
@@ -26,7 +26,7 @@ public class Testingbaba_mousehover_test extends Baselibrary
 
 	
 
-	@Test(priority = 1)
+	@Test(priority = 0)
 
 	public void MousehoverTestingBaba_test01() throws InterruptedException {
 
@@ -34,7 +34,7 @@ public class Testingbaba_mousehover_test extends Baselibrary
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 1)
 
 	public void MousehoverTestingBaba_test02() throws InterruptedException {
 

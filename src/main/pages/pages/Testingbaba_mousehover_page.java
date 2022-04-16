@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.asserts.SoftAssert;
 
 import applicationutility.Applicationutility;
 import baselibrary.Baselibrary;
@@ -58,11 +59,13 @@ public class Testingbaba_mousehover_page extends Baselibrary
 	
 	public  void hoverfunction() throws InterruptedException
 	{
-		assertEquals(tooltip.isDisplayed(),true);
+	
 		tooltip.click();
+		Thread.sleep(4000);
 		Applicationutility.mousehover(hoverme);
 		Thread.sleep(4000);
 		String tooltipvalue = hoverme.getAttribute("title");
+		Thread.sleep(4000);
 		
 		System.out.println(tooltipvalue);
 	}
