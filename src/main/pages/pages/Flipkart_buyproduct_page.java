@@ -3,6 +3,7 @@ package pages;
 import static org.testng.Assert.assertEquals;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.sl.usermodel.ObjectMetaData.Application;
 import org.openqa.selenium.Keys;
@@ -53,6 +54,7 @@ public class Flipkart_buyproduct_page extends Baselibrary
 		assertEquals(search.isDisplayed(),true);
 		search.sendKeys("iphone", Keys.ENTER);
 		Thread.sleep(2000);
+		
 
 		driver.navigate().back();
 

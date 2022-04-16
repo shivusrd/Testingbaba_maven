@@ -18,7 +18,7 @@ public class Testingbaba_checkbox_test extends Baselibrary
 
 	@BeforeTest
 	public void launchtestingbaba() {
-		String url = PropertyUtility.getreadproperty("url");
+		String url = PropertyUtility.getreadproperty("Testingbabaurl");
 		getlaunch();
 		driver.get(url);
 		ob = new Testingbaba_checkbox_page();

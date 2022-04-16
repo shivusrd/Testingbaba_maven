@@ -3,11 +3,14 @@
 <suite name="Testingbaba" >
 
 
-
+<listeners>
+     <listener class-name="listeners.Listners"/>
+       <listener class-name="listeners.Report_log"/>
+       <listener class-name="extentReports.Extent_report"/> 
+        
+ </listeners>
  
-
- 
-  <test name="smoke" enabled="true"  > 
+<test name="smoke" enabled="true"  > 
     <classes>
       <class name="testingbaba.Testingbaba_launch_test"/>
       
@@ -80,9 +83,5 @@
     </classes>
   </test>
   
-  
-  
- 
-
 </suite> <!-- Suite -->
 

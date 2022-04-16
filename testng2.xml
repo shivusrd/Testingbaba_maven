@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Testingbaba" parallel="classes">
+<suite name="Testingbaba" parallel="none" >
 
-	<listeners>
+<listeners>
      <listener class-name="listeners.Listners"/>
        <listener class-name="listeners.Report_log"/>
        <listener class-name="extentReports.Extent_report"/> 
         
  </listeners>
  
-
-
-	 <test name="smoke" enabled="true" > 
-    <classes>
-      <class name="testingbaba.Testingbaba_launch_test"/>
-       <class name="testingbaba.Testingbaba_radio_test"/>
-        
-      
+   
+	 <test name = "autocomplete" enabled="true"  >
+	
+	 
+  <classes>
+  
+  <class name="testingbaba.Testingbaba_launch_test"/>
     </classes>
-    </test> 
+  </test>
   
 </suite> <!-- Suite -->
 

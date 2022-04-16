@@ -23,7 +23,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 
 	@BeforeTest
 	public void launchtestingbaba() {
-		String url = PropertyUtility.getreadproperty("url");
+		String url = PropertyUtility.getreadproperty("Testingbabaurl");
 		getlaunch();
 		driver.get(url);
 		ob = new Testingbaba_textbox_page();

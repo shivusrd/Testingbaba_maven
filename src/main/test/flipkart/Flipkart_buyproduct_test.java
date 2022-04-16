@@ -17,7 +17,7 @@ public class Flipkart_buyproduct_test extends Baselibrary
 	@BeforeTest
 
 	public void launchFB() {
-		String url1 = PropertyUtility.getreadproperty("url1");
+		String url1 = PropertyUtility.getreadproperty("Flipkart");
 		getlaunch();
 		driver.get(url1);
 

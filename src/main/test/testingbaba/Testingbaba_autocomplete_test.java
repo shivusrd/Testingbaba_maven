@@ -22,7 +22,7 @@ public class Testingbaba_autocomplete_test extends Baselibrary
 		ob.closebtn();
 	}
 
-	@Test(priority=1)
+	@Test(priority=0,groups = "Regression",description = "This is to test Autocomplete",testName = "testALM219310")
 
 	public void AutocompleteTestingBaba_test01() throws InterruptedException 
 	{
@@ -31,7 +31,7 @@ public class Testingbaba_autocomplete_test extends Baselibrary
 
 	}
 	
-	@Test (priority=2)
+	@Test (priority=1,groups = "Regression")
 
 	public void AutocompleteTestingBaba_test02() throws InterruptedException 
 	{
@@ -39,7 +39,7 @@ public class Testingbaba_autocomplete_test extends Baselibrary
 		ob.autocomplete();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=2,groups = "Regression")
 	public void AutocompleteTestingBaba_test03() throws InterruptedException
 	
 	{

@@ -1,8 +1,11 @@
 package testingbaba;
 
 
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -21,18 +24,20 @@ public class Testingbaba_launch_test extends Baselibrary
 	
 	
 	Testingbaba_launch_page ob;
+	
 	@BeforeTest
 	public void launchtestingbaba()
 	{ 	
 		
 		
-		String url = PropertyUtility.getreadproperty("url1");
+		String url = PropertyUtility.getreadproperty("Testingbabaurl");
+		
 		getlaunch();
 		driver.get(url);
 	    ob = new Testingbaba_launch_page();
 	    ob.closebtn();
 	}
-	
+
 	@Test()
    public void LaunchTestingBaba_test01() throws Exception
    {
