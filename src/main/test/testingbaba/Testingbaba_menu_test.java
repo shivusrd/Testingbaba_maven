@@ -3,6 +3,7 @@ package testingbaba;
 
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.Baselibrary;
@@ -17,12 +18,23 @@ public class Testingbaba_menu_test extends Baselibrary
 
 {
 	Testingbaba_menu_page ob ;
-	
+	@Parameters({ "browser" })
 	@BeforeTest
-	public void launchtestingbaba() 
-	{   
-		String url = PropertyUtility.getreadproperty("url");
-	    getlaunch();
+	public void launchtestingbaba(String browser) 
+	{
+		String url = PropertyUtility.getreadproperty("Testingbabaurl");
+		if(browser.equalsIgnoreCase("firefox")) {
+			 
+		     //Initializing the firefox driver (Gecko)
+			 FirefoxLaunch();
+
+		  }else if (browser.equalsIgnoreCase("chrome")) { 
+
+			  //Initialize the chrome driver
+
+			  ChromeLaunch();
+
+		  } 
 	    driver.get(url);
 	    
 		ob = new Testingbaba_menu_page();

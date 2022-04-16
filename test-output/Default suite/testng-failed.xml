@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testingbaba.Testingbaba_launch_test">
+      <class name="makemytrip.Makemytrip_launch_test">
         <methods>
           <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="getlaunch"/>
-          <include name="LaunchTestingBaba_test01"/>
+          <include name="launchFB"/>
+          <include name="MakemyTripSendINValidNumber_Test02"/>
+          <include name="MakemyTripSendValidNumber_Test01"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_launch_test -->
+      </class> <!-- makemytrip.Makemytrip_launch_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

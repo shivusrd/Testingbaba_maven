@@ -1,6 +1,7 @@
 package flipkart;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.Baselibrary;
@@ -13,12 +14,24 @@ public class Flipkart_buyproduct_test extends Baselibrary
 
 {
 	Flipkart_buyproduct_page ob;
-	
+	@Parameters({ "browser" })
 	@BeforeTest
 
-	public void launchFB() {
+	public void launchFB(String browser) {
 		String url1 = PropertyUtility.getreadproperty("Flipkart");
-		getlaunch();
+		if(browser.equalsIgnoreCase("firefox")) {
+			 
+		     //Initializing the firefox driver (Gecko)
+			 
+			 FirefoxLaunch();
+
+		  }else if (browser.equalsIgnoreCase("chrome")) { 
+
+			  //Initialize the chrome driver
+
+			  ChromeLaunch();
+
+		  } 
 		driver.get(url1);
 
 		ob = new Flipkart_buyproduct_page();

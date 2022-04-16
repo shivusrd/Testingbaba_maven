@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Testingbaba" parallel="none" >
+<parameter name="browser" value="firefox"/>
 
-<listeners>
+
+  <listeners>
      <listener class-name="listeners.Listners"/>
        <listener class-name="listeners.Report_log"/>
        <listener class-name="extentReports.Extent_report"/> 
@@ -15,7 +17,7 @@
 	 
   <classes>
   
-  <class name="testingbaba.Testingbaba_launch_test"/>
+  <class name="makemytrip.Makemytrip_launch_test"/>
     </classes>
   </test>
   

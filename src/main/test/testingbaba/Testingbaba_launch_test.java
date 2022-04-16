@@ -25,14 +25,23 @@ public class Testingbaba_launch_test extends Baselibrary
 	
 	Testingbaba_launch_page ob;
 	
+	@Parameters({ "browser" })
 	@BeforeTest
-	public void launchtestingbaba()
-	{ 	
-		
-		
+	public void launchtestingbaba(String browser) 
+	{
 		String url = PropertyUtility.getreadproperty("Testingbabaurl");
-		
-		getlaunch();
+		if(browser.equalsIgnoreCase("firefox")) {
+			 
+		     //Initializing the firefox driver (Gecko)
+			 FirefoxLaunch();
+
+		  }else if (browser.equalsIgnoreCase("chrome")) { 
+
+			  //Initialize the chrome driver
+
+			  ChromeLaunch();
+
+		  } 
 		driver.get(url);
 	    ob = new Testingbaba_launch_page();
 	    ob.closebtn();

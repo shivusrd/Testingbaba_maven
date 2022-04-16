@@ -3,6 +3,7 @@ package testingbaba;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -20,11 +21,23 @@ public class Testingbaba_textbox_test extends Baselibrary
 	
 	Testingbaba_textbox_page ob;
 	
-
+	@Parameters({ "browser" })
 	@BeforeTest
-	public void launchtestingbaba() {
+	public void launchtestingbaba(String browser) 
+	{
 		String url = PropertyUtility.getreadproperty("Testingbabaurl");
-		getlaunch();
+		if(browser.equalsIgnoreCase("firefox")) {
+			 
+		     //Initializing the firefox driver (Gecko)
+			 FirefoxLaunch();
+
+		  }else if (browser.equalsIgnoreCase("chrome")) { 
+
+			  //Initialize the chrome driver
+
+			  ChromeLaunch();
+
+		  } 
 		driver.get(url);
 		ob = new Testingbaba_textbox_page();
 		ob.closebtn();
