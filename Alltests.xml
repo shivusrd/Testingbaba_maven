@@ -92,6 +92,12 @@
      <class name="makemytrip.Makemytrip_Flightsearch_test" />
       </classes>
 	</test>
+	
+	<test name="Jenkins job rest assured" enabled="true">
+  <classes>
+     <class name="jenkins.Jenkins_launch_test" />
+      </classes>
+	</test>
   
 </suite> <!-- Suite -->
 
