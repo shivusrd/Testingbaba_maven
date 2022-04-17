@@ -5,12 +5,19 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,8 +30,17 @@ import propertyutility.PropertyUtility;
 public class Applicationutility extends Baselibrary
 
 {
-	public static String departureDate;
-	public static String returnDate;
+	 /*
+	 * 1. ExpWaitForWebelement()
+	 * 2. getExcelData()
+	 * 3. getCurrentAndReturnDates()
+	 * 4. customXpath()
+	 * 5. scrollToBottom()
+	 * 6. ScrollToTop()
+	 * 7. scrollToView()
+	 * 8. getScreenshot()
+	 * 
+	 */
 
 	/**************************************
 	 * Function Name: All Generic actions for Website
@@ -35,6 +51,9 @@ public class Applicationutility extends Baselibrary
 	 * Change History:	  
 	 * 
 	 **************************************/
+	
+	public static String departureDate;
+	public static String returnDate;
 
 	public static void doubleclick(WebElement ele)
 
@@ -114,6 +133,7 @@ public class Applicationutility extends Baselibrary
 		}
 
 	}
+	
 	/**************************************
 	 * Function Name: getCurrentAndReturnDates
 	 * Author: Shivam
@@ -156,5 +176,46 @@ public class Applicationutility extends Baselibrary
 		String rawPath = xpath.replaceAll("%replace%", param);
 		return By.xpath(rawPath);
 	}
-
+	
+	/**************************************
+	 * Functions Names: scrollToBottom ScrollToTop scrollToView
+	 * Author: Shivam
+	 * Created Date: 2019-07-11
+	 * Purpose: scroll the page through javascript executer
+	 * Prerequisites: 
+	 * Change History:	  
+	 * @throws InterruptedException 
+	 * 
+	 **************************************/
+	public static void scrollToBottom() throws InterruptedException {
+		JavascriptExecutor jsDriver = (JavascriptExecutor)driver;
+					
+		try {
+			long currentHeight = Long.parseLong(jsDriver.executeScript("return document.body.scrollHeight").toString());
+			
+			while(true) {
+				jsDriver.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+				Thread.sleep(300);
+				
+				long newHeight = Long.parseLong(jsDriver.executeScript("return document.body.scrollHeight").toString());
+				
+				if(currentHeight==newHeight) break;
+				currentHeight = newHeight;
+			}
+		} catch (Exception e) {
+			 e.printStackTrace();
+		}
+		
+	}
+	
+	public static void ScrollToTop() {
+		JavascriptExecutor jsDriver = (JavascriptExecutor)driver;
+		jsDriver.executeScript("window.scrollTo(document.body.scrollHeight,0)");
+	}
+	
+	public static void scrollToView(WebElement element) {
+		JavascriptExecutor jsDriver = (JavascriptExecutor)driver;
+		jsDriver.executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+	
 }
