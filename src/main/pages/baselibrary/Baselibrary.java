@@ -54,7 +54,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class Baselibrary {
 
 	public static WebDriver driver;
-//public static ChromeOptions option;
+	
+    //public static ChromeOptions option;
 	public static Reporter reporter;
 	public Reporter rep = new Reporter();
 	public static Logger logger = LogManager.getLogger(Baselibrary.class);
@@ -64,6 +65,7 @@ public class Baselibrary {
 	public static ExtentTest childTest;
 	static String path = System.getProperty("user.dir");
 
+	
 	public void ChromeLaunch() {
 
 		// Initializing the Headless chromebrowser
@@ -94,10 +96,20 @@ public class Baselibrary {
 
 		logger.info("Starting Firefox Browser");
 		System.setProperty("webdriver.gecko.driver", path + "\\drivers\\geckodriver.exe");
+		//System.setProperty("webdriver.firefox.marionette",path + "\\drivers\\geckodriver.exe");  
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+		
+}
+    
+	@AfterTest
+	
+	public void Teardown2()
+	{   
+		logger.info("Closing Browser");
+		
+		driver.quit();
 	}
 
 	public void homepage() {
@@ -105,31 +117,35 @@ public class Baselibrary {
 		driver.navigate().to(PropertyUtility.getreadproperty("makemytrip"));
 	}
 
-	@Parameters({ "browser" })
-	@AfterTest
-	public void Teardown(String browser) {
-		if (browser.equalsIgnoreCase("firefox")) {
+	
+	
+	
+//	public void Teardown() 
+//	{
+//		if (browser.equalsIgnoreCase("firefox")) 
+//		{
+//
+//			// Initializing the firefox driver (Gecko)
+//			logger.info("Closing Firefox Browser");
+//			
+//
+//		} else if (browser.equalsIgnoreCase("chrome")) 
+//		{
+//
+//			// Initialize the chrome driver
+//
+//			logger.info("Closing Chrome Browser");
+//			
+//		}
+//		driver.quit();
+//		
+//	}
 
-			// Initializing the firefox driver (Gecko)
-			logger.info("Closing Firefox Browser");
-			driver.quit();
-
-		} else if (browser.equalsIgnoreCase("chrome")) {
-
-			// Initialize the chrome driver
-
-			logger.info("Closing Chrome Browser");
-			driver.quit();
-		}
-
-		
-	}
-
-	public void Teardown()
-	{   
-		logger.info("Closing Browser");
-		driver.quit();
-	}
+//	public void Teardown()
+//	{   
+//		logger.info("Closing Browser");
+//		driver.quit();
+//	}
 
 //	//Setup extend report v4
 //		public void setExtentReport() {

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 16 22:06:15 IST 2022</td>
+<td>Started on:</td><td>Sat Apr 16 23:58:14 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14293 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8068 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,28 +76,57 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testingbaba.Testingbaba_buttons_test.launchtestingbaba()'><b>launchtestingbaba</b><br>Test class: testingbaba.Testingbaba_buttons_test<br>Parameters: firefox</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (741d811a-77b3-4fab-90f9-8572c68329d3)] -&gt; xpath: //*[@id=&quot;myModal2&quot;]/div/div/div[1]/button] (tried for 5 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;nav-link&quot; href=&quot;newdemo.html&quot;&gt; is not clickable at point (599,39) because another element &lt;div class=&quot;modal-backdrop fade&quot;&gt; obscures it
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:49483, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19248, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at applicationutility.Applicationutility.clickme(Applicationutility.java:47)
-	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:49)
+Command: [eb3ca26c-4b07-49cc-87ca-8df52b86f474, clickElement {id=43b51d52-ec3f-4405-8e68-2e1d6bbff0bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:64137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17616, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (eb3ca26c-4b07-49cc-87ca-8df52b86f474)] -&gt; xpath: //*[@id=&quot;navbarSupportedContent&quot;]/ul/li[5]/a]
+Session ID: eb3ca26c-4b07-49cc-87ca-8df52b86f474
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:50)
 	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace345703799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace345703799'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (741d811a-77b3-4fab-90f9-8572c68329d3)] -&gt; xpath: //*[@id=&quot;myModal2&quot;]/div/div/div[1]/button] (tried for 5 second(s) with 500 milliseconds interval)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172943149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172943149'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;nav-link&quot; href=&quot;newdemo.html&quot;&gt; is not clickable at point (599,39) because another element &lt;div class=&quot;modal-backdrop fade&quot;&gt; obscures it
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:49483, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19248, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at applicationutility.Applicationutility.clickme(Applicationutility.java:47)
-	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:49)
+Command: [eb3ca26c-4b07-49cc-87ca-8df52b86f474, clickElement {id=43b51d52-ec3f-4405-8e68-2e1d6bbff0bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:64137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17616, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (eb3ca26c-4b07-49cc-87ca-8df52b86f474)] -&gt; xpath: //*[@id=&quot;navbarSupportedContent&quot;]/ul/li[5]/a]
+Session ID: eb3ca26c-4b07-49cc-87ca-8df52b86f474
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:50)
 	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -124,8 +153,8 @@ Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>14</td>
-<td>testingbaba.Testingbaba_buttons_test@61526469</td></tr>
+<td>8</td>
+<td>testingbaba.Testingbaba_buttons_test@569bf9eb</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -135,10 +164,10 @@ Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testingbaba.Testingbaba_buttons_test.Teardown()'><b>Teardown</b><br>Test class: testingbaba.Testingbaba_buttons_test</td>
+<td title='testingbaba.Testingbaba_buttons_test.Teardown2()'><b>Teardown2</b><br>Test class: testingbaba.Testingbaba_buttons_test</td>
 <td></td>
-<td>-1650126989</td>
-<td>testingbaba.Testingbaba_buttons_test@61526469</td></tr>
+<td>-1650133702</td>
+<td>testingbaba.Testingbaba_buttons_test@569bf9eb</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -148,156 +177,66 @@ Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testingbaba.Testingbaba_buttons_test.ButtonsTestingBaba_test02()'><b>ButtonsTestingBaba_test02</b><br>Test class: testingbaba.Testingbaba_buttons_test<br/>
-<a href="#Output-1478835287" onClick='toggleBox("Output-1478835287", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1478835287" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1478835287">
-Testcase ButtonsTestingBaba_test02 got skipped<br/>
-Testcase ButtonsTestingBaba_test03 started successfully<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (741d811a-77b3-4fab-90f9-8572c68329d3)] -&gt; xpath: //*[@id=&quot;myModal2&quot;]/div/div/div[1]/button] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:49483, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19248, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at applicationutility.Applicationutility.clickme(Applicationutility.java:47)
-	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:49)
-	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1478835287", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1478835287'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (741d811a-77b3-4fab-90f9-8572c68329d3)] -&gt; xpath: //*[@id=&quot;myModal2&quot;]/div/div/div[1]/button] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:49483, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19248, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at applicationutility.Applicationutility.clickme(Applicationutility.java:47)
-	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:49)
-	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testingbaba.Testingbaba_buttons_test@61526469</td></tr>
-<tr>
-<td title='testingbaba.Testingbaba_buttons_test.ButtonsTestingBaba_test03()'><b>ButtonsTestingBaba_test03</b><br>Test class: testingbaba.Testingbaba_buttons_test<br/>
-<a href="#Output-12006451" onClick='toggleBox("Output-12006451", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-12006451" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-12006451">
-Testcase ButtonsTestingBaba_test03 got skipped<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (741d811a-77b3-4fab-90f9-8572c68329d3)] -&gt; xpath: //*[@id=&quot;myModal2&quot;]/div/div/div[1]/button] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:49483, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19248, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at applicationutility.Applicationutility.clickme(Applicationutility.java:47)
-	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:49)
-	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12006451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace12006451'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (741d811a-77b3-4fab-90f9-8572c68329d3)] -&gt; xpath: //*[@id=&quot;myModal2&quot;]/div/div/div[1]/button] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:49483, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19248, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at applicationutility.Applicationutility.clickme(Applicationutility.java:47)
-	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:49)
-	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testingbaba.Testingbaba_buttons_test@61526469</td></tr>
-<tr>
 <td title='testingbaba.Testingbaba_buttons_test.ButtonsTestingBaba_test01()'><b>ButtonsTestingBaba_test01</b><br>Test class: testingbaba.Testingbaba_buttons_test<br/>
-<a href="#Output-95980430" onClick='toggleBox("Output-95980430", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-937860163" onClick='toggleBox("Output-937860163", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-95980430" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-95980430">
+<a href="#Output-937860163" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-937860163">
 Testcase ButtonsTestingBaba_test01 got skipped<br/>
 Testcase ButtonsTestingBaba_test02 started successfully<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (741d811a-77b3-4fab-90f9-8572c68329d3)] -&gt; xpath: //*[@id=&quot;myModal2&quot;]/div/div/div[1]/button] (tried for 5 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;nav-link&quot; href=&quot;newdemo.html&quot;&gt; is not clickable at point (599,39) because another element &lt;div class=&quot;modal-backdrop fade&quot;&gt; obscures it
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:49483, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19248, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at applicationutility.Applicationutility.clickme(Applicationutility.java:47)
-	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:49)
+Command: [eb3ca26c-4b07-49cc-87ca-8df52b86f474, clickElement {id=43b51d52-ec3f-4405-8e68-2e1d6bbff0bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:64137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17616, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (eb3ca26c-4b07-49cc-87ca-8df52b86f474)] -&gt; xpath: //*[@id=&quot;navbarSupportedContent&quot;]/ul/li[5]/a]
+Session ID: eb3ca26c-4b07-49cc-87ca-8df52b86f474
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:50)
 	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace95980430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace95980430'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (741d811a-77b3-4fab-90f9-8572c68329d3)] -&gt; xpath: //*[@id=&quot;myModal2&quot;]/div/div/div[1]/button] (tried for 5 second(s) with 500 milliseconds interval)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace937860163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace937860163'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;nav-link&quot; href=&quot;newdemo.html&quot;&gt; is not clickable at point (599,39) because another element &lt;div class=&quot;modal-backdrop fade&quot;&gt; obscures it
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:49483, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19248, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at applicationutility.Applicationutility.clickme(Applicationutility.java:47)
-	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:49)
+Command: [eb3ca26c-4b07-49cc-87ca-8df52b86f474, clickElement {id=43b51d52-ec3f-4405-8e68-2e1d6bbff0bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:64137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17616, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (eb3ca26c-4b07-49cc-87ca-8df52b86f474)] -&gt; xpath: //*[@id=&quot;navbarSupportedContent&quot;]/ul/li[5]/a]
+Session ID: eb3ca26c-4b07-49cc-87ca-8df52b86f474
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:50)
 	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -325,7 +264,184 @@ Session ID: 741d811a-77b3-4fab-90f9-8572c68329d3
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testingbaba.Testingbaba_buttons_test@61526469</td></tr>
+<td>testingbaba.Testingbaba_buttons_test@569bf9eb</td></tr>
+<tr>
+<td title='testingbaba.Testingbaba_buttons_test.ButtonsTestingBaba_test03()'><b>ButtonsTestingBaba_test03</b><br>Test class: testingbaba.Testingbaba_buttons_test<br/>
+<a href="#Output-878511419" onClick='toggleBox("Output-878511419", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-878511419" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-878511419">
+Testcase ButtonsTestingBaba_test03 got skipped<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;nav-link&quot; href=&quot;newdemo.html&quot;&gt; is not clickable at point (599,39) because another element &lt;div class=&quot;modal-backdrop fade&quot;&gt; obscures it
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eb3ca26c-4b07-49cc-87ca-8df52b86f474, clickElement {id=43b51d52-ec3f-4405-8e68-2e1d6bbff0bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:64137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17616, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (eb3ca26c-4b07-49cc-87ca-8df52b86f474)] -&gt; xpath: //*[@id=&quot;navbarSupportedContent&quot;]/ul/li[5]/a]
+Session ID: eb3ca26c-4b07-49cc-87ca-8df52b86f474
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:50)
+	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace878511419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace878511419'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;nav-link&quot; href=&quot;newdemo.html&quot;&gt; is not clickable at point (599,39) because another element &lt;div class=&quot;modal-backdrop fade&quot;&gt; obscures it
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eb3ca26c-4b07-49cc-87ca-8df52b86f474, clickElement {id=43b51d52-ec3f-4405-8e68-2e1d6bbff0bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:64137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17616, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (eb3ca26c-4b07-49cc-87ca-8df52b86f474)] -&gt; xpath: //*[@id=&quot;navbarSupportedContent&quot;]/ul/li[5]/a]
+Session ID: eb3ca26c-4b07-49cc-87ca-8df52b86f474
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:50)
+	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testingbaba.Testingbaba_buttons_test@569bf9eb</td></tr>
+<tr>
+<td title='testingbaba.Testingbaba_buttons_test.ButtonsTestingBaba_test02()'><b>ButtonsTestingBaba_test02</b><br>Test class: testingbaba.Testingbaba_buttons_test<br/>
+<a href="#Output-1551760389" onClick='toggleBox("Output-1551760389", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1551760389" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1551760389">
+Testcase ButtonsTestingBaba_test02 got skipped<br/>
+Testcase ButtonsTestingBaba_test03 started successfully<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;nav-link&quot; href=&quot;newdemo.html&quot;&gt; is not clickable at point (599,39) because another element &lt;div class=&quot;modal-backdrop fade&quot;&gt; obscures it
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eb3ca26c-4b07-49cc-87ca-8df52b86f474, clickElement {id=43b51d52-ec3f-4405-8e68-2e1d6bbff0bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:64137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17616, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (eb3ca26c-4b07-49cc-87ca-8df52b86f474)] -&gt; xpath: //*[@id=&quot;navbarSupportedContent&quot;]/ul/li[5]/a]
+Session ID: eb3ca26c-4b07-49cc-87ca-8df52b86f474
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:50)
+	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1551760389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1551760389'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;nav-link&quot; href=&quot;newdemo.html&quot;&gt; is not clickable at point (599,39) because another element &lt;div class=&quot;modal-backdrop fade&quot;&gt; obscures it
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;IN-122P5Y2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eb3ca26c-4b07-49cc-87ca-8df52b86f474, clickElement {id=43b51d52-ec3f-4405-8e68-2e1d6bbff0bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:64137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17616, moz:profile: C:\Users\SHIVAM~1.DUB\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (eb3ca26c-4b07-49cc-87ca-8df52b86f474)] -&gt; xpath: //*[@id=&quot;navbarSupportedContent&quot;]/ul/li[5]/a]
+Session ID: eb3ca26c-4b07-49cc-87ca-8df52b86f474
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pages.Testingbaba_buttons_page.closebtn(Testingbaba_buttons_page.java:50)
+	at testingbaba.Testingbaba_buttons_test.launchtestingbaba(Testingbaba_buttons_test.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testingbaba.Testingbaba_buttons_test@569bf9eb</td></tr>
 </table><p>
 </body>
 </html>
