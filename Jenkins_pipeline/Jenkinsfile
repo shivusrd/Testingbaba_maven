@@ -25,7 +25,7 @@ pipeline {
             steps 
 		{
                  
-	    bat "mvn install"
+	    bat "mvn install -Dtestngpath=Alltests.xml"
 	    
 	    publishHTML target: [
             allowMissing: true,
