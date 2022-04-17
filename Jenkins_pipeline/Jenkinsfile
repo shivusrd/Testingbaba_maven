@@ -20,7 +20,7 @@ pipeline {
 	    
 	    stage('Generate-source') { 
             steps {
-                 bat "mvn generate-sources"
+                 build job: 'Testingbaba_maven', parameters: [string(name: 'browser', value: "${chrome}")]
             }
         }
        
