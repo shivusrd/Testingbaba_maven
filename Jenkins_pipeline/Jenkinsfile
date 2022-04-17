@@ -25,7 +25,7 @@ pipeline {
             steps 
 		{
                  
-	    bat "test -Dbrowser="chrome" -Dtestngpath="Alltests.xml"
+	    bat "test -Dbrowser="chrome" -Dtestngpath="Alltests.xml"\n
 	    
 	    publishHTML target: [
             allowMissing: true,
