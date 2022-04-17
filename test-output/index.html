@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Testingbaba" class="navigator-link">
-              <span class="suite-name border-skipped">Testingbaba</span>
+              <span class="suite-name border-passed">Testingbaba</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Testingbaba" class="navigator-link ">
-                    <span>C:\Users\dubey\eclipse-workspace\Testingbaba_maven\testng.xml</span>
+                    <span>C:\Users\dubey\eclipse-workspace\Testingbaba_maven\Alltests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Testingbaba" class="navigator-link ">
-                    <span class="test-stats">12 tests</span>
+                    <span class="test-stats">13 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">24 methods,  1 skipped,  23 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Testingbaba" class="hide-methods skipped suite-Testingbaba"> (hide)</a> <!-- hide-methods skipped suite-Testingbaba -->
-                      <a href="#" panel-name="suite-Testingbaba" class="show-methods skipped suite-Testingbaba"> (show)</a> <!-- show-methods skipped suite-Testingbaba -->
-                    </span>
-                    <div class="method-list-content skipped suite-Testingbaba">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Testingbaba" title="testingbaba.Testingbaba_launch_test" class="method navigator-link" hash-for-method="LaunchTestingBaba_test01">LaunchTestingBaba_test01</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Testingbaba -->
+                    <span class="method-stats">25 methods,   25 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -183,6 +169,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testingbaba" title="testingbaba.Testingbaba_launch_test" class="method navigator-link" hash-for-method="LaunchTestingBaba_test01">LaunchTestingBaba_test01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Testingbaba" title="testingbaba.Testingbaba_links_test" class="method navigator-link" hash-for-method="LinksTestingBaba_test01">LinksTestingBaba_test01</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -204,6 +195,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Testingbaba" title="testingbaba.Testingbaba_radio_test" class="method navigator-link" hash-for-method="RadioButtonTestingBaba_test01">RadioButtonTestingBaba_test01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testingbaba" title="makemytrip.Makemytrip_Flightsearch_test" class="method navigator-link" hash-for-method="SearchFlightToday">SearchFlightToday</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -243,9 +239,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Testingbaba" class="panel Testingbaba">
-          <div class="suite-Testingbaba-class-skipped">
+          <div class="suite-Testingbaba-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testingbaba.Testingbaba_launch_test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -254,102 +250,6 @@
                   <a name="LaunchTestingBaba_test01">
                   </a> <!-- LaunchTestingBaba_test01 -->
                   <span class="method-name">LaunchTestingBaba_test01</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;button class=&quot;close&quot; type=&quot;button&quot;&gt; could not be scrolled into view
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;DESKTOP-493EAAE&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e8f15583-cd2e-4e8c-bd12-a8500b967a1f, clickElement {id=6ad8cbd0-b309-41b8-af79-1ea6279b616b}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:65483, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 18832, moz:profile: C:\Users\dubey\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:65483/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (e8f15583-cd2e-4e8c-bd12-a8500b967a1f)] -&gt; xpath: //*[@id=&quot;myModal2&quot;]/div/div/div[1]/button]
-Session ID: e8f15583-cd2e-4e8c-bd12-a8500b967a1f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
-	at pages.Testingbaba_launch_page.closebtn(Testingbaba_launch_page.java:42)
-	at testingbaba.Testingbaba_launch_test.launchtestingbaba(Testingbaba_launch_test.java:47)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testingbaba-class-skipped -->
-          <div class="suite-Testingbaba-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">flipkart.Flipkart_buyproduct_test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="FlipkartLoginInvalidCred_Test01">
-                  </a> <!-- FlipkartLoginInvalidCred_Test01 -->
-                  <span class="method-name">FlipkartLoginInvalidCred_Test01</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testingbaba-class-passed -->
-          <div class="suite-Testingbaba-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testingbaba.Testingbaba_textbox_test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TextboxTestingBaba_test01">
-                  </a> <!-- TextboxTestingBaba_test01 -->
-                  <span class="method-name">TextboxTestingBaba_test01</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TextboxTestingBaba_test02">
-                  </a> <!-- TextboxTestingBaba_test02 -->
-                  <span class="method-name">TextboxTestingBaba_test02</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TextboxTestingBaba_test03">
-                  </a> <!-- TextboxTestingBaba_test03 -->
-                  <span class="method-name">TextboxTestingBaba_test03</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TextboxTestingBaba_test04">
-                  </a> <!-- TextboxTestingBaba_test04 -->
-                  <span class="method-name">TextboxTestingBaba_test04</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testingbaba-class-passed -->
-          <div class="suite-Testingbaba-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">makemytrip.Makemytrip_launch_test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="MakemyTripSendINValidNumber_Test02">
-                  </a> <!-- MakemyTripSendINValidNumber_Test02 -->
-                  <span class="method-name">MakemyTripSendINValidNumber_Test02</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="MakemyTripSendValidNumber_Test01">
-                  </a> <!-- MakemyTripSendValidNumber_Test01 -->
-                  <span class="method-name">MakemyTripSendValidNumber_Test01</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -387,43 +287,35 @@ Session ID: e8f15583-cd2e-4e8c-bd12-a8500b967a1f
           <div class="suite-Testingbaba-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testingbaba.Testingbaba_buttons_test</span>
+              <span class="class-name">testingbaba.Testingbaba_textbox_test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ButtonsTestingBaba_test01">
-                  </a> <!-- ButtonsTestingBaba_test01 -->
-                  <span class="method-name">ButtonsTestingBaba_test01</span>
+                  <a name="TextboxTestingBaba_test01">
+                  </a> <!-- TextboxTestingBaba_test01 -->
+                  <span class="method-name">TextboxTestingBaba_test01</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ButtonsTestingBaba_test02">
-                  </a> <!-- ButtonsTestingBaba_test02 -->
-                  <span class="method-name">ButtonsTestingBaba_test02</span>
+                  <a name="TextboxTestingBaba_test02">
+                  </a> <!-- TextboxTestingBaba_test02 -->
+                  <span class="method-name">TextboxTestingBaba_test02</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ButtonsTestingBaba_test03">
-                  </a> <!-- ButtonsTestingBaba_test03 -->
-                  <span class="method-name">ButtonsTestingBaba_test03</span>
+                  <a name="TextboxTestingBaba_test03">
+                  </a> <!-- TextboxTestingBaba_test03 -->
+                  <span class="method-name">TextboxTestingBaba_test03</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testingbaba-class-passed -->
-          <div class="suite-Testingbaba-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testingbaba.Testingbaba_webtables_test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="WebTablesTestingBaba_test01">
-                  </a> <!-- WebTablesTestingBaba_test01 -->
-                  <span class="method-name">WebTablesTestingBaba_test01</span>
+                  <a name="TextboxTestingBaba_test04">
+                  </a> <!-- TextboxTestingBaba_test04 -->
+                  <span class="method-name">TextboxTestingBaba_test04</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -491,21 +383,14 @@ Session ID: e8f15583-cd2e-4e8c-bd12-a8500b967a1f
           <div class="suite-Testingbaba-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">flipkart.Flipkart_buy_test</span>
+              <span class="class-name">makemytrip.Makemytrip_Flightsearch_test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="FlipkartLogin_Test01">
-                  </a> <!-- FlipkartLogin_Test01 -->
-                  <span class="method-name">FlipkartLogin_Test01</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="FlipkartProfileChange_Test02">
-                  </a> <!-- FlipkartProfileChange_Test02 -->
-                  <span class="method-name">FlipkartProfileChange_Test02</span>
+                  <a name="SearchFlightToday">
+                  </a> <!-- SearchFlightToday -->
+                  <span class="method-name">SearchFlightToday</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -532,17 +417,120 @@ Session ID: e8f15583-cd2e-4e8c-bd12-a8500b967a1f
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Testingbaba-class-passed -->
+          <div class="suite-Testingbaba-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">flipkart.Flipkart_buyproduct_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlipkartLoginInvalidCred_Test01">
+                  </a> <!-- FlipkartLoginInvalidCred_Test01 -->
+                  <span class="method-name">FlipkartLoginInvalidCred_Test01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testingbaba-class-passed -->
+          <div class="suite-Testingbaba-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">makemytrip.Makemytrip_launch_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MakemyTripSendINValidNumber_Test02">
+                  </a> <!-- MakemyTripSendINValidNumber_Test02 -->
+                  <span class="method-name">MakemyTripSendINValidNumber_Test02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MakemyTripSendValidNumber_Test01">
+                  </a> <!-- MakemyTripSendValidNumber_Test01 -->
+                  <span class="method-name">MakemyTripSendValidNumber_Test01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testingbaba-class-passed -->
+          <div class="suite-Testingbaba-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testingbaba.Testingbaba_buttons_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ButtonsTestingBaba_test01">
+                  </a> <!-- ButtonsTestingBaba_test01 -->
+                  <span class="method-name">ButtonsTestingBaba_test01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ButtonsTestingBaba_test02">
+                  </a> <!-- ButtonsTestingBaba_test02 -->
+                  <span class="method-name">ButtonsTestingBaba_test02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ButtonsTestingBaba_test03">
+                  </a> <!-- ButtonsTestingBaba_test03 -->
+                  <span class="method-name">ButtonsTestingBaba_test03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testingbaba-class-passed -->
+          <div class="suite-Testingbaba-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testingbaba.Testingbaba_webtables_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WebTablesTestingBaba_test01">
+                  </a> <!-- WebTablesTestingBaba_test01 -->
+                  <span class="method-name">WebTablesTestingBaba_test01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testingbaba-class-passed -->
+          <div class="suite-Testingbaba-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">flipkart.Flipkart_buy_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlipkartLogin_Test01">
+                  </a> <!-- FlipkartLogin_Test01 -->
+                  <span class="method-name">FlipkartLogin_Test01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlipkartProfileChange_Test02">
+                  </a> <!-- FlipkartProfileChange_Test02 -->
+                  <span class="method-name">FlipkartProfileChange_Test02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testingbaba-class-passed -->
         </div> <!-- panel Testingbaba -->
         <div panel-name="test-xml-Testingbaba" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dubey\eclipse-workspace\Testingbaba_maven\testng.xml</span>
+            <span class="header-content">C:\Users\dubey\eclipse-workspace\Testingbaba_maven\Alltests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Testingbaba&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listeners.Listners&quot;/&gt;
     &lt;listener class-name=&quot;listeners.Report_log&quot;/&gt;
@@ -608,6 +596,11 @@ Session ID: e8f15583-cd2e-4e8c-bd12-a8500b967a1f
       &lt;class name=&quot;makemytrip.Makemytrip_launch_test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Makemytrip --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Flight search&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;makemytrip.Makemytrip_Flightsearch_test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Flight search --&gt;
 &lt;/suite&gt; &lt;!-- Testingbaba --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -654,6 +647,9 @@ Session ID: e8f15583-cd2e-4e8c-bd12-a8500b967a1f
               <li>
                 <span class="test-name">Makemytrip (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">Flight search (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -694,103 +690,107 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(24);
+data.addRows(25);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'FlipkartProfileChange_Test02')
 data.setCell(0, 2, 'flipkart.Flipkart_buy_test')
-data.setCell(0, 3, 20807);
+data.setCell(0, 3, 21689);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'WebTablesTestingBaba_test01')
-data.setCell(1, 2, 'testingbaba.Testingbaba_webtables_test')
-data.setCell(1, 3, 15187);
+data.setCell(1, 1, 'DropdownTestingBaba_test01')
+data.setCell(1, 2, 'testingbaba.Testingbaba_dropdown_test')
+data.setCell(1, 3, 13966);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'DropdownTestingBaba_test01')
-data.setCell(2, 2, 'testingbaba.Testingbaba_dropdown_test')
-data.setCell(2, 3, 14824);
+data.setCell(2, 1, 'MakemyTripSendINValidNumber_Test02')
+data.setCell(2, 2, 'makemytrip.Makemytrip_launch_test')
+data.setCell(2, 3, 9896);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'MakemyTripSendINValidNumber_Test02')
-data.setCell(3, 2, 'makemytrip.Makemytrip_launch_test')
-data.setCell(3, 3, 10253);
+data.setCell(3, 1, 'WebTablesTestingBaba_test01')
+data.setCell(3, 2, 'testingbaba.Testingbaba_webtables_test')
+data.setCell(3, 3, 8882);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'CheckboxTestingBaba_test03')
 data.setCell(4, 2, 'testingbaba.Testingbaba_checkbox_test')
-data.setCell(4, 3, 8709);
+data.setCell(4, 3, 8309);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'RadioButtonTestingBaba_test01')
 data.setCell(5, 2, 'testingbaba.Testingbaba_radio_test')
-data.setCell(5, 3, 6531);
+data.setCell(5, 3, 6295);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'MakemyTripSendValidNumber_Test01')
 data.setCell(6, 2, 'makemytrip.Makemytrip_launch_test')
-data.setCell(6, 3, 4770);
+data.setCell(6, 3, 4633);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'LinksTestingBaba_test02')
 data.setCell(7, 2, 'testingbaba.Testingbaba_links_test')
-data.setCell(7, 3, 4440);
+data.setCell(7, 3, 4245);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'CheckboxTestingBaba_test02')
 data.setCell(8, 2, 'testingbaba.Testingbaba_checkbox_test')
-data.setCell(8, 3, 4330);
+data.setCell(8, 3, 4118);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'FlipkartLoginInvalidCred_Test01')
-data.setCell(9, 2, 'flipkart.Flipkart_buyproduct_test')
-data.setCell(9, 3, 2617);
+data.setCell(9, 1, 'SearchFlightToday')
+data.setCell(9, 2, 'makemytrip.Makemytrip_Flightsearch_test')
+data.setCell(9, 3, 4003);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'FlipkartLogin_Test01')
-data.setCell(10, 2, 'flipkart.Flipkart_buy_test')
-data.setCell(10, 3, 2498);
+data.setCell(10, 1, 'FlipkartLoginInvalidCred_Test01')
+data.setCell(10, 2, 'flipkart.Flipkart_buyproduct_test')
+data.setCell(10, 3, 2861);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'AutocompleteTestingBaba_test03')
-data.setCell(11, 2, 'testingbaba.Testingbaba_autocomplete_test')
-data.setCell(11, 3, 2422);
+data.setCell(11, 1, 'FlipkartLogin_Test01')
+data.setCell(11, 2, 'flipkart.Flipkart_buy_test')
+data.setCell(11, 3, 2680);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TextboxTestingBaba_test03')
-data.setCell(12, 2, 'testingbaba.Testingbaba_textbox_test')
-data.setCell(12, 3, 1386);
+data.setCell(12, 1, 'AutocompleteTestingBaba_test03')
+data.setCell(12, 2, 'testingbaba.Testingbaba_autocomplete_test')
+data.setCell(12, 3, 2438);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'AutocompleteTestingBaba_test02')
 data.setCell(13, 2, 'testingbaba.Testingbaba_autocomplete_test')
-data.setCell(13, 3, 1259);
+data.setCell(13, 3, 1122);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'ButtonsTestingBaba_test01')
-data.setCell(14, 2, 'testingbaba.Testingbaba_buttons_test')
-data.setCell(14, 3, 335);
+data.setCell(14, 1, 'TextboxTestingBaba_test03')
+data.setCell(14, 2, 'testingbaba.Testingbaba_textbox_test')
+data.setCell(14, 3, 681);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'ButtonsTestingBaba_test02')
 data.setCell(15, 2, 'testingbaba.Testingbaba_buttons_test')
-data.setCell(15, 3, 299);
+data.setCell(15, 3, 671);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'AutocompleteTestingBaba_test01')
 data.setCell(16, 2, 'testingbaba.Testingbaba_autocomplete_test')
-data.setCell(16, 3, 272);
+data.setCell(16, 3, 338);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'TextboxTestingBaba_test02')
-data.setCell(17, 2, 'testingbaba.Testingbaba_textbox_test')
-data.setCell(17, 3, 253);
+data.setCell(17, 1, 'ButtonsTestingBaba_test03')
+data.setCell(17, 2, 'testingbaba.Testingbaba_buttons_test')
+data.setCell(17, 3, 175);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'CheckboxTestingBaba_test01')
-data.setCell(18, 2, 'testingbaba.Testingbaba_checkbox_test')
-data.setCell(18, 3, 250);
+data.setCell(18, 1, 'TextboxTestingBaba_test04')
+data.setCell(18, 2, 'testingbaba.Testingbaba_textbox_test')
+data.setCell(18, 3, 167);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'LinksTestingBaba_test01')
-data.setCell(19, 2, 'testingbaba.Testingbaba_links_test')
-data.setCell(19, 3, 241);
+data.setCell(19, 1, 'ButtonsTestingBaba_test01')
+data.setCell(19, 2, 'testingbaba.Testingbaba_buttons_test')
+data.setCell(19, 3, 120);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'ButtonsTestingBaba_test03')
-data.setCell(20, 2, 'testingbaba.Testingbaba_buttons_test')
-data.setCell(20, 3, 235);
+data.setCell(20, 1, 'LinksTestingBaba_test01')
+data.setCell(20, 2, 'testingbaba.Testingbaba_links_test')
+data.setCell(20, 3, 67);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'TextboxTestingBaba_test04')
-data.setCell(21, 2, 'testingbaba.Testingbaba_textbox_test')
-data.setCell(21, 3, 187);
+data.setCell(21, 1, 'CheckboxTestingBaba_test01')
+data.setCell(21, 2, 'testingbaba.Testingbaba_checkbox_test')
+data.setCell(21, 3, 61);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'TextboxTestingBaba_test01')
+data.setCell(22, 1, 'TextboxTestingBaba_test02')
 data.setCell(22, 2, 'testingbaba.Testingbaba_textbox_test')
-data.setCell(22, 3, 11);
+data.setCell(22, 3, 53);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'LaunchTestingBaba_test01')
 data.setCell(23, 2, 'testingbaba.Testingbaba_launch_test')
-data.setCell(23, 3, 0);
+data.setCell(23, 3, 43);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'TextboxTestingBaba_test01')
+data.setCell(24, 2, 'testingbaba.Testingbaba_textbox_test')
+data.setCell(24, 3, 9);
 window.suiteTableData['Testingbaba']= { tableData: data, tableDiv: 'times-div-Testingbaba'}
 return data;
 }
@@ -809,17 +809,8 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">LaunchTestingBaba_test01</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testcase LaunchTestingBaba_test01 got skipped</span>
-                <span class="reporter-method-output">About to end executing Class smoke</span>
-                <span class="reporter-method-output">About to begin executing Class Textbox</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TextboxTestingBaba_test03</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testcase TextboxTestingBaba_test03 started successfully</span>
-                <span class="reporter-method-output">inside test01</span>
-                <span class="reporter-method-output">Testcase TextboxTestingBaba_test03 passed successfully</span>
+                <span class="reporter-method-output">Testcase LaunchTestingBaba_test01 started successfully</span>
+                <span class="reporter-method-output">Testcase LaunchTestingBaba_test01 passed successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -831,19 +822,27 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">TextboxTestingBaba_test01</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testcase TextboxTestingBaba_test01 started successfully</span>
-                <span class="reporter-method-output">inside test01</span>
-                <span class="reporter-method-output">Testcase TextboxTestingBaba_test01 passed successfully</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">TextboxTestingBaba_test02</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Testcase TextboxTestingBaba_test02 started successfully</span>
                 <span class="reporter-method-output">inside test01</span>
                 <span class="reporter-method-output">Testcase TextboxTestingBaba_test02 passed successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TextboxTestingBaba_test03</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase TextboxTestingBaba_test03 started successfully</span>
+                <span class="reporter-method-output">inside test01</span>
+                <span class="reporter-method-output">Testcase TextboxTestingBaba_test03 passed successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TextboxTestingBaba_test01</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase TextboxTestingBaba_test01 started successfully</span>
+                <span class="reporter-method-output">inside test01</span>
+                <span class="reporter-method-output">Testcase TextboxTestingBaba_test01 passed successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -854,13 +853,6 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">ButtonsTestingBaba_test01</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testcase ButtonsTestingBaba_test01 started successfully</span>
-                <span class="reporter-method-output">Testcase ButtonsTestingBaba_test01 passed successfully</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">ButtonsTestingBaba_test03</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Testcase ButtonsTestingBaba_test03 started successfully</span>
@@ -868,10 +860,10 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">CheckboxTestingBaba_test03</span>
+              <span class="reporter-method-name">ButtonsTestingBaba_test01</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testcase CheckboxTestingBaba_test03 started successfully</span>
-                <span class="reporter-method-output">Testcase CheckboxTestingBaba_test03 passed successfully</span>
+                <span class="reporter-method-output">Testcase ButtonsTestingBaba_test01 started successfully</span>
+                <span class="reporter-method-output">Testcase ButtonsTestingBaba_test01 passed successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -879,6 +871,13 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Testcase CheckboxTestingBaba_test02 started successfully</span>
                 <span class="reporter-method-output">Testcase CheckboxTestingBaba_test02 passed successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CheckboxTestingBaba_test03</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase CheckboxTestingBaba_test03 started successfully</span>
+                <span class="reporter-method-output">Testcase CheckboxTestingBaba_test03 passed successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -917,13 +916,6 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">AutocompleteTestingBaba_test02</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testcase AutocompleteTestingBaba_test02 started successfully</span>
-                <span class="reporter-method-output">Testcase AutocompleteTestingBaba_test02 passed successfully</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">AutocompleteTestingBaba_test03</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Testcase AutocompleteTestingBaba_test03 started successfully</span>
@@ -935,6 +927,13 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Testcase AutocompleteTestingBaba_test01 started successfully</span>
                 <span class="reporter-method-output">Testcase AutocompleteTestingBaba_test01 passed successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AutocompleteTestingBaba_test02</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase AutocompleteTestingBaba_test02 started successfully</span>
+                <span class="reporter-method-output">Testcase AutocompleteTestingBaba_test02 passed successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -966,6 +965,13 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">MakemyTripSendValidNumber_Test01</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase MakemyTripSendValidNumber_Test01 started successfully</span>
+                <span class="reporter-method-output">Testcase MakemyTripSendValidNumber_Test01 passed successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">MakemyTripSendINValidNumber_Test02</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Testcase MakemyTripSendINValidNumber_Test02 started successfully</span>
@@ -973,10 +979,10 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">MakemyTripSendValidNumber_Test01</span>
+              <span class="reporter-method-name">SearchFlightToday</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testcase MakemyTripSendValidNumber_Test01 started successfully</span>
-                <span class="reporter-method-output">Testcase MakemyTripSendValidNumber_Test01 passed successfully</span>
+                <span class="reporter-method-output">Testcase SearchFlightToday started successfully</span>
+                <span class="reporter-method-output">Testcase SearchFlightToday passed successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -996,231 +1002,244 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testingbaba.Testingbaba_launch_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">launchtestingbaba(firefox)</span>
+                <span class="method-name">launchtestingbaba(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LaunchTestingBaba_test01</span>
-                <span class="method-start">8376 ms</span>
+                <span class="method-start">8962 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">8395 ms</span>
+                <span class="method-start">9010 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testingbaba.Testingbaba_textbox_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchtestingbaba(firefox)</span>
-                <span class="method-start">8514 ms</span>
+                <span class="method-name">launchtestingbaba(chrome)</span>
+                <span class="method-start">9425 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TextboxTestingBaba_test01</span>
-                <span class="method-start">19752 ms</span>
+                <span class="method-start">18055 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TextboxTestingBaba_test02</span>
-                <span class="method-start">19770 ms</span>
+                <span class="method-start">18070 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TextboxTestingBaba_test03</span>
-                <span class="method-start">20031 ms</span>
+                <span class="method-start">18126 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TextboxTestingBaba_test04</span>
-                <span class="method-start">21419 ms</span>
+                <span class="method-start">18808 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">21612 ms</span>
+                <span class="method-start">18976 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testingbaba.Testingbaba_buttons_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchtestingbaba(firefox)</span>
-                <span class="method-start">22677 ms</span>
+                <span class="method-name">launchtestingbaba(chrome)</span>
+                <span class="method-start">19173 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ButtonsTestingBaba_test01</span>
-                <span class="method-start">33734 ms</span>
+                <span class="method-start">27308 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ButtonsTestingBaba_test02</span>
-                <span class="method-start">34069 ms</span>
+                <span class="method-start">27433 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ButtonsTestingBaba_test03</span>
-                <span class="method-start">34370 ms</span>
+                <span class="method-start">28112 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">34610 ms</span>
+                <span class="method-start">28289 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testingbaba.Testingbaba_checkbox_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchtestingbaba(firefox)</span>
-                <span class="method-start">36051 ms</span>
+                <span class="method-name">launchtestingbaba(chrome)</span>
+                <span class="method-start">28494 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">CheckboxTestingBaba_test01</span>
-                <span class="method-start">47066 ms</span>
+                <span class="method-start">36385 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CheckboxTestingBaba_test02</span>
-                <span class="method-start">47317 ms</span>
+                <span class="method-start">36447 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CheckboxTestingBaba_test03</span>
-                <span class="method-start">51647 ms</span>
+                <span class="method-start">40579 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">60358 ms</span>
+                <span class="method-start">48889 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testingbaba.Testingbaba_dropdown_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchtestingbaba(firefox)</span>
-                <span class="method-start">61471 ms</span>
+                <span class="method-name">launchtestingbaba(chrome)</span>
+                <span class="method-start">49030 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">DropdownTestingBaba_test01</span>
-                <span class="method-start">67959 ms</span>
+                <span class="method-start">53181 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">82795 ms</span>
+                <span class="method-start">67147 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testingbaba.Testingbaba_links_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchtestingbaba(firefox)</span>
-                <span class="method-start">83863 ms</span>
+                <span class="method-name">launchtestingbaba(chrome)</span>
+                <span class="method-start">67493 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LinksTestingBaba_test01</span>
-                <span class="method-start">94342 ms</span>
+                <span class="method-start">75550 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LinksTestingBaba_test02</span>
-                <span class="method-start">94586 ms</span>
+                <span class="method-start">75621 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">99029 ms</span>
+                <span class="method-start">79867 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testingbaba.Testingbaba_radio_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchtestingbaba(firefox)</span>
-                <span class="method-start">100223 ms</span>
+                <span class="method-name">launchtestingbaba(chrome)</span>
+                <span class="method-start">80076 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">RadioButtonTestingBaba_test01</span>
-                <span class="method-start">106507 ms</span>
+                <span class="method-start">84424 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">113040 ms</span>
+                <span class="method-start">90720 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testingbaba.Testingbaba_autocomplete_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchtestingbaba(firefox)</span>
-                <span class="method-start">114028 ms</span>
+                <span class="method-name">launchtestingbaba(chrome)</span>
+                <span class="method-start">90971 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">AutocompleteTestingBaba_test01</span>
-                <span class="method-start">124629 ms</span>
+                <span class="method-start">99521 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AutocompleteTestingBaba_test02</span>
-                <span class="method-start">124906 ms</span>
+                <span class="method-start">99861 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AutocompleteTestingBaba_test03</span>
-                <span class="method-start">126169 ms</span>
+                <span class="method-start">100985 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">128591 ms</span>
+                <span class="method-start">103425 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testingbaba.Testingbaba_webtables_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchtestingbaba(firefox)</span>
-                <span class="method-start">129697 ms</span>
+                <span class="method-name">launchtestingbaba(chrome)</span>
+                <span class="method-start">103639 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">WebTablesTestingBaba_test01</span>
-                <span class="method-start">140447 ms</span>
+                <span class="method-start">112632 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">155635 ms</span>
+                <span class="method-start">121515 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">flipkart.Flipkart_buy_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchFB(firefox)</span>
-                <span class="method-start">155650 ms</span>
+                <span class="method-name">launchFB(chrome)</span>
+                <span class="method-start">121521 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">FlipkartLogin_Test01</span>
-                <span class="method-start">162714 ms</span>
+                <span class="method-start">125474 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">FlipkartProfileChange_Test02</span>
-                <span class="method-start">165212 ms</span>
+                <span class="method-start">128156 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">186019 ms</span>
+                <span class="method-start">149845 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">flipkart.Flipkart_buyproduct_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchFB(firefox)</span>
-                <span class="method-start">187249 ms</span>
+                <span class="method-name">launchFB(chrome)</span>
+                <span class="method-start">150110 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">FlipkartLoginInvalidCred_Test01</span>
-                <span class="method-start">194435 ms</span>
+                <span class="method-start">153494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">197053 ms</span>
+                <span class="method-start">156357 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">makemytrip.Makemytrip_launch_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchFB(firefox)</span>
-                <span class="method-start">199050 ms</span>
+                <span class="method-name">launchFB(chrome)</span>
+                <span class="method-start">156551 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">MakemyTripSendValidNumber_Test01</span>
-                <span class="method-start">208293 ms</span>
+                <span class="method-start">161446 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MakemyTripSendINValidNumber_Test02</span>
-                <span class="method-start">213063 ms</span>
+                <span class="method-start">166080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">223320 ms</span>
+                <span class="method-start">175977 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">makemytrip.Makemytrip_Flightsearch_test</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchFB(chrome)</span>
+                <span class="method-start">176212 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">SearchFlightToday</span>
+                <span class="method-start">181891 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">Teardown2</span>
+                <span class="method-start">185902 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
