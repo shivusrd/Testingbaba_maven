@@ -25,11 +25,11 @@ pipeline {
             steps 
 		{
                  
-	    bat "mvn install -Dtestngpath=Alltests.xml"
+	    bat "mvn install -Dbrowser=chrome -Dtestngpath=Alltests.xml"
 	    
 	    publishHTML target: [
             allowMissing: true,
-            alwaysLinkToLastBuild: true,
+            alwaysLinkToLastBu ild: true,
             keepAll: true,
             reportDir: 'test-output',
             reportFiles: 'ExtentReportsTestNG.html',
