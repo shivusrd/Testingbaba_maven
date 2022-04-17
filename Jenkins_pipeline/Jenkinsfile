@@ -20,7 +20,7 @@ pipeline {
 	    
 	    stage('Generate-source') { 
             steps {
-                 build job: 'Testingbaba_maven', parameters: [string(name: 'browser', value: "${chrome}")]
+                 build job: 'Testingbaba_maven', parameters: [string(name: 'browser', value: "{chrome}")]
             }
         }
        
