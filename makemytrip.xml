@@ -13,79 +13,17 @@
  </listeners>
 
 
-<test name="smoke" enabled="true"  > 
-
-    <classes>
-      <class name="testingbaba.Testingbaba_launch_test"/>
-      
-    </classes>
-    </test> 
-  
-  <test name = "Textbox" enabled="true" >
-  <classes>
-  <class name="testingbaba.Testingbaba_textbox_test"/>
-    </classes>
-   </test>
-  
-  <test name = "buttons" enabled="true" >
-  <classes>
-  <class name="testingbaba.Testingbaba_buttons_test"/>
-    </classes>
-  </test>
-  
-  <test name = "checkbox" enabled="true" >
-  <classes>
-  <class name="testingbaba.Testingbaba_checkbox_test"/>
-    </classes>
-  </test>
-  
-  <test name = "dropdown" enabled="true" >
-  <classes>
-  <class name="testingbaba.Testingbaba_dropdown_test"/>
-    </classes>
-  </test>
-  
-  <test name = "links" enabled="true" >
-  <classes>
-  <class name="testingbaba.Testingbaba_links_test"/>
-    </classes>
-  </test>
-  
-  <test name = "radio" enabled="true" >
-  <classes>
-  <class name="testingbaba.Testingbaba_radio_test"/>
-    </classes>
-  </test>
-  
-  <test name = "autocomplete" enabled="true" >
-  <classes>
-  <class name="testingbaba.Testingbaba_autocomplete_test"/>
-    </classes>
-  </test>
-  
-  <test name = "Webtable" enabled="true" >
-  <classes>
-  <class name="testingbaba.Testingbaba_webtables_test"/>
-    </classes>
-  </test>
-
-  <test name = "Flipkart" enabled="true" >
-  <classes>
-  <class name="flipkart.Flipkart_buy_test"/>
-    </classes>
-  </test>
-  
-  <test name = "FlipkartBuy" enabled="true" >
-  <classes>
-  <class name="flipkart.Flipkart_buyproduct_test"/>
-    </classes>
-  </test>
-  
-  <test name = "Makemytrip" enabled="true" >
+<test name = "Makemytrip" enabled="true" >
   <classes>
   <class name="makemytrip.Makemytrip_launch_test"/>
     </classes>
   </test>
+  
+  <test name="Flight search" enabled="true">
+  <classes>
+     <class name="makemytrip.Makemytrip_Flightsearch_test" />
+      </classes>
+	</test>
   
 </suite> <!-- Suite -->
 

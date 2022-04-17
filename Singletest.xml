@@ -12,13 +12,21 @@
 	</listeners>
 
 
-	<test name="Single test" enabled="true">
+	<test name="Single test" enabled="true" >
 
 
 		<classes>
 
 			<class name="makemytrip.Makemytrip_Flightsearch_test" />
 		</classes>
+	</test>
+	
+	<test name="Single test" enabled="true">
+
+
+		<packages>
+		<package name=""></package>
+		</packages>
 	</test>
 
 

@@ -69,23 +69,7 @@
     </classes>
   </test>
 
-  <test name = "Flipkart" enabled="true" >
-  <classes>
-  <class name="flipkart.Flipkart_buy_test"/>
-    </classes>
-  </test>
   
-  <test name = "FlipkartBuy" enabled="true" >
-  <classes>
-  <class name="flipkart.Flipkart_buyproduct_test"/>
-    </classes>
-  </test>
-  
-  <test name = "Makemytrip" enabled="true" >
-  <classes>
-  <class name="makemytrip.Makemytrip_launch_test"/>
-    </classes>
-  </test>
   
 </suite> <!-- Suite -->
 
