@@ -18,18 +18,14 @@ pipeline {
             }
         }
 	    
-	    stage('Generate-source') { 
-            steps {
-                 build job: 'Testingbaba_maven', parameters: [string(name: 'browser', value: "{chrome}")]
-            }
-        }
+	   
        
         stage('install') 
 	    {
             steps 
 		{
                  
-	    bat "mvn install"
+	    bat "test -Dbrowser="chrome" -Dtestngpath="Alltests.xml"
 	    
 	    publishHTML target: [
             allowMissing: true,
