@@ -25,7 +25,7 @@ pipeline {
             steps 
 		{
                  
-	    bat "mvn install -Dbrowser="chrome" -Dtestngpath="Alltests.xml"
+	    bat "mvn test -Dbrowser="chrome" -Dtestngpath="Alltests.xml""
 	    
 	    publishHTML target: [
             allowMissing: true,
