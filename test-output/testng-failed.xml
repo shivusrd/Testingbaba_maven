@@ -7,17 +7,15 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="autocomplete22(failed)">
+  <test thread-count="5" name="smoke(failed)">
     <classes>
-      <class name="testingbaba.Testingbaba_autocomplete_test">
+      <class name="testingbaba.Testingbaba_launch_test">
         <methods>
-          <include name="launchtestingbaba"/>
           <include name="Teardown2"/>
-          <include name="AutocompleteTestingBaba_test01"/>
-          <include name="AutocompleteTestingBaba_test03"/>
-          <include name="AutocompleteTestingBaba_test02"/>
+          <include name="launchtestingbaba"/>
+          <include name="LaunchTestingBaba_test01"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_autocomplete_test -->
+      </class> <!-- testingbaba.Testingbaba_launch_test -->
     </classes>
-  </test> <!-- autocomplete22(failed) -->
+  </test> <!-- smoke(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

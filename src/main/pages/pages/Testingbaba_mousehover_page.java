@@ -43,10 +43,11 @@ public class Testingbaba_mousehover_page extends Baselibrary
 	
 	
 
-	public void closebtn()
+	public void closebtn() throws InterruptedException
 	{
 
 		closebtn.click();
+		Thread.sleep(2000);
 		Applicationutility.clickme(practiceform);
 
 	}

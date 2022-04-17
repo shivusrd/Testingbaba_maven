@@ -17,7 +17,7 @@
 
 		<classes>
 
-			<class name="testingbaba.Testingbaba_autocomplete_test" />
+			<class name="testingbaba.Testingbaba_launch_test" />
 		</classes>
 	</test>
 

@@ -37,12 +37,13 @@ public class Testingbaba_launch_page extends Baselibrary
 		//ScreenshotUtility.getscreenshot("passed", "gettitle");
 	}
 	
-	public void closebtn()
+	public void closebtn() throws InterruptedException
 	{
 		closebtn.click();
 		//assertEquals(practiceform.isDisplayed(),true);
+		Thread.sleep(2000);
 		practiceform.click();
-		Applicationutility.getscroll(scroll);
+		//Applicationutility.getscroll(scroll);
 	}
 }
 

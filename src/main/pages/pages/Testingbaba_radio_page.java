@@ -40,6 +40,7 @@ public class Testingbaba_radio_page extends Baselibrary
 	{
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		closebtn.click();
+		Thread.sleep(2000);
 		practiceform.click();
 		elements.click();
 		Thread.sleep(2000);

@@ -20,7 +20,7 @@ public class Testingbaba_menu_test extends Baselibrary
 	Testingbaba_menu_page ob ;
 	@Parameters({ "browser" })
 	@BeforeTest
-	public void launchtestingbaba(String browser) 
+	public void launchtestingbaba(String browser) throws InterruptedException 
 	{
 		String url = PropertyUtility.getreadproperty("Testingbabaurl");
 		if(browser.equalsIgnoreCase("firefox")) {

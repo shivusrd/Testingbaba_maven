@@ -23,7 +23,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 	
 	@Parameters({ "browser" })
 	@BeforeTest
-	public void launchtestingbaba(String browser) 
+	public void launchtestingbaba(String browser) throws InterruptedException 
 	{
 		String url = PropertyUtility.getreadproperty("Testingbabaurl");
 		if(browser.equalsIgnoreCase("firefox")) {

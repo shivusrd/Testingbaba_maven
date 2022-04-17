@@ -45,9 +45,10 @@ public class Testingbaba_checkbox_page extends Baselibrary
 	@FindBy (xpath= "//*[@style=\"display: block;\"]")
 	private List <WebElement> checkboxtext;
 
-	public void closebtn() {
+	public void closebtn() throws InterruptedException {
 
 		closebtn.click();
+		Thread.sleep(2000);
 		practiceform.click();
 	}
 

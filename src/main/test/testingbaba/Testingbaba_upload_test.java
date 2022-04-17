@@ -15,7 +15,7 @@ public class Testingbaba_upload_test extends Baselibrary
 	Testingbaba_upload_page ob;
 	@Parameters({ "browser" })
 	@BeforeTest
-	public void launchtestingbaba(String browser) 
+	public void launchtestingbaba(String browser) throws InterruptedException 
 	{
 		String url = PropertyUtility.getreadproperty("Testingbabaurl");
 		if(browser.equalsIgnoreCase("firefox")) {
