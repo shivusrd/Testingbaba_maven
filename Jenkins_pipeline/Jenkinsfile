@@ -18,22 +18,18 @@ pipeline {
             }
         }
 	    
-	    stage('Generate-source') { 
-            steps {
-                 bat "mvn generate-sources"
-            }
-        }
+	   
        
         stage('install') 
 	    {
             steps 
 		{
                  
-	    bat "mvn install"
+	    bat "mvn install -Dbrowser=chrome -Dtestngpath=Alltests.xml"
 	    
 	    publishHTML target: [
             allowMissing: true,
-            alwaysLinkToLastBuild: true,
+            alwaysLinkToLastBu ild: true,
             keepAll: true,
             reportDir: 'test-output',
             reportFiles: 'ExtentReportsTestNG.html',
