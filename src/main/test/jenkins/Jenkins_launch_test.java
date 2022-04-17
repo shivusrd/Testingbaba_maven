@@ -1,6 +1,7 @@
 package jenkins;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.Baselibrary;
@@ -14,13 +15,25 @@ public class Jenkins_launch_test extends Baselibrary
 {
 
 	Jenkins_launch_page ob;
+	@Parameters({ "browser" })
 	@BeforeTest
-	public void launchtestingbaba()
-	{ 	
-		
-		
-		String url = PropertyUtility.getreadproperty("jenkins");
-		getlaunch();
+
+	public void launchFB(String browser) 
+	
+	{
+		String url = PropertyUtility.getreadproperty("makemytrip");
+		if(browser.equalsIgnoreCase("firefox")) {
+			 
+		     //Initializing the firefox driver (Gecko)
+			 FirefoxLaunch();
+
+		  }else if (browser.equalsIgnoreCase("chrome")) { 
+
+			  //Initialize the chrome driver
+
+			  ChromeLaunch();
+
+		  } 
 		driver.get(url);
 		ob = new Jenkins_launch_page();
 	    

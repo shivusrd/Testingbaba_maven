@@ -125,8 +125,8 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-
+						
+						<suiteXmlFile>${testngpath}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

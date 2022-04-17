@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.Baselibrary;
@@ -16,13 +17,26 @@ import propertyutility.PropertyUtility;
 public class Flipkart_buy_test extends Baselibrary {
 
 	Flipkart_buy_page ob;
-
+	@Parameters({ "browser" })
 	@BeforeTest
 
-	public void launchFB() {
-		String url1 = PropertyUtility.getreadproperty("url1");
-		getlaunch();
-		driver.get(url1);
+	public void launchFB(String browser) 
+	
+	{
+		String url = PropertyUtility.getreadproperty("Flipkart");
+		if(browser.equalsIgnoreCase("firefox")) {
+			 
+		     //Initializing the firefox driver (Gecko)
+			 FirefoxLaunch();
+
+		  }else if (browser.equalsIgnoreCase("chrome")) { 
+
+			  //Initialize the chrome driver
+
+			  ChromeLaunch();
+
+		  } 
+		driver.get(url);
 
 		ob = new Flipkart_buy_page();
 	}

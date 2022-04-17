@@ -2,8 +2,6 @@ package baselibrary;
 
 import java.io.File;
 
-
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.TakesScreenshot;
@@ -14,9 +12,11 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -51,59 +51,102 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class Baselibrary 
-{
+public class Baselibrary {
 
-public static WebDriver driver;
-//public static ChromeOptions option;
-public static Reporter reporter;
-public Reporter rep = new Reporter();
-public static  Logger logger = LogManager.getLogger(Baselibrary.class);
+	public static WebDriver driver;
+	
+    //public static ChromeOptions option;
+	public static Reporter reporter;
+	public Reporter rep = new Reporter();
+	public static Logger logger = LogManager.getLogger(Baselibrary.class);
 
-public static ExtentReports extent;
-public static ExtentTest test;
-public static ExtentTest childTest;
-static String path = System.getProperty("user.dir");
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	public static ExtentTest childTest;
+	static String path = System.getProperty("user.dir");
 
 	
+	public void ChromeLaunch() {
 
+		// Initializing the Headless chromebrowser
 
-    public void getlaunch ()
-	{
-        
-    	// Initializing the Headless chromebrowser
-    
-    	logger.info("Starting Chrome Browser");
 //    	option=new ChromeOptions();
 //    	option.addArguments("headless");
 //    	option.setHeadless(true);
 //    	driver=new HtmlUnitDriver(BrowserVersion.CHROME);
 //    	driver=new HtmlUnitDriver(true);
-    	
-    	
-    	// Without Headless
-    	System.setProperty("webdriver.chrome.driver", path+"\\drivers\\chromedriver.exe");
-    	driver = new ChromeDriver();
-	    driver.manage().window().maximize();
+
+		logger.info("Starting Chrome Browser");
+		System.setProperty("webdriver.chrome.driver", path + "\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	}
+
+	public void FirefoxLaunch() {
+
+		// Initializing the Headless chromebrowser
+
+//       	option=new ChromeOptions();
+//       	option.addArguments("headless");
+//       	option.setHeadless(true);
+//       	driver=new HtmlUnitDriver(BrowserVersion.CHROME);
+//       	driver=new HtmlUnitDriver(true);
+
+		logger.info("Starting Firefox Browser");
+		System.setProperty("webdriver.gecko.driver", path + "\\drivers\\geckodriver.exe");
+		//System.setProperty("webdriver.firefox.marionette",path + "\\drivers\\geckodriver.exe");  
+		driver = new FirefoxDriver();
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		
-	}
+}
     
-    public void homepage()
-    {
-    	
-    	driver.navigate().to(PropertyUtility.getreadproperty("makemytrip"));
-    }
-	
 	@AfterTest
 	
-	public void Teardown()
+	public void Teardown2()
 	{   
-		logger.info("Closing Chrome Browser");
+		logger.info("Closing Browser");
+		
 		driver.quit();
 	}
+
+	public void homepage() {
+
+		driver.navigate().to(PropertyUtility.getreadproperty("makemytrip"));
+	}
+
 	
+	
+	
+//	public void Teardown() 
+//	{
+//		if (browser.equalsIgnoreCase("firefox")) 
+//		{
+//
+//			// Initializing the firefox driver (Gecko)
+//			logger.info("Closing Firefox Browser");
+//			
+//
+//		} else if (browser.equalsIgnoreCase("chrome")) 
+//		{
+//
+//			// Initialize the chrome driver
+//
+//			logger.info("Closing Chrome Browser");
+//			
+//		}
+//		driver.quit();
+//		
+//	}
+
+//	public void Teardown()
+//	{   
+//		logger.info("Closing Browser");
+//		driver.quit();
+//	}
+
 //	//Setup extend report v4
 //		public void setExtentReport() {
 //			 
@@ -133,7 +176,7 @@ static String path = System.getProperty("user.dir");
 //				   String screenshotPath = utilFunctions.getScreenshot(result.getName());
 //				   childTest.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 //				   childTest.addScreenCaptureFromPath(screenshotPath);
-				   
+
 //			} else if (result.getStatus() == ITestResult.SKIP) {
 //				  //test.log(Status.SKIP, result.getName()+ " Test Case Skipped");
 //				childTest.skip(MarkupHelper.createLabel(result.getName()+" Test case Skipped", ExtentColor.YELLOW));
@@ -146,9 +189,7 @@ static String path = System.getProperty("user.dir");
 //		 
 //		 }
 //	
-	
-	
-	
+
 //	@AfterMethod
 //	public void analysis(ITestResult result)
 //	
@@ -173,19 +214,13 @@ static String path = System.getProperty("user.dir");
 //		}
 //		
 //	}
-			
-	public static void getScreenshot(String result) throws IOException 
-	{
-		
-		
-		File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	
+
+	public static void getScreenshot(String result) throws IOException {
+
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
 		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.jpeg"));
 
 	}
-	
-	
-	
-	
-	
+
 }

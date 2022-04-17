@@ -43,10 +43,11 @@ public class Testingbaba_buttons_page extends Baselibrary
 	
 	
 	
-	public void closebtn() 
+	public void closebtn() throws InterruptedException 
 	{
 
 		Applicationutility.clickme(closebtn);
+		Thread.sleep(2000);
 		practiceform.click();
 	}
 

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testingbaba" >
+
+<parameter name="browser" value="firefox"></parameter>
+
+
+<listeners>
+     <listener class-name="listeners.Listners"/>
+       <listener class-name="listeners.Report_log"/>
+       <listener class-name="extentReports.Extent_report"/> 
+        
+ </listeners>
+
+
+<test name="smoke" enabled="true"  > 
+
+    <classes>
+      <class name="testingbaba.Testingbaba_launch_test"/>
+      
+    </classes>
+    </test> 
+  
+  <test name = "Textbox" enabled="true" >
+  <classes>
+  <class name="testingbaba.Testingbaba_textbox_test"/>
+    </classes>
+   </test>
+  
+  <test name = "buttons" enabled="true" >
+  <classes>
+  <class name="testingbaba.Testingbaba_buttons_test"/>
+    </classes>
+  </test>
+  
+  <test name = "checkbox" enabled="true" >
+  <classes>
+  <class name="testingbaba.Testingbaba_checkbox_test"/>
+    </classes>
+  </test>
+  
+  <test name = "dropdown" enabled="true" >
+  <classes>
+  <class name="testingbaba.Testingbaba_dropdown_test"/>
+    </classes>
+  </test>
+  
+  <test name = "links" enabled="true" >
+  <classes>
+  <class name="testingbaba.Testingbaba_links_test"/>
+    </classes>
+  </test>
+  
+  <test name = "radio" enabled="true" >
+  <classes>
+  <class name="testingbaba.Testingbaba_radio_test"/>
+    </classes>
+  </test>
+  
+  <test name = "autocomplete" enabled="true" >
+  <classes>
+  <class name="testingbaba.Testingbaba_autocomplete_test"/>
+    </classes>
+  </test>
+  
+  <test name = "Webtable" enabled="true" >
+  <classes>
+  <class name="testingbaba.Testingbaba_webtables_test"/>
+    </classes>
+  </test>
+
+  
+  
+</suite> <!-- Suite -->
+

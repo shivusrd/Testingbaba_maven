@@ -39,6 +39,7 @@ public class Testingbaba_dropdown_page extends Baselibrary
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		assertEquals(closebtn.isDisplayed(),true);
 		closebtn.click();
+		Thread.sleep(2000);
 		Select sel = new Select(ele1);
 		Thread.sleep(5000);
 		//sel.selectByVisibleText("Selenium Testing");
