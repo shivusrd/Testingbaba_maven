@@ -54,7 +54,7 @@ public class Testingbaba_links_test extends Baselibrary
 
 	}
 	
-	@Test(priority =2)
+	@Test(priority =2,groups ="Functional testing")
 
 	public void LinksTestingBaba_test02() throws Exception
 

@@ -54,7 +54,7 @@ public class Testingbaba_launch_test extends Baselibrary
 	    ob.closebtn();
 	}
 
-	@Test()
+	@Test(groups ="Functional testing")
    public void LaunchTestingBaba_test01() throws Exception
    {
 		

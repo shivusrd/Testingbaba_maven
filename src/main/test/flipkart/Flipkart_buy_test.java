@@ -50,7 +50,7 @@ public class Flipkart_buy_test extends Baselibrary {
 		ob = new Flipkart_buy_page();
 	}
 
-	@Test
+	@Test(groups ="smoke")
 	public void FlipkartLogin_Test01() throws InterruptedException
 
 	{
@@ -59,7 +59,7 @@ public class Flipkart_buy_test extends Baselibrary {
 
 	}
 
-	@Test
+	@Test(groups ="smoke")
 	public void FlipkartProfileChange_Test02() throws InterruptedException
 
 	{

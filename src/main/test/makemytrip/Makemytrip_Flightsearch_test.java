@@ -43,7 +43,7 @@ public class Makemytrip_Flightsearch_test extends Baselibrary
 	}
 
 	
-	@Test(priority = 0)
+	@Test(priority = 0,groups ="Functional testing")
 	public void SearchFlightToday() throws InterruptedException
 	{
 		ob.ClickOnFlight();

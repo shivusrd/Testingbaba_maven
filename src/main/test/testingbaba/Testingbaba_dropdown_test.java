@@ -43,7 +43,7 @@ public class Testingbaba_dropdown_test extends Baselibrary
 
 	}
 
-	@Test()
+	@Test(groups ="Functional testing")
 
 	public void DropdownTestingBaba_test01() throws Exception
 

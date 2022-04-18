@@ -45,7 +45,7 @@ public class Makemytrip_launch_test extends Baselibrary
 		ob = new Makemytrip_launch_page();
 	}
     
-	@Test(priority = 0 )
+	@Test(priority = 0 ,groups ="Functional testing" )
 	public void MakemyTripSendValidNumber_Test01() throws InterruptedException
 
 	{
@@ -55,7 +55,7 @@ public class Makemytrip_launch_test extends Baselibrary
 	}
 
 	
-	@Test(priority = 1)
+	@Test(priority = 1,groups ="Functional testing")
 	public void MakemyTripSendINValidNumber_Test02() throws InterruptedException
 
 	{

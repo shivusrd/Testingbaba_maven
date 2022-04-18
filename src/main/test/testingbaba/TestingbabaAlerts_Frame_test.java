@@ -45,7 +45,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	
 
-	@Test (priority = 1)
+	@Test (priority = 1,groups ="Functional testing")
 
 	public void AlertsTestingBaba_test01()
 
@@ -53,7 +53,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 		ob.alerts();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,groups ="Functional testing")
 
 	public void AlertsTestingBaba_test02()
 
@@ -62,7 +62,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,groups ="Functional testing")
 	public void AlertsTestingBaba_test03()
 
 	{
@@ -71,7 +71,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4,groups ="Functional testing")
 	public void AlertsTestingBaba_test04()
 
 	{
@@ -80,7 +80,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 5,groups ="Functional testing")
 	public void AlertsTestingBaba_test05()
 
 	{

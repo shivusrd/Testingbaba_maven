@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Testingbaba" >
 
-<parameter name="browser" value="firefox"></parameter>
+<parameter name="browser" value="edge"></parameter>
 
 
 <listeners>

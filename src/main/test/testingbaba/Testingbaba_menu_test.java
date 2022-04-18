@@ -48,7 +48,7 @@ public class Testingbaba_menu_test extends Baselibrary
 		ob.closebtn();
 	}
 	
-	@Test (priority = 0)
+	@Test (priority = 0,groups ="Functional testing")
 
 	public void MenuTestingBaba_test01() throws Exception 
 	{

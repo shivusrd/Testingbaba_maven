@@ -42,7 +42,7 @@ public class Testingbaba_webtables_test extends Baselibrary
 		ob.closebtn();
 	}
 
-	@Test 
+	@Test (groups ="Functional testing")
 
 	public void WebTablesTestingBaba_test01() throws Exception
 	{

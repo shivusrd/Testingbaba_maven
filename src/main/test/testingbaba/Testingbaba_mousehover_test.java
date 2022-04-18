@@ -45,7 +45,7 @@ public class Testingbaba_mousehover_test extends Baselibrary
 
 	
 
-	@Test(priority = 0)
+	@Test(priority = 0,groups ="Functional testing")
 
 	public void MousehoverTestingBaba_test01() throws InterruptedException {
 
@@ -53,7 +53,7 @@ public class Testingbaba_mousehover_test extends Baselibrary
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,groups ="Functional testing")
 
 	public void MousehoverTestingBaba_test02() throws InterruptedException {
 

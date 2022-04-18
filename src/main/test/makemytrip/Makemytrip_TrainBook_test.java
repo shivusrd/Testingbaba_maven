@@ -42,7 +42,7 @@ Makemytrip_TrainBook_page ob;
 		ob = new Makemytrip_TrainBook_page();
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0 ,groups ="Functional testing")
 	public void BookTrainTicket_Test01() throws InterruptedException
 
 	{

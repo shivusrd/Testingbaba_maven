@@ -43,7 +43,7 @@ public class Testingbaba_radio_test extends Baselibrary
 
 	}
 
-	@Test()
+	@Test(groups ="Functional testing")
 
 	public void RadioButtonTestingBaba_test01() throws Exception
 

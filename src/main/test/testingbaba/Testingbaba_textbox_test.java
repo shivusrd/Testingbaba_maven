@@ -59,7 +59,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,groups ="Functional testing")
 	public void TextboxTestingBaba_test02()
 
 	{
@@ -67,7 +67,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 		ob.clickonelements();
 	}
 
-	@Test (priority = 2)
+	@Test (priority = 2,groups ="Functional testing")
 
 	public void TextboxTestingBaba_test03() 
 	
@@ -76,7 +76,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,groups ="Functional testing")
 	public void TextboxTestingBaba_test04() 
 	{
 		reporter.log("inside test01");

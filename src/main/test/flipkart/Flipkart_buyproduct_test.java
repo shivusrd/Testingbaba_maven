@@ -44,7 +44,7 @@ public class Flipkart_buyproduct_test extends Baselibrary
 		ob = new Flipkart_buyproduct_page();
 	}
 
-	@Test
+	@Test (groups = "Regression")
 	public void FlipkartLoginInvalidCred_Test01() throws InterruptedException
 
 	{
