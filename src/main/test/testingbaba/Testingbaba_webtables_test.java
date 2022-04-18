@@ -30,6 +30,13 @@ public class Testingbaba_webtables_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url);
 		ob = new Testingbaba_webtables_page();
 		ob.closebtn();

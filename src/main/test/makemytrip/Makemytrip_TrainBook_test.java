@@ -30,6 +30,13 @@ Makemytrip_TrainBook_page ob;
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url);
 
 		ob = new Makemytrip_TrainBook_page();

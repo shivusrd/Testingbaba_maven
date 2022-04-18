@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Testingbaba]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="firefox"/>
+  <parameter name="browser" value="edge"/>
   <listeners>
     <listener class-name="listeners.Listners"/>
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="smoke(failed)">
+  <test thread-count="5" name="Single test(failed)">
     <classes>
-      <class name="testingbaba.Testingbaba_launch_test">
+      <class name="flipkart.Flipkart_buy_test">
         <methods>
           <include name="Teardown2"/>
-          <include name="launchtestingbaba"/>
-          <include name="LaunchTestingBaba_test01"/>
+          <include name="FlipkartProfileChange_Test02"/>
+          <include name="launchFB"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_launch_test -->
+      </class> <!-- flipkart.Flipkart_buy_test -->
     </classes>
-  </test> <!-- smoke(failed) -->
+  </test> <!-- Single test(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

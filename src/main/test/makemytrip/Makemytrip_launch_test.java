@@ -33,6 +33,13 @@ public class Makemytrip_launch_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url);
 
 		ob = new Makemytrip_launch_page();

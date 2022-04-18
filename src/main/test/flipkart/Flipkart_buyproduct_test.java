@@ -32,6 +32,13 @@ public class Flipkart_buyproduct_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url1);
 
 		ob = new Flipkart_buyproduct_page();

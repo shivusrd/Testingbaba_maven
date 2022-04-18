@@ -29,11 +29,20 @@ public class Flipkart_buy_test extends Baselibrary {
 		     //Initializing the firefox driver (Gecko)
 			 FirefoxLaunch();
 
-		  }else if (browser.equalsIgnoreCase("chrome")) { 
+		  }
+		else if (browser.equalsIgnoreCase("chrome")) { 
 
 			  //Initialize the chrome driver
 
 			  ChromeLaunch();
+
+		  } 
+		
+		else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
 
 		  } 
 		driver.get(url);
