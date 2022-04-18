@@ -154,7 +154,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						
-						<suiteXmlFile>${XMLS/testngpath}</suiteXmlFile>
+						<suiteXmlFile>XMLS/"$testngpath"</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
