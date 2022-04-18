@@ -21,7 +21,7 @@ public class Jenkins_launch_test extends Baselibrary
 	public void launchFB(String browser) 
 	
 	{
-		String url = PropertyUtility.getreadproperty("makemytrip");
+		String url = PropertyUtility.getreadproperty("jenkins");
 		if(browser.equalsIgnoreCase("firefox")) {
 			 
 		     //Initializing the firefox driver (Gecko)

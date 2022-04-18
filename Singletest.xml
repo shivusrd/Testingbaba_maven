@@ -17,17 +17,11 @@
 
 		<classes>
 
-			<class name="makemytrip.Makemytrip_Flightsearch_test" />
+			<class name="jenkins.Jenkins_launch_test" />
 		</classes>
 	</test>
 	
-	<test name="Single test" enabled="true">
-
-
-		<packages>
-		<package name=""></package>
-		</packages>
-	</test>
+	
 
 
 	

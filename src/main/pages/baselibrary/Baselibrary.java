@@ -108,6 +108,9 @@ public class Baselibrary {
 	public void Teardown2()
 	{   
 		logger.info("Closing Browser");
+
+
+         driver.manage().deleteAllCookies();
 		
 		driver.quit();
 	}
