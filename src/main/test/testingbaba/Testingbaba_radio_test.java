@@ -31,12 +31,19 @@ public class Testingbaba_radio_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url);
 		ob = new Testingbaba_radio_page();
 
 	}
 
-	@Test()
+	@Test(groups ="Functional testing")
 
 	public void RadioButtonTestingBaba_test01() throws Exception
 

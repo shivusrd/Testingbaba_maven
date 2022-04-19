@@ -29,11 +29,20 @@ public class Flipkart_buy_test extends Baselibrary {
 		     //Initializing the firefox driver (Gecko)
 			 FirefoxLaunch();
 
-		  }else if (browser.equalsIgnoreCase("chrome")) { 
+		  }
+		else if (browser.equalsIgnoreCase("chrome")) { 
 
 			  //Initialize the chrome driver
 
 			  ChromeLaunch();
+
+		  } 
+		
+		else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
 
 		  } 
 		driver.get(url);
@@ -41,7 +50,7 @@ public class Flipkart_buy_test extends Baselibrary {
 		ob = new Flipkart_buy_page();
 	}
 
-	@Test
+	@Test(groups ="smoke")
 	public void FlipkartLogin_Test01() throws InterruptedException
 
 	{
@@ -50,7 +59,7 @@ public class Flipkart_buy_test extends Baselibrary {
 
 	}
 
-	@Test
+	@Test(groups ="smoke")
 	public void FlipkartProfileChange_Test02() throws InterruptedException
 
 	{

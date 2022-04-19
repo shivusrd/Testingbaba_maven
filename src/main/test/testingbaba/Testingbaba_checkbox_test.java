@@ -33,12 +33,19 @@ public class Testingbaba_checkbox_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url);
 		ob = new Testingbaba_checkbox_page();
 		ob.closebtn();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,groups ="Functional testing")
 
 	public void CheckboxTestingBaba_test01() throws Exception
 
@@ -47,14 +54,14 @@ public class Testingbaba_checkbox_test extends Baselibrary
 		
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,groups ="Functional testing")
 
 	public void CheckboxTestingBaba_test02() throws InterruptedException {
 		ob.checkbox();
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,groups ="Functional testing")
 
 	public void CheckboxTestingBaba_test03() throws InterruptedException 
 	{

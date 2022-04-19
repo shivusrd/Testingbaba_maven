@@ -30,12 +30,19 @@ Makemytrip_TrainBook_page ob;
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url);
 
 		ob = new Makemytrip_TrainBook_page();
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0 ,groups ="Functional testing")
 	public void BookTrainTicket_Test01() throws InterruptedException
 
 	{

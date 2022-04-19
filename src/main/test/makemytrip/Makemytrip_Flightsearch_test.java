@@ -31,12 +31,19 @@ public class Makemytrip_Flightsearch_test extends Baselibrary
 				  ChromeLaunch();
 
 			  } 
+			  else if (browser.equalsIgnoreCase("edge")) { 
+
+				  //Initialize the chrome driver
+
+				 EdgeLaunch();
+
+			  } 
 		driver.get(url);
         ob = new Makemytrip_Search_Flight();
 	}
 
 	
-	@Test(priority = 0)
+	@Test(priority = 0,groups ="Functional testing")
 	public void SearchFlightToday() throws InterruptedException
 	{
 		ob.ClickOnFlight();

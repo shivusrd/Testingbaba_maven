@@ -31,12 +31,19 @@ public class Testingbaba_buttons_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url);
 		ob = new Testingbaba_buttons_page();
 		ob.closebtn();
 	}
 	
-	@Test(priority = 0)
+	@Test(priority = 0,groups ="Functional testing")
 
 	public void ButtonsTestingBaba_test01() throws Exception
 	{
@@ -44,7 +51,7 @@ public class Testingbaba_buttons_test extends Baselibrary
        
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1,groups ="Functional testing")
 
 	public void ButtonsTestingBaba_test02() throws Exception
 	{
@@ -52,7 +59,7 @@ public class Testingbaba_buttons_test extends Baselibrary
        
 	}
 	 
-	@Test(priority=2)
+	@Test(priority=2,groups ="Functional testing")
 	
 	public void ButtonsTestingBaba_test03() 
 	{

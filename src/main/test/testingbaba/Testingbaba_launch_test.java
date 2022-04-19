@@ -42,12 +42,19 @@ public class Testingbaba_launch_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url);
 	    ob = new Testingbaba_launch_page();
 	    ob.closebtn();
 	}
 
-	@Test()
+	@Test(groups ="Functional testing")
    public void LaunchTestingBaba_test01() throws Exception
    {
 		

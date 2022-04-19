@@ -32,12 +32,19 @@ public class Flipkart_buyproduct_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
 		driver.get(url1);
 
 		ob = new Flipkart_buyproduct_page();
 	}
 
-	@Test
+	@Test (groups = "Regression")
 	public void FlipkartLoginInvalidCred_Test01() throws InterruptedException
 
 	{

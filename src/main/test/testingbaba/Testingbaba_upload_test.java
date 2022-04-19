@@ -29,13 +29,20 @@ public class Testingbaba_upload_test extends Baselibrary
 
 			  ChromeLaunch();
 
+		  }
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
 		  } 
 		driver.get(url);
 		ob = new Testingbaba_upload_page();
 		ob.closebtn();
 	}
 
-	@Test
+	@Test(groups ="Functional testing")
 
 	public void UploadFileTestingBaba_test01() throws Exception {
 
@@ -43,7 +50,7 @@ public class Testingbaba_upload_test extends Baselibrary
 
 	}
 	
-	@Test
+	@Test(groups ="Functional testing")
 	
 	public void UploadFileTestingBaba_test02() throws InterruptedException
 	{
