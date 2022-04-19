@@ -17,7 +17,7 @@
 
 		<classes>
 
-			<class name="flipkart.Flipkart_buy_test" />
+			<class name="testingbaba.Testingbaba_webtables_test" />
 		</classes>
 	</test>
 	

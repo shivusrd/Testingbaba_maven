@@ -119,10 +119,6 @@ public void EdgeLaunch() {
 	public void Teardown2()
 	{   
 		logger.info("Closing Browser");
-
-
-         driver.manage().deleteAllCookies();
-		
 		driver.quit();
 	}
 
