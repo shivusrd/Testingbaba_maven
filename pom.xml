@@ -162,7 +162,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						
-					   <suiteXmlFile>${testngpath}</suiteXmlFile>
+					   <suiteXmlFile>XML/${testngpath}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

@@ -103,8 +103,6 @@ public class Baselibrary {
 	
 public void EdgeLaunch() {
 
-		
-
 		logger.info("Starting Edge Browser");
 		System.setProperty("webdriver.edge.driver", path + "\\drivers\\msedgedriver.exe");
 		//System.setProperty("webdriver.firefox.marionette",path + "\\drivers\\geckodriver.exe");  
