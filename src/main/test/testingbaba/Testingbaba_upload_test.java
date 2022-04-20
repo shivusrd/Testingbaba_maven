@@ -42,7 +42,7 @@ public class Testingbaba_upload_test extends Baselibrary
 			 
 		     //Initializing the firefox driver (Gecko)
 			 driver.get(testingbaba);
-
+			 driver.quit();
 		  }
 		
 		else { 

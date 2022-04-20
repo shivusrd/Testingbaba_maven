@@ -53,7 +53,7 @@ public class Testingbaba_checkbox_test extends Baselibrary
 			  //Initialize the chrome driver
 
 			logger.error("Wrong url used for Testing");
-
+			driver.quit();
 		  }
 		ob = new Testingbaba_checkbox_page();
 		ob.closebtn();

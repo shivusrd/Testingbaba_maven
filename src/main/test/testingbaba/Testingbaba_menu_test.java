@@ -55,7 +55,7 @@ public class Testingbaba_menu_test extends Baselibrary
 			  //Initialize the chrome driver
 
 			logger.error("Wrong url used for Testing");
-
+			driver.quit();
 		  }
 	    
 		ob = new Testingbaba_menu_page();

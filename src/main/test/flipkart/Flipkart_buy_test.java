@@ -58,6 +58,7 @@ public class Flipkart_buy_test extends Baselibrary {
 			  //Initialize the chrome driver
 
 			logger.error("Wrong url used for Testing");
+			driver.quit();
 
 		  }
 

@@ -58,7 +58,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 			  //Initialize the chrome driver
 
 			logger.error("Wrong url used for Testing");
-
+			driver.quit();
 		  }
 		ob = new Testingbaba_textbox_page();
 		ob.closebtn();

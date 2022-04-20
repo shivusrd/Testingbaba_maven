@@ -51,7 +51,7 @@ public class Testingbaba_radio_test extends Baselibrary
 			  //Initialize the chrome driver
 
 			logger.error("Wrong url used for Testing");
-
+			driver.quit();
 		  }
 		ob = new Testingbaba_radio_page();
 
