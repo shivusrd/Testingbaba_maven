@@ -17,13 +17,13 @@ import propertyutility.PropertyUtility;
 public class Flipkart_buy_test extends Baselibrary {
 
 	Flipkart_buy_page ob;
-	@Parameters({ "browser" })
+	@Parameters({ "browser" ,"url" })
 	@BeforeTest
 
-	public void launchFB(String browser) 
+	public void launchFB(String browser,String url) 
 	
 	{
-		String url = PropertyUtility.getreadproperty("Flipkart");
+		String flipkart = PropertyUtility.getreadproperty("Flipkart");
 		if(browser.equalsIgnoreCase("firefox")) {
 			 
 		     //Initializing the firefox driver (Gecko)
@@ -45,7 +45,21 @@ public class Flipkart_buy_test extends Baselibrary {
 			 EdgeLaunch();
 
 		  } 
-		driver.get(url);
+		if(url.equalsIgnoreCase(flipkart))
+		{
+			 
+		     //Initializing the firefox driver (Gecko)
+			 driver.get(flipkart);
+
+		  }
+		
+		else { 
+
+			  //Initialize the chrome driver
+
+			logger.error("Wrong url used for Testing");
+
+		  }
 
 		ob = new Flipkart_buy_page();
 	}

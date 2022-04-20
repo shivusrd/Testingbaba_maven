@@ -3,7 +3,7 @@
 <suite name="Testingbaba" >
 
 <parameter name="browser" value="firefox"></parameter>
-
+<parameter name="url" value="https://makemytrip.com/" />
 
 <listeners>
      <listener class-name="listeners.Listners"/>

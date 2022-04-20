@@ -3,7 +3,7 @@
 <suite name="Testingbaba" >
 
 <parameter name="browser" value="edge"></parameter>
-
+<parameter name="url" value="https://www.flipkart.com/" />
 
 <listeners>
      <listener class-name="listeners.Listners"/>
