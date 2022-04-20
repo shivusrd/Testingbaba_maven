@@ -14,11 +14,11 @@ public class Testingbaba_radio_test extends Baselibrary
 {
 
 	Testingbaba_radio_page ob;
-	@Parameters({ "browser" })
+	@Parameters({ "browser","url" })
 	@BeforeTest
-	public void launchtestingbaba(String browser) 
+	public void launchtestingbaba(String browser,String url) throws InterruptedException 
 	{
-		String url = PropertyUtility.getreadproperty("Testingbabaurl");
+		String testingbaba = PropertyUtility.getreadproperty("Testingbabaurl");
 		if(browser.equalsIgnoreCase("firefox")) {
 			 
 		     //Initializing the firefox driver (Gecko)
@@ -38,7 +38,21 @@ public class Testingbaba_radio_test extends Baselibrary
 			 EdgeLaunch();
 
 		  } 
-		driver.get(url);
+		if(url.equalsIgnoreCase(testingbaba))
+		{
+			 
+		     //Initializing the firefox driver (Gecko)
+			 driver.get(testingbaba);
+
+		  }
+		
+		else { 
+
+			  //Initialize the chrome driver
+
+			logger.error("Wrong url used for Testing");
+			driver.quit();
+		  }
 		ob = new Testingbaba_radio_page();
 
 	}

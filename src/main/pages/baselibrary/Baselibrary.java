@@ -103,8 +103,6 @@ public class Baselibrary {
 	
 public void EdgeLaunch() {
 
-		
-
 		logger.info("Starting Edge Browser");
 		System.setProperty("webdriver.edge.driver", path + "\\drivers\\msedgedriver.exe");
 		//System.setProperty("webdriver.firefox.marionette",path + "\\drivers\\geckodriver.exe");  
@@ -114,16 +112,32 @@ public void EdgeLaunch() {
 		
 }
     
+    @Parameters({ "browser" })
 	@AfterTest
 	
-	public void Teardown2()
+	public void Teardown2(String browser)
 	{   
-		logger.info("Closing Browser");
-
-
-         driver.manage().deleteAllCookies();
 		
-		driver.quit();
+		if(browser.equalsIgnoreCase("firefox")) {
+			 
+		     //Initializing the firefox driver (Gecko)
+			  logger.info("Closing firefox Browser");
+
+		  }else if (browser.equalsIgnoreCase("chrome")) { 
+
+			  //Initialize the chrome driver
+			  logger.info("Closing chrome Browser");
+			  
+
+		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+			  logger.info("Closing edge Browser");
+			 
+
+		  } 
+	    driver.quit();
 	}
 
 	public void MakemytripHomepage() {

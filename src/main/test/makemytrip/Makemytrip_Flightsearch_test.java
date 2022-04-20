@@ -13,12 +13,12 @@ public class Makemytrip_Flightsearch_test extends Baselibrary
 
 {
 	Makemytrip_Search_Flight ob;
-	@Parameters({ "browser" })
+	@Parameters({ "browser","url" })
 	@BeforeTest
 
-	public void launchFB(String browser) 
+	public void launchFB(String browser,String url) 
 	{
-		String url = PropertyUtility.getreadproperty("makemytrip");
+		String makemytrip = PropertyUtility.getreadproperty("makemytrip");
 		if(browser.equalsIgnoreCase("firefox")) {
 			 
 			     //Initializing the firefox driver (Gecko)
@@ -38,7 +38,23 @@ public class Makemytrip_Flightsearch_test extends Baselibrary
 				 EdgeLaunch();
 
 			  } 
-		driver.get(url);
+
+		if(url.equalsIgnoreCase(makemytrip))
+		{
+			 
+		     //Initializing the firefox driver (Gecko)
+			 driver.get(makemytrip);
+
+		  }
+		
+		else { 
+
+			  //Initialize the chrome driver
+
+			logger.error("Wrong url used for Testing");
+			driver.quit();
+		  }
+		
         ob = new Makemytrip_Search_Flight();
 	}
 

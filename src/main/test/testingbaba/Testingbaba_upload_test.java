@@ -13,11 +13,11 @@ public class Testingbaba_upload_test extends Baselibrary
 
 {
 	Testingbaba_upload_page ob;
-	@Parameters({ "browser" })
+	@Parameters({ "browser","url" })
 	@BeforeTest
-	public void launchtestingbaba(String browser) throws InterruptedException 
+	public void launchtestingbaba(String browser,String url) throws InterruptedException 
 	{
-		String url = PropertyUtility.getreadproperty("Testingbabaurl");
+		String testingbaba = PropertyUtility.getreadproperty("Testingbabaurl");
 		if(browser.equalsIgnoreCase("firefox")) {
 			 
 		     //Initializing the firefox driver (Gecko)
@@ -29,7 +29,7 @@ public class Testingbaba_upload_test extends Baselibrary
 
 			  ChromeLaunch();
 
-		  }
+		  } 
 		  else if (browser.equalsIgnoreCase("edge")) { 
 
 			  //Initialize the chrome driver
@@ -37,7 +37,21 @@ public class Testingbaba_upload_test extends Baselibrary
 			 EdgeLaunch();
 
 		  } 
-		driver.get(url);
+		if(url.equalsIgnoreCase(testingbaba))
+		{
+			 
+		     //Initializing the firefox driver (Gecko)
+			 driver.get(testingbaba);
+			 driver.quit();
+		  }
+		
+		else { 
+
+			  //Initialize the chrome driver
+
+			logger.error("Wrong url used for Testing");
+
+		  }
 		ob = new Testingbaba_upload_page();
 		ob.closebtn();
 	}
