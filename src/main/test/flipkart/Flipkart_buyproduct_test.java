@@ -14,11 +14,12 @@ public class Flipkart_buyproduct_test extends Baselibrary
 
 {
 	Flipkart_buyproduct_page ob;
-	@Parameters({ "browser" })
+	@Parameters({ "browser","url"  })
 	@BeforeTest
 
-	public void launchFB(String browser) {
-		String url1 = PropertyUtility.getreadproperty("Flipkart");
+	public void launchFB(String browser,String url) 
+	{
+		String flipkart = PropertyUtility.getreadproperty("Flipkart");
 		if(browser.equalsIgnoreCase("firefox")) {
 			 
 		     //Initializing the firefox driver (Gecko)
@@ -32,12 +33,34 @@ public class Flipkart_buyproduct_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
-		driver.get(url1);
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
+		if(url.equalsIgnoreCase(flipkart))
+		{
+			 
+		     //Initializing the firefox driver (Gecko)
+			 driver.get(flipkart);
+
+		  }
+		
+		else { 
+
+			  //Initialize the chrome driver
+
+			logger.error("Wrong url used for Testing");
+			driver.quit();
+
+		  }
 
 		ob = new Flipkart_buyproduct_page();
 	}
 
-	@Test
+	@Test (groups = "Regression")
 	public void FlipkartLoginInvalidCred_Test01() throws InterruptedException
 
 	{

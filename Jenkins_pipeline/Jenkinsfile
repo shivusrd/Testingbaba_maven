@@ -18,27 +18,16 @@ pipeline {
             }
         }
 	    
-	    stage('Generate-source') { 
-            steps {
-                 bat "mvn generate-sources"
-            }
-        }
+	   
        
         stage('install') 
 	    {
             steps 
 		{
                  
-	    bat "mvn install"
+	    bat "mvn test -Dtestngpath=Alltests.xml"
 	    
-	    publishHTML target: [
-            allowMissing: true,
-            alwaysLinkToLastBuild: true,
-            keepAll: true,
-            reportDir: 'test-output',
-            reportFiles: 'ExtentReportsTestNG.html',
-            reportName: 'Extent Report'
-          ]
+	    
 		
 	    
             }

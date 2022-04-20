@@ -17,31 +17,55 @@ import propertyutility.PropertyUtility;
 public class Flipkart_buy_test extends Baselibrary {
 
 	Flipkart_buy_page ob;
-	@Parameters({ "browser" })
+	@Parameters({ "browser" ,"url" })
 	@BeforeTest
 
-	public void launchFB(String browser) 
+	public void launchFB(String browser,String url) 
 	
 	{
-		String url = PropertyUtility.getreadproperty("Flipkart");
+		String flipkart = PropertyUtility.getreadproperty("Flipkart");
 		if(browser.equalsIgnoreCase("firefox")) {
 			 
 		     //Initializing the firefox driver (Gecko)
 			 FirefoxLaunch();
 
-		  }else if (browser.equalsIgnoreCase("chrome")) { 
+		  }
+		else if (browser.equalsIgnoreCase("chrome")) { 
 
 			  //Initialize the chrome driver
 
 			  ChromeLaunch();
 
 		  } 
-		driver.get(url);
+		
+		else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
+		if(url.equalsIgnoreCase(flipkart))
+		{
+			 
+		     //Initializing the firefox driver (Gecko)
+			 driver.get(flipkart);
+
+		  }
+		
+		else { 
+
+			  //Initialize the chrome driver
+
+			logger.error("Wrong url used for Testing");
+			driver.quit();
+
+		  }
 
 		ob = new Flipkart_buy_page();
 	}
 
-	@Test
+	@Test(groups ="smoke")
 	public void FlipkartLogin_Test01() throws InterruptedException
 
 	{
@@ -50,7 +74,7 @@ public class Flipkart_buy_test extends Baselibrary {
 
 	}
 
-	@Test
+	@Test(groups ="smoke")
 	public void FlipkartProfileChange_Test02() throws InterruptedException
 
 	{

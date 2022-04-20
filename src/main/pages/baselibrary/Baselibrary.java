@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -28,6 +29,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.relevantcodes.extentreports.model.Log;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.Makemytrip_launch_page;
 import propertyutility.PropertyUtility;
 import screenshotutility.ScreenshotUtility;
@@ -81,18 +83,14 @@ public class Baselibrary {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+		
+		
+		
 	}
 
 	public void FirefoxLaunch() {
 
-		// Initializing the Headless chromebrowser
-
-//       	option=new ChromeOptions();
-//       	option.addArguments("headless");
-//       	option.setHeadless(true);
-//       	driver=new HtmlUnitDriver(BrowserVersion.CHROME);
-//       	driver=new HtmlUnitDriver(true);
+		
 
 		logger.info("Starting Firefox Browser");
 		System.setProperty("webdriver.gecko.driver", path + "\\drivers\\geckodriver.exe");
@@ -102,17 +100,47 @@ public class Baselibrary {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 }
+	
+public void EdgeLaunch() {
+
+		logger.info("Starting Edge Browser");
+		System.setProperty("webdriver.edge.driver", path + "\\drivers\\msedgedriver.exe");
+		//System.setProperty("webdriver.firefox.marionette",path + "\\drivers\\geckodriver.exe");  
+		driver = new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+}
     
+    @Parameters({ "browser" })
 	@AfterTest
 	
-	public void Teardown2()
+	public void Teardown2(String browser)
 	{   
-		logger.info("Closing Browser");
 		
-		driver.quit();
+		if(browser.equalsIgnoreCase("firefox")) {
+			 
+		     //Initializing the firefox driver (Gecko)
+			  logger.info("Closing firefox Browser");
+
+		  }else if (browser.equalsIgnoreCase("chrome")) { 
+
+			  //Initialize the chrome driver
+			  logger.info("Closing chrome Browser");
+			  
+
+		  } 
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+			  logger.info("Closing edge Browser");
+			 
+
+		  } 
+	    driver.quit();
 	}
 
-	public void homepage() {
+	public void MakemytripHomepage() {
 
 		driver.navigate().to(PropertyUtility.getreadproperty("makemytrip"));
 	}

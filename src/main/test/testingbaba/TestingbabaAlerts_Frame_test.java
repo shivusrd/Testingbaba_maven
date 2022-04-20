@@ -13,11 +13,11 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 {
 	TestingbabaAlerts_Frame_page ob;
-	@Parameters({ "browser" })
+	@Parameters({ "browser","url" })
 	@BeforeTest
-	public void launchtestingbaba(String browser) throws InterruptedException 
+	public void launchtestingbaba(String browser,String url) throws InterruptedException 
 	{
-		String url = PropertyUtility.getreadproperty("Testingbabaurl");
+		String testingbaba = PropertyUtility.getreadproperty("Testingbabaurl");
 		if(browser.equalsIgnoreCase("firefox")) {
 			 
 		     //Initializing the firefox driver (Gecko)
@@ -30,14 +30,35 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
-		driver.get(url);
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
+		if(url.equalsIgnoreCase(testingbaba))
+		{
+			 
+		     //Initializing the firefox driver (Gecko)
+			 driver.get(testingbaba);
+
+		  }
+		
+		else { 
+
+			  //Initialize the chrome driver
+
+			logger.error("Wrong url used for Testing");
+			driver.quit();
+		  }
 		ob = new TestingbabaAlerts_Frame_page();
 		ob.closebtn();
 	}
 
 	
 
-	@Test (priority = 1)
+	@Test (priority = 1,groups ="Functional testing")
 
 	public void AlertsTestingBaba_test01()
 
@@ -45,7 +66,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 		ob.alerts();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,groups ="Functional testing")
 
 	public void AlertsTestingBaba_test02()
 
@@ -54,7 +75,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,groups ="Functional testing")
 	public void AlertsTestingBaba_test03()
 
 	{
@@ -63,7 +84,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4,groups ="Functional testing")
 	public void AlertsTestingBaba_test04()
 
 	{
@@ -72,7 +93,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 5,groups ="Functional testing")
 	public void AlertsTestingBaba_test05()
 
 	{

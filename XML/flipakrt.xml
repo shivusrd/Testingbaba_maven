@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testingbaba" >
+
+<parameter name="browser" value="edge"></parameter>
+<parameter name="url" value="https://www.flipkart.com/" />
+
+<listeners>
+     <listener class-name="listeners.Listners"/>
+       <listener class-name="listeners.Report_log"/>
+       <listener class-name="extentReports.Extent_report"/> 
+        
+ </listeners>
+
+<test name = "Flipkart" enabled="true" >
+  <classes>
+  <class name="flipkart.Flipkart_buy_test"/>
+    </classes>
+  </test>
+  
+  <test name = "FlipkartBuy" enabled="true" >
+  <classes>
+  <class name="flipkart.Flipkart_buyproduct_test"/>
+    </classes>
+  </test>
+  
+  
+  
+</suite> <!-- Suite -->
+

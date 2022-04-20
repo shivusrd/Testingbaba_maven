@@ -14,11 +14,11 @@ public class Testingbaba_links_test extends Baselibrary
 
 {
 	Testingbaba_links_page ob;
-	@Parameters({ "browser" })
+	@Parameters({ "browser","url" })
 	@BeforeTest
-	public void launchtestingbaba(String browser) throws InterruptedException 
+	public void launchtestingbaba(String browser,String url) throws InterruptedException 
 	{
-		String url = PropertyUtility.getreadproperty("Testingbabaurl");
+		String testingbaba = PropertyUtility.getreadproperty("Testingbabaurl");
 		if(browser.equalsIgnoreCase("firefox")) {
 			 
 		     //Initializing the firefox driver (Gecko)
@@ -31,7 +31,28 @@ public class Testingbaba_links_test extends Baselibrary
 			  ChromeLaunch();
 
 		  } 
-		driver.get(url);
+		  else if (browser.equalsIgnoreCase("edge")) { 
+
+			  //Initialize the chrome driver
+
+			 EdgeLaunch();
+
+		  } 
+		if(url.equalsIgnoreCase(testingbaba))
+		{
+			 
+		     //Initializing the firefox driver (Gecko)
+			 driver.get(testingbaba);
+
+		  }
+		
+		else { 
+
+			  //Initialize the chrome driver
+
+			logger.error("Wrong url used for Testing");
+			driver.quit();
+		  }
 		ob = new Testingbaba_links_page();
 		ob.closebtn();
 	}
@@ -47,7 +68,7 @@ public class Testingbaba_links_test extends Baselibrary
 
 	}
 	
-	@Test(priority =2)
+	@Test(priority =2,groups ="Functional testing")
 
 	public void LinksTestingBaba_test02() throws Exception
 
