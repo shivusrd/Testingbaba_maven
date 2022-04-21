@@ -43,7 +43,7 @@ public class Testingbaba_dropdown_test extends Baselibrary
 			 
 		     //Initializing the firefox driver (Gecko)
 			 driver.get(testingbaba);
-
+			 logger.info(testingbaba, "url is validated");
 		  }
 		
 		else { 

@@ -50,7 +50,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 			 
 		     //Initializing the firefox driver (Gecko)
 			 driver.get(testingbaba);
-
+			 logger.info(testingbaba, "url is validated");
 		  }
 		
 		else { 

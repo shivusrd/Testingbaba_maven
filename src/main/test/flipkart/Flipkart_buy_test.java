@@ -50,6 +50,7 @@ public class Flipkart_buy_test extends Baselibrary {
 			 
 		     //Initializing the firefox driver (Gecko)
 			 driver.get(flipkart);
+			logger.info(flipkart, "url is validated");
 
 		  }
 		

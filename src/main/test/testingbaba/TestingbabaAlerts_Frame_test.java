@@ -42,7 +42,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 			 
 		     //Initializing the firefox driver (Gecko)
 			 driver.get(testingbaba);
-
+			 logger.info(testingbaba, "url is validated");
 		  }
 		
 		else { 
@@ -66,7 +66,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 		ob.alerts();
 	}
 
-	@Test(priority = 2,groups ="Functional testing")
+	@Test(priority = 2,groups ="Functional testing",dependsOnMethods = {"AlertsTestingBaba_test01"})
 
 	public void AlertsTestingBaba_test02()
 
@@ -75,7 +75,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	}
 
-	@Test(priority = 3,groups ="Functional testing")
+	@Test(priority = 3,groups ="Functional testing",dependsOnMethods = {"AlertsTestingBaba_test02"})
 	public void AlertsTestingBaba_test03()
 
 	{
@@ -84,7 +84,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	}
 
-	@Test(priority = 4,groups ="Functional testing")
+	@Test(priority = 4,groups ="Functional testing",dependsOnMethods = {"AlertsTestingBaba_test03"})
 	public void AlertsTestingBaba_test04()
 
 	{
@@ -93,7 +93,7 @@ public class TestingbabaAlerts_Frame_test extends Baselibrary
 
 	}
 
-	@Test(priority = 5,groups ="Functional testing")
+	@Test(priority = 5,groups ="Functional testing",dependsOnMethods = {"AlertsTestingBaba_test04"})
 	public void AlertsTestingBaba_test05()
 
 	{

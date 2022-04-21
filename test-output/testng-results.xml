@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[About to begin executing Class Makemytrip]]>
-    </line>
-    <line>
-      <![CDATA[Testcase MakemyTripSendValidNumber_Test01 started successfully]]>
-    </line>
-    <line>
-      <![CDATA[Testcase MakemyTripSendValidNumber_Test01 passed successfully]]>
-    </line>
-    <line>
-      <![CDATA[Testcase MakemyTripSendINValidNumber_Test02 started successfully]]>
-    </line>
-    <line>
-      <![CDATA[Testcase MakemyTripSendINValidNumber_Test02 passed successfully]]>
-    </line>
-    <line>
-      <![CDATA[About to end executing Class Makemytrip]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Class Flight search]]>
+      <![CDATA[About to begin executing Class Single test]]>
     </line>
     <line>
       <![CDATA[Testcase SearchFlightToday started successfully]]>
@@ -29,68 +11,15 @@
       <![CDATA[Testcase SearchFlightToday passed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-04-20T17:44:23 IST" name="Testingbaba" finished-at="2022-04-20T17:45:12 IST" duration-ms="48380">
+  <suite started-at="2022-04-21T09:16:01 IST" name="Testingbaba" finished-at="2022-04-21T09:16:22 IST" duration-ms="20939">
     <groups>
       <group name="Functional testing">
-        <method signature="Makemytrip_launch_test.MakemyTripSendINValidNumber_Test02()[pri:1, instance:makemytrip.Makemytrip_launch_test@2d1dee39]" name="MakemyTripSendINValidNumber_Test02" class="makemytrip.Makemytrip_launch_test"/>
-        <method signature="Makemytrip_launch_test.MakemyTripSendValidNumber_Test01()[pri:0, instance:makemytrip.Makemytrip_launch_test@2d1dee39]" name="MakemyTripSendValidNumber_Test01" class="makemytrip.Makemytrip_launch_test"/>
-        <method signature="Makemytrip_Flightsearch_test.SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@7a560583]" name="SearchFlightToday" class="makemytrip.Makemytrip_Flightsearch_test"/>
+        <method signature="Makemytrip_Flightsearch_test.SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@47f4e407]" name="SearchFlightToday" class="makemytrip.Makemytrip_Flightsearch_test"/>
       </group> <!-- Functional testing -->
     </groups>
-    <test started-at="2022-04-20T17:44:23 IST" name="Makemytrip" finished-at="2022-04-20T17:44:51 IST" duration-ms="28080">
-      <class name="makemytrip.Makemytrip_launch_test">
-        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_launch_test@2d1dee39]" started-at="2022-04-20T17:44:23 IST" name="launchFB" finished-at="2022-04-20T17:44:35 IST" duration-ms="11662" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://makemytrip.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchFB -->
-        <test-method signature="MakemyTripSendValidNumber_Test01()[pri:0, instance:makemytrip.Makemytrip_launch_test@2d1dee39]" started-at="2022-04-20T17:44:35 IST" name="MakemyTripSendValidNumber_Test01" finished-at="2022-04-20T17:44:40 IST" duration-ms="5012" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Testcase MakemyTripSendValidNumber_Test01 started successfully]]>
-            </line>
-            <line>
-              <![CDATA[Testcase MakemyTripSendValidNumber_Test01 passed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- MakemyTripSendValidNumber_Test01 -->
-        <test-method signature="MakemyTripSendINValidNumber_Test02()[pri:1, instance:makemytrip.Makemytrip_launch_test@2d1dee39]" started-at="2022-04-20T17:44:40 IST" name="MakemyTripSendINValidNumber_Test02" finished-at="2022-04-20T17:44:50 IST" duration-ms="9710" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Testcase MakemyTripSendINValidNumber_Test02 started successfully]]>
-            </line>
-            <line>
-              <![CDATA[Testcase MakemyTripSendINValidNumber_Test02 passed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- MakemyTripSendINValidNumber_Test02 -->
-        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_launch_test@2d1dee39]" started-at="2022-04-20T17:44:50 IST" name="Teardown2" finished-at="2022-04-20T17:44:51 IST" duration-ms="1608" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown2 -->
-      </class> <!-- makemytrip.Makemytrip_launch_test -->
-    </test> <!-- Makemytrip -->
-    <test started-at="2022-04-20T17:44:51 IST" name="Flight search" finished-at="2022-04-20T17:45:12 IST" duration-ms="20252">
+    <test started-at="2022-04-21T09:16:01 IST" name="Single test" finished-at="2022-04-21T09:16:22 IST" duration-ms="20939">
       <class name="makemytrip.Makemytrip_Flightsearch_test">
-        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@7a560583]" started-at="2022-04-20T17:44:51 IST" name="launchFB" finished-at="2022-04-20T17:45:02 IST" duration-ms="10673" status="PASS">
+        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@47f4e407]" started-at="2022-04-21T09:16:01 IST" name="launchFB" finished-at="2022-04-21T09:16:12 IST" duration-ms="10884" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchFB -->
-        <test-method signature="SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@7a560583]" started-at="2022-04-20T17:45:02 IST" name="SearchFlightToday" finished-at="2022-04-20T17:45:09 IST" duration-ms="6779" status="PASS">
+        <test-method signature="SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@47f4e407]" started-at="2022-04-21T09:16:12 IST" name="SearchFlightToday" finished-at="2022-04-21T09:16:19 IST" duration-ms="7504" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Testcase SearchFlightToday started successfully]]>
@@ -116,7 +45,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- SearchFlightToday -->
-        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@7a560583]" started-at="2022-04-20T17:45:09 IST" name="Teardown2" finished-at="2022-04-20T17:45:12 IST" duration-ms="2780" status="PASS">
+        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@47f4e407]" started-at="2022-04-21T09:16:19 IST" name="Teardown2" finished-at="2022-04-21T09:16:22 IST" duration-ms="2483" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,6 +57,6 @@
           </reporter-output>
         </test-method> <!-- Teardown2 -->
       </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
-    </test> <!-- Flight search -->
+    </test> <!-- Single test -->
   </suite> <!-- Testingbaba -->
 </testng-results>

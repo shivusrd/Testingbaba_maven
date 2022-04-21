@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Makemytrip]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://makemytrip.com/"/>
+  <listeners>
+    <listener class-name="listeners.Listners"/>
+    <listener class-name="listeners.Report_log"/>
+    <listener class-name="extentReports.Extent_report"/>
+  </listeners>
+  <test thread-count="5" name="Flight search(failed)">
+    <classes>
+      <class name="makemytrip.Makemytrip_Flightsearch_test">
+        <methods>
+          <include name="Teardown2"/>
+          <include name="SearchFlightToday"/>
+          <include name="launchFB"/>
+        </methods>
+      </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
+    </classes>
+  </test> <!-- Flight search(failed) -->
+</suite> <!-- Failed suite [Makemytrip] -->

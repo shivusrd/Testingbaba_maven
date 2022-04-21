@@ -42,7 +42,7 @@ public class Testingbaba_upload_test extends Baselibrary
 			 
 		     //Initializing the firefox driver (Gecko)
 			 driver.get(testingbaba);
-			 driver.quit();
+			 logger.info(testingbaba, "url is validated");
 		  }
 		
 		else { 
@@ -50,6 +50,7 @@ public class Testingbaba_upload_test extends Baselibrary
 			  //Initialize the chrome driver
 
 			logger.error("Wrong url used for Testing");
+			driver.quit();
 
 		  }
 		ob = new Testingbaba_upload_page();

@@ -54,7 +54,7 @@ public class Testingbaba_launch_test extends Baselibrary
 			 
 		     //Initializing the firefox driver (Gecko)
 			 driver.get(testingbaba);
-
+			 logger.info(testingbaba, "url is validated");
 		  }
 		
 		else { 
