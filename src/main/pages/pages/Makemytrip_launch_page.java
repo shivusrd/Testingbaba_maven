@@ -88,7 +88,7 @@ public class Makemytrip_launch_page extends Baselibrary
 		Applicationutility.clickme(submit);
 		
 		String text2 = invalid.getText();
-		assertEquals(text2, "Link sent successfully to 8630597590, please check your SMS");
+		assertEquals(text2, "Link sent successfully to");
 		System.out.println(text2);
 		System.out.println(text2);
 
@@ -111,7 +111,7 @@ public class Makemytrip_launch_page extends Baselibrary
 
 		Applicationutility.clickme(submit);
 		String text = invalid.getText();
-		assertEquals(text, "Incomplete phone number, please check");
+		assertEquals(text, "Incomplete phone number, please provide complete phone number.");
 		System.out.println(text);
 
 		Thread.sleep(5000);

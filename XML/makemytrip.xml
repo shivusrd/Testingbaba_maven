@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Makemytrip" >
 
-<parameter name="browser" value="firefox"></parameter>
+<parameter name="browser" value="chrome"></parameter>
 <parameter name="url" value="https://makemytrip.com/" />
 
 <listeners>
@@ -25,9 +25,9 @@
       </classes>
 	</test>
 	
-	<test name="Flight search" enabled="true">
+	<test name="Homestays" enabled="true">
   <classes>
-     <class name="makemytrip.Makemytrip_homestays" />
+     <class name="makemytrip.Makemytrip_homestays_test" />
       </classes>
 	</test>
   

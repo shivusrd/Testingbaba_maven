@@ -71,13 +71,16 @@ public class Makemytrip_Search_Flight extends Baselibrary
 	}
 	
 	public void enterDepartureDate() throws InterruptedException {
+		
+		Thread.sleep(2000);
 		departureDrop.click();
 	
 		Applicationutility date = Applicationutility.getCurrentAndReturnDates();
 		driver.findElement(Applicationutility.customXpath(departureDate,date.departureDate)).click();
 	}
 	
-	public void enterReturnDate() {
+	public void enterReturnDate() throws InterruptedException {
+		Thread.sleep(2000);		
 		returnDrop.click();
 		Applicationutility date = Applicationutility.getCurrentAndReturnDates();
 		driver.findElement(Applicationutility.customXpath(returnDate, date.returnDate)).click();

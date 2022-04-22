@@ -15,6 +15,7 @@
           <include name="Teardown2"/>
           <include name="SearchFlightToday"/>
           <include name="launchFB"/>
+          <include name="analysis"/>
         </methods>
       </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
     </classes>
