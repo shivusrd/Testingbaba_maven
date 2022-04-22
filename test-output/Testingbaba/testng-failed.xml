@@ -10,13 +10,14 @@
   </listeners>
   <test thread-count="5" name="Single test(failed)">
     <classes>
-      <class name="makemytrip.Makemytrip_homestays_test">
+      <class name="makemytrip.Makemytrip_Flightsearch_test">
         <methods>
           <include name="Teardown2"/>
+          <include name="SearchFlightToday"/>
           <include name="launchFB"/>
-          <include name="SearchHomestay"/>
+          <include name="analysis"/>
         </methods>
-      </class> <!-- makemytrip.Makemytrip_homestays_test -->
+      </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
     </classes>
   </test> <!-- Single test(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

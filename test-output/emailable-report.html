@@ -8,40 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Makemytrip</th></tr>
-<tr><td><a href="#t0">Makemytrip</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,221</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Flight search</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,218</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Homestays</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,433</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">51,872</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Testingbaba</th></tr>
+<tr><td><a href="#t0">Single test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">39,608</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Makemytrip</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Makemytrip &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">makemytrip.Makemytrip_launch_test</td><td><a href="#m0">MakemyTripSendINValidNumber_Test02</a></td><td rowspan="1">1650598898624</td><td rowspan="1">10030</td></tr><tr class="passedeven"><td><a href="#m1">MakemyTripSendValidNumber_Test01</a></td><td rowspan="1">1650598893669</td><td rowspan="1">4947</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Flight search &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">makemytrip.Makemytrip_Flightsearch_test</td><td><a href="#m2">SearchFlightToday</a></td><td rowspan="1">1650598915962</td><td rowspan="1">6619</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Homestays &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">makemytrip.Makemytrip_homestays_test</td><td><a href="#m3">SearchHomestay</a></td><td rowspan="1">1650598930551</td><td rowspan="1">6938</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Testingbaba</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Single test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">makemytrip.Makemytrip_Flightsearch_test</td><td><a href="#m0">SearchFlightToday</a></td><td rowspan="1">1650629697208</td><td rowspan="1">19518</td></tr></tbody>
 </table>
-<h2>Makemytrip</h2><h3 id="m0">makemytrip.Makemytrip_launch_test#MakemyTripSendINValidNumber_Test02</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Testcase MakemyTripSendINValidNumber_Test02 started successfully<br/>Testcase MakemyTripSendINValidNumber_Test02 passed successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">makemytrip.Makemytrip_launch_test#MakemyTripSendValidNumber_Test01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Testcase MakemyTripSendValidNumber_Test01 started successfully<br/>Testcase MakemyTripSendValidNumber_Test01 passed successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Flight search</h2><h3 id="m2">makemytrip.Makemytrip_Flightsearch_test#SearchFlightToday</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Testcase SearchFlightToday started successfully<br/>Testcase SearchFlightToday failed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (887, 572)
-  (Session info: chrome=100.0.4896.127)
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;DESKTOP-493EAAE&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cbfb09b84b1c14cd63c312c22fdd28bc, clickElement {id=965fc8d0-78c7-4d95-a1fd-7b251b7ec50c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\dubey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52091/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (cbfb09b84b1c14cd63c312c22fdd28bc)] -&gt; xpath: //div[@aria-label=&apos;Fri Apr 29 2022&apos; and @aria-disabled=&apos;false&apos;]]
-Session ID: cbfb09b84b1c14cd63c312c22fdd28bc
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.Makemytrip_Search_Flight.enterReturnDate(Makemytrip_Search_Flight.java:86)
-	at makemytrip.Makemytrip_Flightsearch_test.SearchFlightToday(Makemytrip_Flightsearch_test.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Homestays</h2><h3 id="m3">makemytrip.Makemytrip_homestays_test#SearchHomestay</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Testcase SearchHomestay started successfully<br/>Testcase SearchHomestay passed successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Single test</h2><h3 id="m0">makemytrip.Makemytrip_Flightsearch_test#SearchFlightToday</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Testcase SearchFlightToday started successfully<br/>Testcase SearchFlightToday passed successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

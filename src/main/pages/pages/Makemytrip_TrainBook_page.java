@@ -43,7 +43,7 @@ public class Makemytrip_TrainBook_page extends Baselibrary
 	@FindBy(xpath = "//button[@class='capText font16']")
 	private WebElement login2;
 
-	@FindBy(xpath = "//span[@class='chNavIcon appendBottom2 chSprite chTrains active']")
+	@FindBy(xpath = "(//*[@class=\"false chNavText darkGreyText\"])[5]")
 	private WebElement train_btn;
 
 	@FindBy(xpath = "//a[@class='primaryBtn font24 latoBold widgetSearchBtn']")
@@ -71,22 +71,8 @@ public class Makemytrip_TrainBook_page extends Baselibrary
 		{
 			closebtn.click();
 			login3.click();
-			Thread.sleep(2000);
-			username.sendKeys("8630597482");
-			continu.click();
-			password.click();
-			pass.sendKeys("Shivu@srd1");
-			login2.click();
-			driver.navigate().refresh();
-			Thread.sleep(2000);
 			train_btn.click();
 			Thread.sleep(2000);
-			from.click();
-			from2.sendKeys("bareilly");
-			from2.sendKeys("bareilly",Keys.ARROW_DOWN);
-			from2.sendKeys(Keys.ENTER);
-			
-			
 			search_btn.click();
 			Thread.sleep(2000);
 			assertEquals(depaft6_btn.isDisplayed(),true);
@@ -107,14 +93,7 @@ public class Makemytrip_TrainBook_page extends Baselibrary
 
 			login3.click();
 			Thread.sleep(2000);
-			username.sendKeys("8630597482");
-			continu.click();
-			password.click();
-			pass.sendKeys("Shivu@srd1");
-			login2.click();
-			driver.navigate().refresh();
-			Thread.sleep(2000);
-			train_btn.click();
+		    train_btn.click();
 			Thread.sleep(2000);
 			search_btn.click();
 			Thread.sleep(2000);

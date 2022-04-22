@@ -70,6 +70,8 @@ public class Testingbaba_buttons_page extends Baselibrary
 		Applicationutility.doubleclick(doubleclick);
 		Applicationutility.rightclick(rightclick);
 		
+		
+		
 	}
 	
 }

@@ -3,6 +3,7 @@ package pages;
 import static org.testng.Assert.assertEquals;
 
 import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,6 +19,7 @@ import propertyutility.PropertyUtility;
 public class Flipkart_buy_page extends Baselibrary
 
 {
+	
 	
 	public Flipkart_buy_page()
 
@@ -86,6 +88,7 @@ public class Flipkart_buy_page extends Baselibrary
 		logger.info("Clicks on login button");
 		login.click();
 		Thread.sleep(2000);
+	
 		
 		
 	}

@@ -56,8 +56,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class Baselibrary {
 
 	public static WebDriver driver;
-	
-    //public static ChromeOptions option;
+
+	// public static ChromeOptions option;
 	public static Reporter reporter;
 	public Reporter rep = new Reporter();
 	public static Logger logger = LogManager.getLogger(Baselibrary.class);
@@ -67,7 +67,6 @@ public class Baselibrary {
 	public static ExtentTest childTest;
 	static String path = System.getProperty("user.dir");
 
-	
 	public void ChromeLaunch() {
 
 		// Initializing the Headless chromebrowser
@@ -78,91 +77,80 @@ public class Baselibrary {
 //    	driver=new HtmlUnitDriver(BrowserVersion.CHROME);
 //    	driver=new HtmlUnitDriver(true);
 
-		
 		logger.info("Starting Chrome Browser");
 		WebDriverManager.chromedriver().setup();
-		//System.setProperty("webdriver.chrome.driver", path + "\\drivers\\chromedriver.exe");
+
 		driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		
-		
+
 	}
 
 	public void FirefoxLaunch() {
 
-		
-
 		logger.info("Starting Firefox Browser");
 		WebDriverManager.firefoxdriver().setup();
-		//System.setProperty("webdriver.gecko.driver", path + "\\drivers\\geckodriver.exe");
-		//System.setProperty("webdriver.firefox.marionette",path + "\\drivers\\geckodriver.exe");  
+
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-}
-	
-public void EdgeLaunch() {
+
+	}
+
+	public void EdgeLaunch() {
 
 		logger.info("Starting Edge Browser");
 		WebDriverManager.edgedriver().setup();
-		//System.setProperty("webdriver.edge.driver", path + "\\drivers\\msedgedriver.exe");
-		//System.setProperty("webdriver.firefox.marionette",path + "\\drivers\\geckodriver.exe");  
+
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-}
-    
-    @Parameters({ "browser" })
+
+	}
+
+	@Parameters({ "browser" })
 	@AfterTest
-	
-	public void Teardown2(String browser)
-	{   
-		
-		if(browser.equalsIgnoreCase("firefox")) {
-			 
-		     //Initializing the firefox driver (Gecko)
-			  logger.info("Closing firefox Browser");
 
-		  }else if (browser.equalsIgnoreCase("chrome")) { 
+	public void Teardown2(String browser) {
 
-			  //Initialize the chrome driver
-			  logger.info("Closing chrome Browser");
-			  
+		if (browser.equalsIgnoreCase("firefox")) {
 
-		  } 
-		  else if (browser.equalsIgnoreCase("edge")) { 
+			// Initializing the firefox driver (Gecko)
+			logger.info("Closing firefox Browser");
 
-			  //Initialize the chrome driver
-			  logger.info("Closing edge Browser");
-			 
+		} else if (browser.equalsIgnoreCase("chrome")) {
 
-		  } 
-	    driver.quit();
+			// Initialize the chrome driver
+			logger.info("Closing chrome Browser");
+
+		} else if (browser.equalsIgnoreCase("edge")) {
+
+			// Initialize the chrome driver
+			logger.info("Closing edge Browser");
+
+		}
+		driver.quit();
 	}
 
 	public void MakemytripHomepage() {
 
 		driver.navigate().to(PropertyUtility.getreadproperty("makemytrip"));
 	}
-	
+
 	public void TestingbabaHomepage() {
 
 		driver.navigate().to(PropertyUtility.getreadproperty("testingbaba"));
 	}
-	
+
 	public void FlipkartHomepage() {
 
 		driver.navigate().to(PropertyUtility.getreadproperty("flipkart"));
 	}
 
-	
 	@AfterMethod
 	public void analysis(ITestResult result)
-	
+
 	{
 		String methodname = result.getMethod().getMethodName();
 //		if(result.isSuccess())
@@ -170,19 +158,19 @@ public void EdgeLaunch() {
 //			
 //			ScreenshotUtility.getscreenshot("PASSED", methodname);
 //		}
-		
-		if (result.getStatus()==ITestResult.FAILURE)
-		
+
+		if (result.getStatus() == ITestResult.FAILURE)
+
 		{
 			ScreenshotUtility.getscreenshot("FAILED", methodname);
 		}
-		
-		else if (result.getStatus()==ITestResult.SKIP)
-			
+
+		else if (result.getStatus() == ITestResult.SKIP)
+
 		{
 			ScreenshotUtility.getscreenshot("SKIP", methodname);
 		}
-		
+
 	}
 
 	public static void getScreenshot(String result) throws IOException {

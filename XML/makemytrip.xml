@@ -30,6 +30,12 @@
      <class name="makemytrip.Makemytrip_homestays_test" />
       </classes>
 	</test>
+	
+	<test name="Trainbook" enabled="true">
+  <classes>
+     <class name="makemytrip.Makemytrip_TrainBook_test" />
+      </classes>
+	</test>
   
 </suite> <!-- Suite -->
 
