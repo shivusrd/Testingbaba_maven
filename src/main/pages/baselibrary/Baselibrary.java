@@ -78,8 +78,10 @@ public class Baselibrary {
 //    	driver=new HtmlUnitDriver(BrowserVersion.CHROME);
 //    	driver=new HtmlUnitDriver(true);
 
+		
 		logger.info("Starting Chrome Browser");
-		System.setProperty("webdriver.chrome.driver", path + "\\drivers\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		//System.setProperty("webdriver.chrome.driver", path + "\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -93,7 +95,8 @@ public class Baselibrary {
 		
 
 		logger.info("Starting Firefox Browser");
-		System.setProperty("webdriver.gecko.driver", path + "\\drivers\\geckodriver.exe");
+		WebDriverManager.firefoxdriver().setup();
+		//System.setProperty("webdriver.gecko.driver", path + "\\drivers\\geckodriver.exe");
 		//System.setProperty("webdriver.firefox.marionette",path + "\\drivers\\geckodriver.exe");  
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
@@ -104,7 +107,8 @@ public class Baselibrary {
 public void EdgeLaunch() {
 
 		logger.info("Starting Edge Browser");
-		System.setProperty("webdriver.edge.driver", path + "\\drivers\\msedgedriver.exe");
+		WebDriverManager.edgedriver().setup();
+		//System.setProperty("webdriver.edge.driver", path + "\\drivers\\msedgedriver.exe");
 		//System.setProperty("webdriver.firefox.marionette",path + "\\drivers\\geckodriver.exe");  
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
@@ -144,104 +148,42 @@ public void EdgeLaunch() {
 
 		driver.navigate().to(PropertyUtility.getreadproperty("makemytrip"));
 	}
+	
+	public void TestingbabaHomepage() {
+
+		driver.navigate().to(PropertyUtility.getreadproperty("testingbaba"));
+	}
+	
+	public void FlipkartHomepage() {
+
+		driver.navigate().to(PropertyUtility.getreadproperty("flipkart"));
+	}
 
 	
+	@AfterMethod
+	public void analysis(ITestResult result)
 	
-	
-//	public void Teardown() 
-//	{
-//		if (browser.equalsIgnoreCase("firefox")) 
-//		{
-//
-//			// Initializing the firefox driver (Gecko)
-//			logger.info("Closing Firefox Browser");
-//			
-//
-//		} else if (browser.equalsIgnoreCase("chrome")) 
-//		{
-//
-//			// Initialize the chrome driver
-//
-//			logger.info("Closing Chrome Browser");
-//			
-//		}
-//		driver.quit();
-//		
-//	}
-
-//	public void Teardown()
-//	{   
-//		logger.info("Closing Browser");
-//		driver.quit();
-//	}
-
-//	//Setup extend report v4
-//		public void setExtentReport() {
-//			 
-//			  htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/extentReports/MMTFunctionalTestReport.html");
-//			  htmlReporter.config().setDocumentTitle("Makemytrip Automation Report"); // Title
-//			  htmlReporter.config().setReportName("Functional Testing"); // Report Name
-//			  htmlReporter.config().setTheme(Theme.DARK);
-//			  
-//			  extent = new ExtentReports();
-//			  extent.attachReporter(htmlReporter);
-//			  
-//			  extent.setSystemInfo("Host name", "localhost");
-//			  extent.setSystemInfo("Environemnt", "QA");
-//			  extent.setSystemInfo("user", "Kavitha");
-//			 }
-//		
-//	
-//		@AfterMethod
-//		 public void checkResult(ITestResult result) throws Exception   {
-//		  
-//			if (result.getStatus() == ITestResult.FAILURE) {
-//				
-//				childTest.log(Status.FAIL, result.getName()+" Test Case Failed");
-//				   test.log(Status.FAIL, "Test Case Failed is " + result.getThrowable());
-//				   test.fail(MarkupHelper.createLabel(result.getName()+" Test case Failed", ExtentColor.RED));
-
-//				   String screenshotPath = utilFunctions.getScreenshot(result.getName());
-//				   childTest.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-//				   childTest.addScreenCaptureFromPath(screenshotPath);
-
-//			} else if (result.getStatus() == ITestResult.SKIP) {
-//				  //test.log(Status.SKIP, result.getName()+ " Test Case Skipped");
-//				childTest.skip(MarkupHelper.createLabel(result.getName()+" Test case Skipped", ExtentColor.YELLOW));
-//				childTest.skip(result.getThrowable());
-//				  
-//			} else if (result.getStatus() == ITestResult.SUCCESS) {
-//				  //test.log(Status.PASS, result.getName()+ " Test Case Passed");
-//				childTest.pass(MarkupHelper.createLabel(" Test case passed", ExtentColor.GREEN));
-//			  }
-//		 
-//		 }
-//	
-
-//	@AfterMethod
-//	public void analysis(ITestResult result)
-//	
-//	{
-//		String methodname = result.getMethod().getMethodName();
+	{
+		String methodname = result.getMethod().getMethodName();
 //		if(result.isSuccess())
 //		{
 //			
 //			ScreenshotUtility.getscreenshot("PASSED", methodname);
 //		}
-//		
-//		if (result.getStatus()==ITestResult.FAILURE)
-//		
-//		{
-//			ScreenshotUtility.getscreenshot("FAILED", methodname);
-//		}
-//		
-//		else if (result.getStatus()==ITestResult.SKIP)
-//			
-//		{
-//			ScreenshotUtility.getscreenshot("SKIP", methodname);
-//		}
-//		
-//	}
+		
+		if (result.getStatus()==ITestResult.FAILURE)
+		
+		{
+			ScreenshotUtility.getscreenshot("FAILED", methodname);
+		}
+		
+		else if (result.getStatus()==ITestResult.SKIP)
+			
+		{
+			ScreenshotUtility.getscreenshot("SKIP", methodname);
+		}
+		
+	}
 
 	public static void getScreenshot(String result) throws IOException {
 

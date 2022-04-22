@@ -19,7 +19,7 @@
 
 		<classes>
 
-			<class name="makemytrip.Makemytrip_Flightsearch_test" />
+			<class name="makemytrip.Makemytrip_homestays_test" />
 		</classes>
 	</test>
 	

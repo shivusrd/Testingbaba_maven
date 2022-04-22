@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Testingbaba]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="edge"/>
+  <parameter name="browser" value="chrome"/>
   <parameter name="url" value="https://makemytrip.com/"/>
   <listeners>
     <listener class-name="listeners.Listners"/>
@@ -10,13 +10,13 @@
   </listeners>
   <test thread-count="5" name="Single test(failed)">
     <classes>
-      <class name="makemytrip.Makemytrip_Flightsearch_test">
+      <class name="makemytrip.Makemytrip_homestays_test">
         <methods>
           <include name="Teardown2"/>
-          <include name="SearchFlightToday"/>
           <include name="launchFB"/>
+          <include name="SearchHomestay"/>
         </methods>
-      </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
+      </class> <!-- makemytrip.Makemytrip_homestays_test -->
     </classes>
   </test> <!-- Single test(failed) -->
 </suite> <!-- Failed suite [Testingbaba] -->

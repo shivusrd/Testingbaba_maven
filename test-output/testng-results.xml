@@ -5,21 +5,21 @@
       <![CDATA[About to begin executing Class Single test]]>
     </line>
     <line>
-      <![CDATA[Testcase SearchFlightToday started successfully]]>
+      <![CDATA[Testcase SearchHomestay started successfully]]>
     </line>
     <line>
-      <![CDATA[Testcase SearchFlightToday passed successfully]]>
+      <![CDATA[Testcase SearchHomestay passed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-04-21T09:16:01 IST" name="Testingbaba" finished-at="2022-04-21T09:16:22 IST" duration-ms="20939">
+  <suite started-at="2022-04-22T08:35:08 IST" name="Testingbaba" finished-at="2022-04-22T08:35:39 IST" duration-ms="31006">
     <groups>
       <group name="Functional testing">
-        <method signature="Makemytrip_Flightsearch_test.SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@47f4e407]" name="SearchFlightToday" class="makemytrip.Makemytrip_Flightsearch_test"/>
+        <method signature="Makemytrip_homestays_test.SearchHomestay()[pri:0, instance:makemytrip.Makemytrip_homestays_test@57ea113a]" name="SearchHomestay" class="makemytrip.Makemytrip_homestays_test"/>
       </group> <!-- Functional testing -->
     </groups>
-    <test started-at="2022-04-21T09:16:01 IST" name="Single test" finished-at="2022-04-21T09:16:22 IST" duration-ms="20939">
-      <class name="makemytrip.Makemytrip_Flightsearch_test">
-        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@47f4e407]" started-at="2022-04-21T09:16:01 IST" name="launchFB" finished-at="2022-04-21T09:16:12 IST" duration-ms="10884" status="PASS">
+    <test started-at="2022-04-22T08:35:08 IST" name="Single test" finished-at="2022-04-22T08:35:39 IST" duration-ms="31006">
+      <class name="makemytrip.Makemytrip_homestays_test">
+        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_homestays_test@57ea113a]" started-at="2022-04-22T08:35:08 IST" name="launchFB" finished-at="2022-04-22T08:35:31 IST" duration-ms="23452" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,17 +35,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchFB -->
-        <test-method signature="SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@47f4e407]" started-at="2022-04-21T09:16:12 IST" name="SearchFlightToday" finished-at="2022-04-21T09:16:19 IST" duration-ms="7504" status="PASS">
+        <test-method signature="SearchHomestay()[pri:0, instance:makemytrip.Makemytrip_homestays_test@57ea113a]" started-at="2022-04-22T08:35:31 IST" name="SearchHomestay" finished-at="2022-04-22T08:35:37 IST" duration-ms="5543" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Testcase SearchFlightToday started successfully]]>
+              <![CDATA[Testcase SearchHomestay started successfully]]>
             </line>
             <line>
-              <![CDATA[Testcase SearchFlightToday passed successfully]]>
+              <![CDATA[Testcase SearchHomestay passed successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- SearchFlightToday -->
-        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@47f4e407]" started-at="2022-04-21T09:16:19 IST" name="Teardown2" finished-at="2022-04-21T09:16:22 IST" duration-ms="2483" status="PASS">
+        </test-method> <!-- SearchHomestay -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:makemytrip.Makemytrip_homestays_test@57ea113a]" started-at="2022-04-22T08:35:37 IST" name="analysis" finished-at="2022-04-22T08:35:37 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchHomestay status=SUCCESS method=Makemytrip_homestays_test.SearchHomestay()[pri:0, instance:makemytrip.Makemytrip_homestays_test@57ea113a] output=Testcase SearchHomestay started successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analysis -->
+        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_homestays_test@57ea113a]" started-at="2022-04-22T08:35:37 IST" name="Teardown2" finished-at="2022-04-22T08:35:39 IST" duration-ms="1938" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-      </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
+      </class> <!-- makemytrip.Makemytrip_homestays_test -->
     </test> <!-- Single test -->
   </suite> <!-- Testingbaba -->
 </testng-results>

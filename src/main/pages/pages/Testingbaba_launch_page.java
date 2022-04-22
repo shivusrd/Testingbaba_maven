@@ -34,16 +34,16 @@ public class Testingbaba_launch_page extends Baselibrary
 	{
 		String title = driver.getTitle();
 		System.out.println(title);
-		//ScreenshotUtility.getscreenshot("passed", "gettitle");
+		
 	}
 	
 	public void closebtn() throws InterruptedException
 	{
 		closebtn.click();
-		//assertEquals(practiceform.isDisplayed(),true);
+		assertEquals(practiceform.isDisplayed(),true);
 		Thread.sleep(2000);
 		practiceform.click();
-		//Applicationutility.getscroll(scroll);
+		Applicationutility.getscroll(scroll);
 	}
 }
 

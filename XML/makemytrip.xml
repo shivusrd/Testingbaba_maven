@@ -24,6 +24,12 @@
      <class name="makemytrip.Makemytrip_Flightsearch_test" />
       </classes>
 	</test>
+	
+	<test name="Flight search" enabled="true">
+  <classes>
+     <class name="makemytrip.Makemytrip_homestays" />
+      </classes>
+	</test>
   
 </suite> <!-- Suite -->
 
