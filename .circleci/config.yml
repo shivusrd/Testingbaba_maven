@@ -25,7 +25,7 @@ jobs:
       # Then run your tests!
       - run:
           name: Test
-          command: test -Dbrowser=chrome -Dtestngpath=testingbaba.xml -Durl=https://testingbaba.com/
+          command: test -Dbrowser=chrome -Durl=https://testingbaba.com/
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
