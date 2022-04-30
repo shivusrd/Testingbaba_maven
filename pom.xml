@@ -163,7 +163,7 @@
 				<configuration>
 					<suiteXmlFiles>
 
-						<suiteXmlFile>XML/${testngpath}</suiteXmlFile>
+						<suiteXmlFile>testingbaba.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					
 				</configuration>
