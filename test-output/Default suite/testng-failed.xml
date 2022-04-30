@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testingbaba.Testingbaba_autocomplete_test">
+      <class name="database.ConnectMySql">
         <methods>
-          <include name="launchtestingbaba"/>
-          <include name="Teardown2"/>
-          <include name="AutocompleteTestingBaba_test01"/>
-          <include name="AutocompleteTestingBaba_test03"/>
-          <include name="AutocompleteTestingBaba_test02"/>
+          <include name="TestDB"/>
         </methods>
-      </class> <!-- testingbaba.Testingbaba_autocomplete_test -->
+      </class> <!-- database.ConnectMySql -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

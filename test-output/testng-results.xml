@@ -1,25 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[About to begin executing Class Single test]]>
+      <![CDATA[About to begin executing Class Flipkart]]>
     </line>
     <line>
-      <![CDATA[Testcase SearchFlightToday started successfully]]>
+      <![CDATA[Testcase FlipkartLogin_Test01 started successfully]]>
     </line>
     <line>
-      <![CDATA[Testcase SearchFlightToday passed successfully]]>
+      <![CDATA[Testcase FlipkartLogin_Test01 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartProfileChange_Test02 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartProfileChange_Test02 passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class Flipkart]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class FlipkartBuy]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 passed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-04-22T17:44:37 IST" name="Testingbaba" finished-at="2022-04-22T17:45:17 IST" duration-ms="39608">
+  <suite started-at="2022-04-29T17:50:12 IST" name="Flipkart" finished-at="2022-04-29T17:50:48 IST" duration-ms="35887">
     <groups>
-      <group name="Functional testing">
-        <method signature="Makemytrip_Flightsearch_test.SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@57ea113a]" name="SearchFlightToday" class="makemytrip.Makemytrip_Flightsearch_test"/>
-      </group> <!-- Functional testing -->
+      <group name="Regression">
+        <method signature="Flipkart_buyproduct_test.FlipkartLoginInvalidCred_Test01()[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" name="FlipkartLoginInvalidCred_Test01" class="flipkart.Flipkart_buyproduct_test"/>
+      </group> <!-- Regression -->
+      <group name="smoke">
+        <method signature="Flipkart_buy_test.FlipkartLogin_Test01()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" name="FlipkartLogin_Test01" class="flipkart.Flipkart_buy_test"/>
+        <method signature="Flipkart_buy_test.FlipkartProfileChange_Test02()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" name="FlipkartProfileChange_Test02" class="flipkart.Flipkart_buy_test"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-04-22T17:44:37 IST" name="Single test" finished-at="2022-04-22T17:45:17 IST" duration-ms="39608">
-      <class name="makemytrip.Makemytrip_Flightsearch_test">
-        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@57ea113a]" started-at="2022-04-22T17:44:37 IST" name="launchFB" finished-at="2022-04-22T17:44:57 IST" duration-ms="19400" status="PASS">
+    <test started-at="2022-04-29T17:50:12 IST" name="Flipkart" finished-at="2022-04-29T17:50:40 IST" duration-ms="28270">
+      <class name="flipkart.Flipkart_buy_test">
+        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:12 IST" name="launchFB" finished-at="2022-04-29T17:50:18 IST" duration-ms="5477" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,35 +50,45 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://makemytrip.com/]]>
+                <![CDATA[https://www.flipkart.com/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchFB -->
-        <test-method signature="SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@57ea113a]" started-at="2022-04-22T17:44:57 IST" name="SearchFlightToday" finished-at="2022-04-22T17:45:16 IST" duration-ms="19518" status="PASS">
+        <test-method signature="FlipkartLogin_Test01()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:18 IST" name="FlipkartLogin_Test01" finished-at="2022-04-29T17:50:20 IST" duration-ms="2473" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Testcase SearchFlightToday started successfully]]>
+              <![CDATA[Testcase FlipkartLogin_Test01 started successfully]]>
             </line>
             <line>
-              <![CDATA[Testcase SearchFlightToday passed successfully]]>
+              <![CDATA[Testcase FlipkartLogin_Test01 passed successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- SearchFlightToday -->
-        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@57ea113a]" started-at="2022-04-22T17:45:16 IST" name="analysis" finished-at="2022-04-22T17:45:16 IST" duration-ms="20" status="PASS">
+        </test-method> <!-- FlipkartLogin_Test01 -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:20 IST" name="analysis" finished-at="2022-04-29T17:50:20 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SearchFlightToday status=SUCCESS method=Makemytrip_Flightsearch_test.SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@57ea113a] output=Testcase SearchFlightToday started successfully]]]>
+                <![CDATA[[TestResult name=FlipkartLogin_Test01 status=SUCCESS method=Flipkart_buy_test.FlipkartLogin_Test01()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2] output=Testcase FlipkartLogin_Test01 started successfully]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- analysis -->
-        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@57ea113a]" started-at="2022-04-22T17:45:16 IST" name="Teardown2" finished-at="2022-04-22T17:45:17 IST" duration-ms="598" status="PASS">
+        <test-method signature="FlipkartProfileChange_Test02()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:20 IST" name="FlipkartProfileChange_Test02" finished-at="2022-04-29T17:50:40 IST" duration-ms="19726" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase FlipkartProfileChange_Test02 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase FlipkartProfileChange_Test02 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FlipkartProfileChange_Test02 -->
+        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:40 IST" name="Teardown2" finished-at="2022-04-29T17:50:40 IST" duration-ms="517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,7 +99,70 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-      </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
-    </test> <!-- Single test -->
-  </suite> <!-- Testingbaba -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:40 IST" name="analysis" finished-at="2022-04-29T17:50:40 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FlipkartProfileChange_Test02 status=SUCCESS method=Flipkart_buy_test.FlipkartProfileChange_Test02()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2] output=Testcase FlipkartProfileChange_Test02 started successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analysis -->
+      </class> <!-- flipkart.Flipkart_buy_test -->
+    </test> <!-- Flipkart -->
+    <test started-at="2022-04-29T17:50:40 IST" name="FlipkartBuy" finished-at="2022-04-29T17:50:48 IST" duration-ms="7587">
+      <class name="flipkart.Flipkart_buyproduct_test">
+        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" started-at="2022-04-29T17:50:40 IST" name="launchFB" finished-at="2022-04-29T17:50:44 IST" duration-ms="4074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.flipkart.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFB -->
+        <test-method signature="FlipkartLoginInvalidCred_Test01()[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" started-at="2022-04-29T17:50:44 IST" name="FlipkartLoginInvalidCred_Test01" finished-at="2022-04-29T17:50:47 IST" duration-ms="2703" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FlipkartLoginInvalidCred_Test01 -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" started-at="2022-04-29T17:50:47 IST" name="analysis" finished-at="2022-04-29T17:50:47 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FlipkartLoginInvalidCred_Test01 status=SUCCESS method=Flipkart_buyproduct_test.FlipkartLoginInvalidCred_Test01()[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59] output=Testcase FlipkartLoginInvalidCred_Test01 started successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analysis -->
+        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" started-at="2022-04-29T17:50:47 IST" name="Teardown2" finished-at="2022-04-29T17:50:48 IST" duration-ms="798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown2 -->
+      </class> <!-- flipkart.Flipkart_buyproduct_test -->
+    </test> <!-- FlipkartBuy -->
+  </suite> <!-- Flipkart -->
 </testng-results>

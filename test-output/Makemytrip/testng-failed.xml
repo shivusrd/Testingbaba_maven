@@ -20,4 +20,16 @@
       </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
     </classes>
   </test> <!-- Flight search(failed) -->
+  <test thread-count="5" name="Trainbook(failed)">
+    <classes>
+      <class name="makemytrip.Makemytrip_TrainBook_test">
+        <methods>
+          <include name="Teardown2"/>
+          <include name="launch_makemytrip"/>
+          <include name="analysis"/>
+          <include name="BookTrainTicket_Test01"/>
+        </methods>
+      </class> <!-- makemytrip.Makemytrip_TrainBook_test -->
+    </classes>
+  </test> <!-- Trainbook(failed) -->
 </suite> <!-- Failed suite [Makemytrip] -->
