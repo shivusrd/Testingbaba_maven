@@ -1,47 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[About to begin executing Class Flipkart]]>
+      <![CDATA[About to begin executing Class Makemytrip]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartLogin_Test01 started successfully]]>
+      <![CDATA[Testcase MakemyTripSendValidNumber_Test01 started successfully]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartLogin_Test01 passed successfully]]>
+      <![CDATA[Testcase MakemyTripSendValidNumber_Test01 failed]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartProfileChange_Test02 started successfully]]>
+      <![CDATA[Testcase MakemyTripSendINValidNumber_Test02 started successfully]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartProfileChange_Test02 passed successfully]]>
+      <![CDATA[Testcase MakemyTripSendINValidNumber_Test02 failed]]>
     </line>
     <line>
-      <![CDATA[About to end executing Class Flipkart]]>
+      <![CDATA[About to end executing Class Makemytrip]]>
     </line>
     <line>
-      <![CDATA[About to begin executing Class FlipkartBuy]]>
+      <![CDATA[About to begin executing Class Flight search]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 started successfully]]>
+      <![CDATA[Testcase SearchFlightToday started successfully]]>
     </line>
     <line>
-      <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 passed successfully]]>
+      <![CDATA[Testcase SearchFlightToday passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class Flight search]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class Homestays]]>
+    </line>
+    <line>
+      <![CDATA[Testcase SearchHomestay started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase SearchHomestay passed successfully]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class Homestays]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class Trainbook]]>
+    </line>
+    <line>
+      <![CDATA[Testcase BookTrainTicket_Test01 started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase BookTrainTicket_Test01 failed]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Class Trainbook]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Class Hotel_book]]>
+    </line>
+    <line>
+      <![CDATA[Testcase SearchHomestay started successfully]]>
+    </line>
+    <line>
+      <![CDATA[Testcase SearchHomestay failed]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-04-29T17:50:12 IST" name="Flipkart" finished-at="2022-04-29T17:50:48 IST" duration-ms="35887">
+  <suite started-at="2022-05-01T20:28:39 IST" name="Makemytrip" finished-at="2022-05-01T20:38:59 IST" duration-ms="620861">
     <groups>
-      <group name="Regression">
-        <method signature="Flipkart_buyproduct_test.FlipkartLoginInvalidCred_Test01()[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" name="FlipkartLoginInvalidCred_Test01" class="flipkart.Flipkart_buyproduct_test"/>
-      </group> <!-- Regression -->
-      <group name="smoke">
-        <method signature="Flipkart_buy_test.FlipkartLogin_Test01()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" name="FlipkartLogin_Test01" class="flipkart.Flipkart_buy_test"/>
-        <method signature="Flipkart_buy_test.FlipkartProfileChange_Test02()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" name="FlipkartProfileChange_Test02" class="flipkart.Flipkart_buy_test"/>
-      </group> <!-- smoke -->
+      <group name="Functional testing">
+        <method signature="Makemytrip_launch_test.MakemyTripSendINValidNumber_Test02()[pri:1, instance:makemytrip.Makemytrip_launch_test@42b64ab8]" name="MakemyTripSendINValidNumber_Test02" class="makemytrip.Makemytrip_launch_test"/>
+        <method signature="Makemytrip_launch_test.MakemyTripSendValidNumber_Test01()[pri:0, instance:makemytrip.Makemytrip_launch_test@42b64ab8]" name="MakemyTripSendValidNumber_Test01" class="makemytrip.Makemytrip_launch_test"/>
+        <method signature="Makemytrip_Flightsearch_test.SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@4f936da8]" name="SearchFlightToday" class="makemytrip.Makemytrip_Flightsearch_test"/>
+        <method signature="Makemytrip_homestays_test.SearchHomestay()[pri:0, instance:makemytrip.Makemytrip_homestays_test@6ffab045]" name="SearchHomestay" class="makemytrip.Makemytrip_homestays_test"/>
+        <method signature="Makemytrip_TrainBook_test.BookTrainTicket_Test01()[pri:0, instance:makemytrip.Makemytrip_TrainBook_test@2c9399a4]" name="BookTrainTicket_Test01" class="makemytrip.Makemytrip_TrainBook_test"/>
+        <method signature="Makemytrip_hotel_test.SearchHomestay()[pri:0, instance:makemytrip.Makemytrip_hotel_test@1c98290c]" name="SearchHomestay" class="makemytrip.Makemytrip_hotel_test"/>
+      </group> <!-- Functional testing -->
     </groups>
-    <test started-at="2022-04-29T17:50:12 IST" name="Flipkart" finished-at="2022-04-29T17:50:40 IST" duration-ms="28270">
-      <class name="flipkart.Flipkart_buy_test">
-        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:12 IST" name="launchFB" finished-at="2022-04-29T17:50:18 IST" duration-ms="5477" status="PASS">
+    <test started-at="2022-05-01T20:28:39 IST" name="Makemytrip" finished-at="2022-05-01T20:29:53 IST" duration-ms="74264">
+      <class name="makemytrip.Makemytrip_launch_test">
+        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_launch_test@42b64ab8]" started-at="2022-05-01T20:28:39 IST" name="launchFB" finished-at="2022-05-01T20:29:00 IST" duration-ms="21686" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,45 +87,208 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://www.flipkart.com/]]>
+                <![CDATA[https://makemytrip.com/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchFB -->
-        <test-method signature="FlipkartLogin_Test01()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:18 IST" name="FlipkartLogin_Test01" finished-at="2022-04-29T17:50:20 IST" duration-ms="2473" status="PASS">
+        <test-method signature="MakemyTripSendValidNumber_Test01()[pri:0, instance:makemytrip.Makemytrip_launch_test@42b64ab8]" started-at="2022-05-01T20:29:00 IST" name="MakemyTripSendValidNumber_Test01" finished-at="2022-05-01T20:29:25 IST" duration-ms="24571" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="root"]/div/div[2]/div/main/div[5]/div/div[1]/div/div/button' (tried for 5 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="root"]/div/div[2]/div/main/div[5]/div/div[1]/div/div/button' (tried for 5 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at applicationutility.Applicationutility.clickme(Applicationutility.java:80)
+at pages.Makemytrip_launch_page.makemytrip_login(Makemytrip_launch_page.java:88)
+at makemytrip.Makemytrip_launch_test.MakemyTripSendValidNumber_Test01(Makemytrip_launch_test.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div/div[2]/div/main/div[5]/div/div[1]/div/div/button"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'IN-122P5Y2', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b762ee4448f786cfa86762b144450d83, findElement {using=xpath, value=//*[@id="root"]/div/div[2]/div/main/div[5]/div/div[1]/div/div/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\SHIVAM~1.DUB\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64220/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b762ee4448f786cfa86762b144450d83
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy33.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
-              <![CDATA[Testcase FlipkartLogin_Test01 started successfully]]>
+              <![CDATA[Testcase MakemyTripSendValidNumber_Test01 started successfully]]>
             </line>
             <line>
-              <![CDATA[Testcase FlipkartLogin_Test01 passed successfully]]>
+              <![CDATA[Testcase MakemyTripSendValidNumber_Test01 failed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- FlipkartLogin_Test01 -->
-        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:20 IST" name="analysis" finished-at="2022-04-29T17:50:20 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- MakemyTripSendValidNumber_Test01 -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:makemytrip.Makemytrip_launch_test@42b64ab8]" started-at="2022-05-01T20:29:25 IST" name="analysis" finished-at="2022-05-01T20:29:26 IST" duration-ms="477" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FlipkartLogin_Test01 status=SUCCESS method=Flipkart_buy_test.FlipkartLogin_Test01()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2] output=Testcase FlipkartLogin_Test01 started successfully]]]>
+                <![CDATA[[TestResult name=MakemyTripSendValidNumber_Test01 status=FAILURE method=Makemytrip_launch_test.MakemyTripSendValidNumber_Test01()[pri:0, instance:makemytrip.Makemytrip_launch_test@42b64ab8] output=Testcase MakemyTripSendValidNumber_Test01 started successfully]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- analysis -->
-        <test-method signature="FlipkartProfileChange_Test02()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:20 IST" name="FlipkartProfileChange_Test02" finished-at="2022-04-29T17:50:40 IST" duration-ms="19726" status="PASS">
+        <test-method signature="MakemyTripSendINValidNumber_Test02()[pri:1, instance:makemytrip.Makemytrip_launch_test@42b64ab8]" started-at="2022-05-01T20:29:26 IST" name="MakemyTripSendINValidNumber_Test02" finished-at="2022-05-01T20:29:51 IST" duration-ms="25320" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="root"]/div/div[2]/div/main/div[5]/div/div[1]/div/div/button' (tried for 5 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="root"]/div/div[2]/div/main/div[5]/div/div[1]/div/div/button' (tried for 5 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at applicationutility.Applicationutility.clickme(Applicationutility.java:80)
+at pages.Makemytrip_launch_page.makemytrip_booking(Makemytrip_launch_page.java:112)
+at makemytrip.Makemytrip_launch_test.MakemyTripSendINValidNumber_Test02(Makemytrip_launch_test.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div/div[2]/div/main/div[5]/div/div[1]/div/div/button"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'IN-122P5Y2', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b762ee4448f786cfa86762b144450d83, findElement {using=xpath, value=//*[@id="root"]/div/div[2]/div/main/div[5]/div/div[1]/div/div/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\SHIVAM~1.DUB\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64220/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b762ee4448f786cfa86762b144450d83
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy33.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
-              <![CDATA[Testcase FlipkartProfileChange_Test02 started successfully]]>
+              <![CDATA[Testcase MakemyTripSendINValidNumber_Test02 started successfully]]>
             </line>
             <line>
-              <![CDATA[Testcase FlipkartProfileChange_Test02 passed successfully]]>
+              <![CDATA[Testcase MakemyTripSendINValidNumber_Test02 failed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- FlipkartProfileChange_Test02 -->
-        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:40 IST" name="Teardown2" finished-at="2022-04-29T17:50:40 IST" duration-ms="517" status="PASS">
+        </test-method> <!-- MakemyTripSendINValidNumber_Test02 -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:makemytrip.Makemytrip_launch_test@42b64ab8]" started-at="2022-05-01T20:29:52 IST" name="analysis" finished-at="2022-05-01T20:29:52 IST" duration-ms="560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MakemyTripSendINValidNumber_Test02 status=FAILURE method=Makemytrip_launch_test.MakemyTripSendINValidNumber_Test02()[pri:1, instance:makemytrip.Makemytrip_launch_test@42b64ab8] output=Testcase MakemyTripSendINValidNumber_Test02 started successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analysis -->
+        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_launch_test@42b64ab8]" started-at="2022-05-01T20:29:52 IST" name="Teardown2" finished-at="2022-05-01T20:29:53 IST" duration-ms="431" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,22 +299,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2]" started-at="2022-04-29T17:50:40 IST" name="analysis" finished-at="2022-04-29T17:50:40 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=FlipkartProfileChange_Test02 status=SUCCESS method=Flipkart_buy_test.FlipkartProfileChange_Test02()[pri:0, instance:flipkart.Flipkart_buy_test@2072acb2] output=Testcase FlipkartProfileChange_Test02 started successfully]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- analysis -->
-      </class> <!-- flipkart.Flipkart_buy_test -->
-    </test> <!-- Flipkart -->
-    <test started-at="2022-04-29T17:50:40 IST" name="FlipkartBuy" finished-at="2022-04-29T17:50:48 IST" duration-ms="7587">
-      <class name="flipkart.Flipkart_buyproduct_test">
-        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" started-at="2022-04-29T17:50:40 IST" name="launchFB" finished-at="2022-04-29T17:50:44 IST" duration-ms="4074" status="PASS">
+      </class> <!-- makemytrip.Makemytrip_launch_test -->
+    </test> <!-- Makemytrip -->
+    <test started-at="2022-05-01T20:29:53 IST" name="Flight search" finished-at="2022-05-01T20:30:20 IST" duration-ms="27470">
+      <class name="makemytrip.Makemytrip_Flightsearch_test">
+        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@4f936da8]" started-at="2022-05-01T20:29:53 IST" name="launchFB" finished-at="2022-05-01T20:30:02 IST" duration-ms="8827" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,35 +312,35 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://www.flipkart.com/]]>
+                <![CDATA[https://makemytrip.com/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchFB -->
-        <test-method signature="FlipkartLoginInvalidCred_Test01()[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" started-at="2022-04-29T17:50:44 IST" name="FlipkartLoginInvalidCred_Test01" finished-at="2022-04-29T17:50:47 IST" duration-ms="2703" status="PASS">
+        <test-method signature="SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@4f936da8]" started-at="2022-05-01T20:30:02 IST" name="SearchFlightToday" finished-at="2022-05-01T20:30:20 IST" duration-ms="18135" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 started successfully]]>
+              <![CDATA[Testcase SearchFlightToday started successfully]]>
             </line>
             <line>
-              <![CDATA[Testcase FlipkartLoginInvalidCred_Test01 passed successfully]]>
+              <![CDATA[Testcase SearchFlightToday passed successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- FlipkartLoginInvalidCred_Test01 -->
-        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" started-at="2022-04-29T17:50:47 IST" name="analysis" finished-at="2022-04-29T17:50:47 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- SearchFlightToday -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@4f936da8]" started-at="2022-05-01T20:30:20 IST" name="analysis" finished-at="2022-05-01T20:30:20 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FlipkartLoginInvalidCred_Test01 status=SUCCESS method=Flipkart_buyproduct_test.FlipkartLoginInvalidCred_Test01()[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59] output=Testcase FlipkartLoginInvalidCred_Test01 started successfully]]]>
+                <![CDATA[[TestResult name=SearchFlightToday status=SUCCESS method=Makemytrip_Flightsearch_test.SearchFlightToday()[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@4f936da8] output=Testcase SearchFlightToday started successfully]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- analysis -->
-        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:flipkart.Flipkart_buyproduct_test@2dd29a59]" started-at="2022-04-29T17:50:47 IST" name="Teardown2" finished-at="2022-04-29T17:50:48 IST" duration-ms="798" status="PASS">
+        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_Flightsearch_test@4f936da8]" started-at="2022-05-01T20:30:20 IST" name="Teardown2" finished-at="2022-05-01T20:30:20 IST" duration-ms="504" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -162,7 +351,308 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-      </class> <!-- flipkart.Flipkart_buyproduct_test -->
-    </test> <!-- FlipkartBuy -->
-  </suite> <!-- Flipkart -->
+      </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
+    </test> <!-- Flight search -->
+    <test started-at="2022-05-01T20:30:20 IST" name="Homestays" finished-at="2022-05-01T20:30:42 IST" duration-ms="21359">
+      <class name="makemytrip.Makemytrip_homestays_test">
+        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_homestays_test@6ffab045]" started-at="2022-05-01T20:30:20 IST" name="launchFB" finished-at="2022-05-01T20:30:34 IST" duration-ms="14007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://makemytrip.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFB -->
+        <test-method signature="SearchHomestay()[pri:0, instance:makemytrip.Makemytrip_homestays_test@6ffab045]" started-at="2022-05-01T20:30:34 IST" name="SearchHomestay" finished-at="2022-05-01T20:30:41 IST" duration-ms="6887" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase SearchHomestay started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase SearchHomestay passed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SearchHomestay -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:makemytrip.Makemytrip_homestays_test@6ffab045]" started-at="2022-05-01T20:30:41 IST" name="analysis" finished-at="2022-05-01T20:30:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchHomestay status=SUCCESS method=Makemytrip_homestays_test.SearchHomestay()[pri:0, instance:makemytrip.Makemytrip_homestays_test@6ffab045] output=Testcase SearchHomestay started successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analysis -->
+        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_homestays_test@6ffab045]" started-at="2022-05-01T20:30:41 IST" name="Teardown2" finished-at="2022-05-01T20:30:42 IST" duration-ms="459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown2 -->
+      </class> <!-- makemytrip.Makemytrip_homestays_test -->
+    </test> <!-- Homestays -->
+    <test started-at="2022-05-01T20:30:42 IST" name="Trainbook" finished-at="2022-05-01T20:31:10 IST" duration-ms="27989">
+      <class name="makemytrip.Makemytrip_TrainBook_test">
+        <test-method is-config="true" signature="launch_makemytrip(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_TrainBook_test@2c9399a4]" started-at="2022-05-01T20:30:42 IST" name="launch_makemytrip" finished-at="2022-05-01T20:30:51 IST" duration-ms="8844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_makemytrip -->
+        <test-method signature="BookTrainTicket_Test01()[pri:0, instance:makemytrip.Makemytrip_TrainBook_test@2c9399a4]" started-at="2022-05-01T20:30:51 IST" name="BookTrainTicket_Test01" finished-at="2022-05-01T20:31:08 IST" duration-ms="17602" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='departureAfter6']"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'IN-122P5Y2', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ced960d20331cd50906847f88e391f0, findElement {using=xpath, value=//input[@id='departureAfter6']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\SHIVAM~1.DUB\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64511}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64511/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ced960d20331cd50906847f88e391f0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='departureAfter6']"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'IN-122P5Y2', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ced960d20331cd50906847f88e391f0, findElement {using=xpath, value=//input[@id='departureAfter6']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\SHIVAM~1.DUB\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64511}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64511/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ced960d20331cd50906847f88e391f0
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy33.isDisplayed(Unknown Source)
+at pages.Makemytrip_TrainBook_page.booktrain_ticket(Makemytrip_TrainBook_page.java:78)
+at makemytrip.Makemytrip_TrainBook_test.BookTrainTicket_Test01(Makemytrip_TrainBook_test.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase BookTrainTicket_Test01 started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase BookTrainTicket_Test01 failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BookTrainTicket_Test01 -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:makemytrip.Makemytrip_TrainBook_test@2c9399a4]" started-at="2022-05-01T20:31:09 IST" name="analysis" finished-at="2022-05-01T20:31:09 IST" duration-ms="588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BookTrainTicket_Test01 status=FAILURE method=Makemytrip_TrainBook_test.BookTrainTicket_Test01()[pri:0, instance:makemytrip.Makemytrip_TrainBook_test@2c9399a4] output=Testcase BookTrainTicket_Test01 started successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analysis -->
+        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_TrainBook_test@2c9399a4]" started-at="2022-05-01T20:31:09 IST" name="Teardown2" finished-at="2022-05-01T20:31:10 IST" duration-ms="403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown2 -->
+      </class> <!-- makemytrip.Makemytrip_TrainBook_test -->
+    </test> <!-- Trainbook -->
+    <test started-at="2022-05-01T20:31:10 IST" name="Hotel_book" finished-at="2022-05-01T20:38:59 IST" duration-ms="469660">
+      <class name="makemytrip.Makemytrip_hotel_test">
+        <test-method is-config="true" signature="launchFB(java.lang.String,java.lang.String)[pri:0, instance:makemytrip.Makemytrip_hotel_test@1c98290c]" started-at="2022-05-01T20:31:10 IST" name="launchFB" finished-at="2022-05-01T20:31:21 IST" duration-ms="11422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://makemytrip.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFB -->
+        <test-method signature="SearchHomestay()[pri:0, instance:makemytrip.Makemytrip_hotel_test@1c98290c]" started-at="2022-05-01T20:31:21 IST" name="SearchHomestay" finished-at="2022-05-01T20:38:58 IST" duration-ms="457037" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'IN-122P5Y2', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [24b5797b17b88b711d21010b4cd86841, clickElement {id=63a95ea4-34ca-4c32-8fdb-e5fb860f802b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\SHIVAM~1.DUB\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64601/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (24b5797b17b88b711d21010b4cd86841)] -> xpath: //span[@class='langCardClose']]
+Session ID: 24b5797b17b88b711d21010b4cd86841]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'IN-122P5Y2', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [24b5797b17b88b711d21010b4cd86841, clickElement {id=63a95ea4-34ca-4c32-8fdb-e5fb860f802b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\SHIVAM~1.DUB\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64601/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (24b5797b17b88b711d21010b4cd86841)] -> xpath: //span[@class='langCardClose']]
+Session ID: 24b5797b17b88b711d21010b4cd86841
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+at pages.Makemytrip_hotel_page.ClickOnHotel(Makemytrip_hotel_page.java:67)
+at makemytrip.Makemytrip_hotel_test.SearchHomestay(Makemytrip_hotel_test.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase SearchHomestay started successfully]]>
+            </line>
+            <line>
+              <![CDATA[Testcase SearchHomestay failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SearchHomestay -->
+        <test-method is-config="true" signature="analysis(org.testng.ITestResult)[pri:0, instance:makemytrip.Makemytrip_hotel_test@1c98290c]" started-at="2022-05-01T20:38:59 IST" name="analysis" finished-at="2022-05-01T20:38:59 IST" duration-ms="274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchHomestay status=FAILURE method=Makemytrip_hotel_test.SearchHomestay()[pri:0, instance:makemytrip.Makemytrip_hotel_test@1c98290c] output=Testcase SearchHomestay started successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analysis -->
+        <test-method is-config="true" signature="Teardown2(java.lang.String)[pri:0, instance:makemytrip.Makemytrip_hotel_test@1c98290c]" started-at="2022-05-01T20:38:59 IST" name="Teardown2" finished-at="2022-05-01T20:38:59 IST" duration-ms="312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown2 -->
+      </class> <!-- makemytrip.Makemytrip_hotel_test -->
+    </test> <!-- Hotel_book -->
+  </suite> <!-- Makemytrip -->
 </testng-results>

@@ -8,18 +8,19 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="Flight search(failed)">
+  <test thread-count="5" name="Makemytrip(failed)">
     <classes>
-      <class name="makemytrip.Makemytrip_Flightsearch_test">
+      <class name="makemytrip.Makemytrip_launch_test">
         <methods>
           <include name="Teardown2"/>
-          <include name="SearchFlightToday"/>
           <include name="launchFB"/>
+          <include name="MakemyTripSendINValidNumber_Test02"/>
+          <include name="MakemyTripSendValidNumber_Test01"/>
           <include name="analysis"/>
         </methods>
-      </class> <!-- makemytrip.Makemytrip_Flightsearch_test -->
+      </class> <!-- makemytrip.Makemytrip_launch_test -->
     </classes>
-  </test> <!-- Flight search(failed) -->
+  </test> <!-- Makemytrip(failed) -->
   <test thread-count="5" name="Trainbook(failed)">
     <classes>
       <class name="makemytrip.Makemytrip_TrainBook_test">
@@ -32,4 +33,16 @@
       </class> <!-- makemytrip.Makemytrip_TrainBook_test -->
     </classes>
   </test> <!-- Trainbook(failed) -->
+  <test thread-count="5" name="Hotel_book(failed)">
+    <classes>
+      <class name="makemytrip.Makemytrip_hotel_test">
+        <methods>
+          <include name="Teardown2"/>
+          <include name="SearchHomestay"/>
+          <include name="launchFB"/>
+          <include name="analysis"/>
+        </methods>
+      </class> <!-- makemytrip.Makemytrip_hotel_test -->
+    </classes>
+  </test> <!-- Hotel_book(failed) -->
 </suite> <!-- Failed suite [Makemytrip] -->
