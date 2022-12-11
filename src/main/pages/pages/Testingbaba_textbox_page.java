@@ -66,12 +66,12 @@ public class Testingbaba_textbox_page extends Baselibrary
 	public void closebtn() throws InterruptedException {
 
 		closebtn.click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		Applicationutility.clickme(practiceform);
 		driver.navigate().refresh();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		closebtn.click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		Applicationutility.clickme(practiceform);
 	}
 
