@@ -21,7 +21,7 @@ public class Testingbaba_launch_page extends Baselibrary
 
 	@FindBy(xpath= "//*[@id=\"myModal2\"]/div/div/div[1]/button")
 	private WebElement closebtn;
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[4]/a")
+	@FindBy(xpath="//a[@class='kbt'][normalize-space()='Practice']")
 	
 	
 	

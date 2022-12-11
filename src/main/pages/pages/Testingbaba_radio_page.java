@@ -23,7 +23,7 @@ public class Testingbaba_radio_page extends Baselibrary
 	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
 	private WebElement closebtn;
 
-	@FindBy(xpath = "//*[@id=\"navbarSupportedContent\"]/ul/li[5]/a")
+	@FindBy(xpath = "//a[@class='kbt'][normalize-space()='Practice']")
 	private WebElement practiceform;
 
 	@FindBy(xpath = "//*[@id=\"elements-accordion\"]/div[1]/div[1]/h2/button")

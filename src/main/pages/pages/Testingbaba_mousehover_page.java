@@ -22,7 +22,7 @@ public class Testingbaba_mousehover_page extends Baselibrary
 	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
 	private WebElement closebtn;
 
-	@FindBy(xpath = "//*[@id=\"navbarSupportedContent\"]/ul/li[5]/a")
+	@FindBy(xpath = "//a[@class='kbt'][normalize-space()='Practice']")
 	private WebElement practiceform;
 
 	@FindBy(xpath = "//*[@id=\"elements-accordion\"]/div[1]/div[1]/h2/button")
@@ -47,7 +47,12 @@ public class Testingbaba_mousehover_page extends Baselibrary
 	{
 
 		closebtn.click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
+		Applicationutility.clickme(practiceform);
+		driver.navigate().refresh();
+		Thread.sleep(4000);
+		closebtn.click();
+		Thread.sleep(4000);
 		Applicationutility.clickme(practiceform);
 
 	}

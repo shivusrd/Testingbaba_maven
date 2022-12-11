@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.sl.usermodel.ObjectMetaData.Application;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -24,7 +25,7 @@ public class Testingbaba_autocomplete_page extends Baselibrary
 	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
 	private WebElement closebtn;
 
-	@FindBy(xpath = "//*[@id=\"navbarSupportedContent\"]/ul/li[5]/a")
+	@FindBy(xpath = "//a[@class='kbt'][normalize-space()='Practice']")
 	private WebElement practiceform;
 
 	@FindBy(xpath = "//body/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/h2[1]/button[1]")
@@ -45,8 +46,15 @@ public class Testingbaba_autocomplete_page extends Baselibrary
 	{
 
 		closebtn.click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		Applicationutility.clickme(practiceform);
+		driver.navigate().refresh();
+		Thread.sleep(4000);
+		closebtn.click();
+		Thread.sleep(4000);
+		Applicationutility.clickme(practiceform);
+		
+	    
 		
 		
 	}
@@ -56,7 +64,7 @@ public class Testingbaba_autocomplete_page extends Baselibrary
 	{   
 		assertEquals(widgets.isDisplayed(),true);
 		widgets.click();
-      
+        
 		
 	}
 	
