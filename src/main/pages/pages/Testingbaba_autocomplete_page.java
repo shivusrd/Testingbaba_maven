@@ -46,12 +46,12 @@ public class Testingbaba_autocomplete_page extends Baselibrary
 	{
 
 		closebtn.click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		Applicationutility.clickme(practiceform);
 		driver.navigate().refresh();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		closebtn.click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		Applicationutility.clickme(practiceform);
 		
 	    
