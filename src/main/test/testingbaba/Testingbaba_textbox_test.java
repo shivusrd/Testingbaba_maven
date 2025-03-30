@@ -5,9 +5,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.relevantcodes.extentreports.ExtentTest;
-
 import baselibrary.Baselibrary;
 
 import pages.Testingbaba_textbox_page;
@@ -26,25 +23,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 	public void launchtestingbaba(String browser,String url) throws InterruptedException 
 	{
 		String testingbaba = PropertyUtility.getreadproperty("Testingbabaurl");
-		if(browser.equalsIgnoreCase("firefox")) {
-			 
-		     //Initializing the firefox driver (Gecko)
-			 FirefoxLaunch();
-
-		  }else if (browser.equalsIgnoreCase("chrome")) { 
-
-			  //Initialize the chrome driver
-
-			  ChromeLaunch();
-
-		  } 
-		  else if (browser.equalsIgnoreCase("edge")) { 
-
-			  //Initialize the chrome driver
-
-			 EdgeLaunch();
-
-		  } 
+		 
 		if(url.equalsIgnoreCase(testingbaba))
 		{
 			 
@@ -67,7 +46,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 	@Test(priority = 0)
 
 	public void TextboxTestingBaba_test01() throws Exception {
-		reporter.log("inside test01");
+		
 		ob.gettitle();
 		
 
@@ -77,7 +56,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 	public void TextboxTestingBaba_test02()
 
 	{
-		reporter.log("inside test01");
+		
 		ob.clickonelements();
 	}
 
@@ -85,7 +64,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 
 	public void TextboxTestingBaba_test03() 
 	
-	{reporter.log("inside test01");
+	{
 		ob.filldetails();
 
 	}
@@ -93,7 +72,7 @@ public class Testingbaba_textbox_test extends Baselibrary
 	@Test(priority = 3,groups ="Functional testing")
 	public void TextboxTestingBaba_test04() 
 	{
-		reporter.log("inside test01");
+		
 		ob.getverify_textboxdata();
 	}
 

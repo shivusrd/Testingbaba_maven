@@ -80,7 +80,7 @@ public class TestingbabaAlerts_Frame_page extends Baselibrary
 	public void clickme2()
 	{
 		Applicationutility.clickme(clickme2);
-		Waitutility.alertispresent(6);
+		Waitutility.alertIsPresent(6);
 		driver.switchTo().alert().accept();
 	}
 	

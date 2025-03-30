@@ -18,25 +18,6 @@ public class Makemytrip_homestays_test extends Baselibrary
 	public void launchFB(String browser,String url) 
 	{
 		String makemytrip = PropertyUtility.getreadproperty("makemytrip");
-		if(browser.equalsIgnoreCase("firefox")) {
-			 
-			     //Initializing the firefox driver (Gecko)
-				 FirefoxLaunch();
-
-			  }else if (browser.equalsIgnoreCase("chrome")) { 
-
-				  //Initialize the chrome driver
-
-				  ChromeLaunch();
-
-			  } 
-			  else if (browser.equalsIgnoreCase("edge")) { 
-
-				  //Initialize the chrome driver
-
-				 EdgeLaunch();
-
-			  } 
 
 		if(url.equalsIgnoreCase(makemytrip))
 		{

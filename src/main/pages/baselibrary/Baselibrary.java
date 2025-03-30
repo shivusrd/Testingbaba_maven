@@ -12,6 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -27,7 +28,6 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.relevantcodes.extentreports.model.Log;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.Makemytrip_launch_page;
@@ -56,129 +56,131 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class Baselibrary {
 
 	public static WebDriver driver;
-
-	// public static ChromeOptions option;
-	public static Reporter reporter;
-	public Reporter rep = new Reporter();
-	public static Logger logger = LogManager.getLogger(Baselibrary.class);
-
+	public static final Logger logger = LogManager.getLogger(Baselibrary.class);
 	public static ExtentReports extent;
 	public static ExtentTest test;
-	public static ExtentTest childTest;
-	static String path = System.getProperty("user.dir");
+	static String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport.html";
 
-	public void ChromeLaunch() {
-
-		// Initializing the Headless chromebrowser
-
-//    	option=new ChromeOptions();
-//    	option.addArguments("headless");
-//    	option.setHeadless(true);
-//    	driver=new HtmlUnitDriver(BrowserVersion.CHROME);
-//    	driver=new HtmlUnitDriver(true);
-
-		logger.info("Starting Chrome Browser");
-		WebDriverManager.chromedriver().setup();
-
-		driver = new ChromeDriver();
-		
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+	@BeforeSuite
+	public void setupExtentReport() {
+		ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
+		spark.config().setTheme(Theme.STANDARD);
+		spark.config().setDocumentTitle("Automation Report");
+		extent = new ExtentReports();
+		extent.attachReporter(spark);
 	}
 
-	public void FirefoxLaunch() {
-
-		logger.info("Starting Firefox Browser");
-		WebDriverManager.firefoxdriver().setup();
-
-		driver = new FirefoxDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-	}
-
-	public void EdgeLaunch() {
-
-		logger.info("Starting Edge Browser");
-		WebDriverManager.edgedriver().setup();
-
-		driver = new EdgeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-	}
-
-	@Parameters({ "browser" })
-	@AfterTest
-
-	public void Teardown2(String browser) {
-
-		if (browser.equalsIgnoreCase("firefox")) {
-
-			// Initializing the firefox driver (Gecko)
-			logger.info("Closing firefox Browser");
-
-		} else if (browser.equalsIgnoreCase("chrome")) {
-
-			// Initialize the chrome driver
-			logger.info("Closing chrome Browser");
-
-		} else if (browser.equalsIgnoreCase("edge")) {
-
-			// Initialize the chrome driver
-			logger.info("Closing edge Browser");
-
+	@Parameters("browser")
+	@BeforeTest
+	public void setupBrowser(String browser) {
+		if ("chrome".equalsIgnoreCase(browser)) {
+			logger.info("Starting Chrome Browser");
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		} else if ("firefox".equalsIgnoreCase(browser)) {
+			logger.info("Starting Firefox Browser");
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		} else if ("edge".equalsIgnoreCase(browser)) {
+			logger.info("Starting Edge Browser");
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
 		}
-		driver.quit();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	public void MakemytripHomepage() {
-
-		driver.navigate().to(PropertyUtility.getreadproperty("makemytrip"));
+	@AfterTest
+	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+			logger.info("Browser closed.");
+		}
 	}
 
-	public void TestingbabaHomepage() {
-
-		driver.navigate().to(PropertyUtility.getreadproperty("testingbaba"));
-	}
-
-	public void FlipkartHomepage() {
-
-		driver.navigate().to(PropertyUtility.getreadproperty("flipkart"));
+	@AfterSuite
+	public void tearDownExtentReport() {
+		if (extent != null) {
+			extent.flush();
+		}
 	}
 
 	@AfterMethod
-	public void analysis(ITestResult result)
+	public void recordResult(ITestResult result) {
+		String methodName = result.getMethod().getMethodName();
+		String screenshotPath = captureScreenshot(result.getStatus() == ITestResult.SUCCESS ? "PASSED"
+				: result.getStatus() == ITestResult.FAILURE ? "FAILED" : "SKIPPED", methodName);
 
-	{
-		String methodname = result.getMethod().getMethodName();
-//		if(result.isSuccess())
-//		{
-//			
-//			ScreenshotUtility.getscreenshot("PASSED", methodname);
-//		}
+		test = extent.createTest(methodName);
 
-		if (result.getStatus() == ITestResult.FAILURE)
-
-		{
-			ScreenshotUtility.getscreenshot("FAILED", methodname);
+		if (result.getStatus() == ITestResult.SUCCESS) {
+			if (!screenshotPath.equals("Screenshot capture disabled")) {
+				test.log(Status.PASS, "Test Passed: " + methodName,
+						MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			} else {
+				test.log(Status.PASS, "Test Passed: " + methodName);
+			}
+			logger.info("Test passed: " + methodName);
+			test.log(Status.INFO, "Log: " + "Test passed: " + methodName);
+		} else if (result.getStatus() == ITestResult.FAILURE) {
+			if (!screenshotPath.equals("Screenshot capture disabled")) {
+				test.log(Status.FAIL, "Test Failed: " + methodName,
+						MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			} else {
+				test.log(Status.FAIL, "Test Failed: " + methodName);
+			}
+			test.log(Status.FAIL, result.getThrowable());
+			logger.error("Test failed: " + methodName, result.getThrowable());
+			test.log(Status.FAIL, "Log: " + "Test failed: " + methodName + result.getThrowable());
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			if (!screenshotPath.equals("Screenshot capture disabled")) {
+				test.log(Status.SKIP, "Test Skipped: " + methodName,
+						MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			} else {
+				test.log(Status.SKIP, "Test Skipped: " + methodName);
+			}
+			logger.warn("Test skipped: " + methodName);
+			test.log(Status.WARNING, "Log: " + "Test skipped: " + methodName);
 		}
-
-		else if (result.getStatus() == ITestResult.SKIP)
-
-		{
-			ScreenshotUtility.getscreenshot("SKIP", methodname);
-		}
-
 	}
 
-	public static void getScreenshot(String result) throws IOException {
+	public String captureScreenshot(String status, String methodName) {
+		String destFilePath = null;
+		try {
+			String captureScreenshotsProperty = PropertyUtility.getreadproperty("captureScreenshots");
+			boolean captureScreenshots = Boolean.parseBoolean(captureScreenshotsProperty);
 
-		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			if (captureScreenshots) {
+				File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+				String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+				destFilePath = System.getProperty("user.dir") + "/Screenshots/" + status + "/" + methodName + "_"
+						+ timestamp + ".png";
+				File destinationFile = new File(destFilePath);
+				destinationFile.getParentFile().mkdirs(); // Ensure directory exists
+				FileUtils.copyFile(srcFile, destinationFile);
+			} else {
+				logger.info("Screenshot capture is disabled in properties.");
+				return "Screenshot capture disabled"; // Or any value to indicate no screenshot was taken.
+			}
 
-		FileUtils.copyFile(srcFile, new File("C://screenshotTest//" + result + "screenshot.jpeg"));
-
+		} catch (IOException e) {
+			logger.error("Error capturing screenshot: " + e.getMessage());
+		}
+		return destFilePath;
 	}
+
+	// Navigation Methods
+	public void makemytripHomepage() {
+		driver.navigate().to(PropertyUtility.getreadproperty("makemytrip"));
+	}
+
+	public void testingbabaHomepage() {
+		driver.navigate().to(PropertyUtility.getreadproperty("testingbaba"));
+	}
+
+	public void flipkartHomepage() {
+		driver.navigate().to(PropertyUtility.getreadproperty("flipkart"));
+	}
+	
 
 }

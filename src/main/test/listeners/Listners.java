@@ -2,7 +2,6 @@ package listeners;
 
 import java.io.IOException;
 
-import org.jsoup.Connection.Base;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -30,17 +29,6 @@ public class Listners implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		
-		try {
-			p.getScreenshot(result.getName());
-		
-		} 
-		
-		catch (IOException e) 
-		
-		{
-			
-			e.printStackTrace();
-		}
 		
 		
 		

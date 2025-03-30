@@ -18,25 +18,7 @@ Makemytrip_TrainBook_page ob;
 
 	public void launch_makemytrip(String browser) {
 		String url = PropertyUtility.getreadproperty("makemytrip");
-		if(browser.equalsIgnoreCase("firefox")) {
-			 
-		     //Initializing the firefox driver (Gecko)
-			 FirefoxLaunch();
-
-		  }else if (browser.equalsIgnoreCase("chrome")) { 
-
-			  //Initialize the chrome driver
-
-			  ChromeLaunch();
-
-		  } 
-		  else if (browser.equalsIgnoreCase("edge")) { 
-
-			  //Initialize the chrome driver
-
-			 EdgeLaunch();
-
-		  } 
+		
 		driver.get(url);
 
 		ob = new Makemytrip_TrainBook_page();

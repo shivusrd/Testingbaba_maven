@@ -102,7 +102,7 @@ public class Makemytrip_launch_page extends Baselibrary
 	}
 
 	public void makemytrip_booking() throws InterruptedException {
-		MakemytripHomepage();
+		makemytripHomepage();
 		Applicationutility.getscroll(scroll);
 		
 		Thread.sleep(2000);
