@@ -7,8 +7,7 @@
 
 <listeners>
      <listener class-name="listeners.Listners"/>
-       <listener class-name="listeners.Report_log"/>
-       <listener class-name="extentReports.Extent_report"/> 
+       <listener class-name="listeners.Report_log"/> 
         
  </listeners>
 
