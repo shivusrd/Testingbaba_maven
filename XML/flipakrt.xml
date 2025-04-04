@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Flipkart" >
+<!DOCTYPE suite SYSTEM "testng-1.0.dtd">
+<suite name="Flipkart">
 
-<parameter name="browser" value="chrome"></parameter>
-<parameter name="url" value="https://www.flipkart.com/" />
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="url" value="https://www.flipkart.com/" />
+	<parameter name="captureScreenshots" value="true" />
+	<parameter name="enableLogs" value="true" />
+	<parameter name="enableExtentReports" value="true" />
 
-<listeners>
-     <listener class-name="listeners.Listners"/>
-       <listener class-name="listeners.Report_log"/> 
-        
- </listeners>
+	<listeners>
+		<listener class-name="listeners.Listners" />
+		<listener class-name="listeners.Report_log" />
 
-<test name = "Flipkart" enabled="true" >
-  <classes>
-  <class name="flipkart.Flipkart_buy_test"/>
-    </classes>
-  </test>
-  
-  <test name = "FlipkartBuy" enabled="true" >
-  <classes>
-  <class name="flipkart.Flipkart_buyproduct_test"/>
-    </classes>
-  </test>
-  
-  
-  
+	</listeners>
+
+	<test name="Flipkart" enabled="true">
+		<packages>
+			<package name="flipkart"></package>
+		</packages>
+
+
+	</test>
+
+
+
+
+
 </suite> <!-- Suite -->
 

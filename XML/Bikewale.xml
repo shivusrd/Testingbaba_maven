@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "testng-1.0.dtd">
+<suite name="Bikewale_testing" >
+
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://www.bikewale.com/" />
+    <parameter name="captureScreenshots" value="true" />
+    <parameter name="enableLogs" value="true" />
+    <parameter name="enableExtentReports" value="true" />
+
+    <listeners>
+        <listener class-name="listeners.Listners" />
+        <listener class-name="listeners.Report_log" />
+    </listeners>
+
+
+    <test name="Bikewale" enabled="true">
+        <packages>
+            <package name="bikewale" />
+        </packages>
+    </test>
+
+</suite>

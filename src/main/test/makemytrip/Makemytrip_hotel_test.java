@@ -4,9 +4,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import baselibrary.Baselibrary;
-import pages.Makemytrip_homestays_page;
 import pages.Makemytrip_hotel_page;
+
+import baselibrary.Baselibrary;
+
 import propertyutility.PropertyUtility;
 
 public class Makemytrip_hotel_test extends Baselibrary

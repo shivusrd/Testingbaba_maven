@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "testng-1.0.dtd">
+<suite name="RestAssured_testing" >
+
+    <parameter name="enableLogs" value="true" />
+    <parameter name="enableExtentReports" value="true" />
+
+    <listeners>
+        <listener class-name="listeners.Listners" />
+        <listener class-name="listeners.Report_log" />
+    </listeners>
+
+    <test name="RestAssured" enabled="true">
+       <packages>
+       
+       <package name="restassured"></package>
+       </packages>
+    </test>
+
+</suite>

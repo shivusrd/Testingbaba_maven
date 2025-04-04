@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "testng-1.0.dtd">
 <suite name="Testingbaba" parallel="none">
-	
-	<parameter name="browser" value="chrome" />
-	<parameter name="url" value="https://makemytrip.com/" />
 
-     
+	<parameter name="browser" value="chrome" />
+	<parameter name="url" value="https://www.flipkart.com/" />
+	<parameter name="captureScreenshots" value="true" />
+	<parameter name="enableLogs" value="true" />
+	<parameter name="enableExtentReports" value="true" />
+
+
 	<listeners>
 		<listener class-name="listeners.Listners" />
 		<listener class-name="listeners.Report_log" />
@@ -14,23 +17,17 @@
 	</listeners>
 
 
-	<test name="Single test" enabled="true" >
+	<test name="Single test" enabled="true">
 
 
 		<classes>
 
-			<class name="makemytrip.Makemytrip_Flightsearch_test" />
+			<class name="flipkart.Flipkart_buyproduct_test" />
+
 		</classes>
+
+
 	</test>
-	
-	
-
-
-	
-
-
-
-
 
 </suite> <!-- Suite -->
 
